@@ -1,0 +1,1928 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+      Duet: an integrated platform for on-demand ride, dynamic transit and
+      microtransit for your commute, last mile and flex rides.
+    </title>
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      property="al:ios:url"
+      content="duet://invite_from_fb?tracking_id=882682221745718"
+    />
+    <meta property="al:ios:app_store_id" content="882682221745718" />
+    <meta property="al:ios:app_name" content="Duet Commute" />
+    <link href="images/favicon.png" rel="icon" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FontAwesome JS-->
+    <script
+      type="text/javascript"
+      src="plugins/font-awesome/js/fontawesome-all.min.js"
+    ></script>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css" />
+    <!-- Plugins CSS -->
+    <!--<link rel="stylesheet" href="plugins/pe-icon-7-stroke/css/pe-icon-7-stroke.css">-->
+    <link rel="stylesheet" href="plugins/animate-css/animate.min.css" />
+    <link rel="stylesheet" href="plugins/flexslider/flexslider.css" />
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="css/theme-1.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    ></script>
+    <script>
+      (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        (i[r] =
+          i[r] ||
+          function() {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      })(
+        window,
+        document,
+        'script',
+        '//www.google-analytics.com/analytics.js',
+        'ga'
+      );
+
+      ga('create', 'UA-53638414-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script>
+      var userAgent = 'desktop';
+
+      if (
+        navigator.userAgent.match(/Android/i) ||
+        navigator.userAgent.match(/webOS/i) ||
+        navigator.userAgent.match(/iPhone/i) ||
+        navigator.userAgent.match(/iPad/i) ||
+        navigator.userAgent.match(/iPod/i) ||
+        navigator.userAgent.match(/BlackBerry/i) ||
+        navigator.userAgent.match(/Windows Phone/i)
+      ) {
+        userAgent = 'mobile';
+      } else {
+        //console.log('desktop');
+      }
+
+      $(document).ready(function() {
+        if (userAgent == 'desktop') {
+          $('div.down-app-banner').hide();
+        }
+
+        if (userAgent == 'mobile') {
+          $('div#mobileFormDiv').html('');
+          $('div#mobileFormDiv').attr(
+            'style',
+            'background: rgba(0,0,0,0) !important'
+          );
+          $('div.down-app-header').hide();
+        }
+
+        setNavigation();
+      });
+
+      function setNavigation() {
+        var url = window.location.href;
+        var activeTab = url.substring(url.indexOf('#') + 1);
+        if (activeTab != url) {
+          $('.tab-pane').removeClass('active show');
+          $('#' + activeTab).addClass('active show');
+          $('a[href="#' + activeTab + '"]').tab('show');
+        }
+      }
+
+      $(function() {
+        $('#header-container').load('components/header.html');
+        $('#footer').load('components/footer.html');
+      });
+    </script>
+  </head>
+
+  <body class="home-page">
+    <!-- * Facebook Like button script starts -->
+    <div id="fb-root"></div>
+    <div id="header-container" class="sticky-top"></div>
+    <section class="section">
+      <div class="container">
+        <div class="row" style="margin-left: -15px; margin-right: -15px;">
+          <div class="col-lg-12">
+            <div class="rideshare">
+              <h1 class="text-center">Legal</h1>
+            </div>
+          </div>
+          <div class="col-lg-12 ">
+            <div class="bd-example bd-example-tabs">
+              <ul
+                class="nav nav-pills nav-justified"
+                role="tablist"
+                style="margin: auto; width: 75%"
+              >
+                <li class="nav-item" style="min-width: 200px">
+                  <a
+                    class="nav-link active show"
+                    data-toggle="tab"
+                    href="#privacy"
+                    role="tab"
+                    aria-controls="privacy"
+                    aria-selected="false"
+                    >PRIVACY POLICY</a
+                  >
+                </li>
+                <li class="nav-item" style="min-width: 200px">
+                  <a
+                    class="nav-link"
+                    data-toggle="tab"
+                    href="#terms"
+                    role="tab"
+                    aria-controls="terms"
+                    aria-selected="true"
+                    >TERMS OF SERVICE</a
+                  >
+                </li>
+                
+              </ul>
+              <div class="tab-content">
+                <br /><br />
+                <div role="tabpanel" class="tab-pane active show" id="privacy">
+                  <div class="section-head">
+                    <h6>DUET PRIVACY POLICY</h6>
+                    <time datetime="2018-12-28"
+                      ><a href="#">(Last updated on December 28, 2022)</a></time
+                    >
+                  </div>
+                  <div class="teton-content">
+                    <p>
+                      This privacy policy (the "Privacy Policy") describes how
+                      Dashboard Story, Inc. (referred to as "we", "our", "us")
+                      collects, uses, and stores information of users ("you") of
+                      the Duet services. This Privacy Policy, together with
+                      Terms of Use ("Agreement") separately agreed to between us
+                      and you and incorporating this Privacy Policy, establishes
+                      the legal terms and conditions of the agreement between us
+                      governing the submission of the information and our use of
+                      it in performing the Duet services. All capitalized terms
+                      used in this policy and not otherwise defined here will
+                      have the meanings assigned to them in the Agreement. By
+                      submitting information, you agree to be bound by this
+                      policy and allow the information to be used in the manner
+                      specified in this policy.
+                    </p>
+                    <p>
+                      This privacy policy, together with our Terms of Use
+                      ("Terms of Use") separately agreed and incorporating this
+                      privacy policy, establishes the legal terms and conditions
+                      of the agreement between us governing the submission of
+                      information and our use of it in providing the Platform
+                      and Services. All capitalized terms not otherwise defined
+                      in this privacy policy have the meanings assigned to them
+                      in the Terms of Use.
+                    </p>
+                    <br />
+                    <span class="section-head">
+                      <h6>1. What information do we collect from you?</h6>
+                    </span>
+                    <p>
+                      In order for us to provide you with the services that may
+                      be of interest to you, we may ask you for certain
+                      categories of information about you (collectively,
+                      "Personal Information"), such as your first name, last
+                      name, email address, mobile number, profile picture,
+                      vehicle picture, addresses or location information related
+                      to your trips, commute, your commute schedule and
+                      preferences, as well as the dates and times that you would
+                      like to carpool with another user. The information that
+                      you submit or that we collect, that is not Personal
+                      Information, may include, but is not limited to, current
+                      location and time information, our own user-generated
+                      content such as ratings and reviews,
+                      browsing/searching/registration history information, your
+                      friend or contact list if you choose to connect your
+                      social network account, such as Facebook, with your Duet
+                      account, as well as the information that you provide to us
+                      in our website, Apple App Store, Android Play Store, our
+                      Facebook page, Twitter account, or our user surveys that
+                      are sent out periodically. We host user communication in
+                      the in-app chat feature of our mobile applications on our
+                      server.
+                    </p>
+                    <p>
+                      Please be aware that we require that all users of Duet be
+                      at least 22 years old for our Carpool service or at least
+                      18 years old for our Shuttle service.
+                    </p>
+                    <br />
+                    <span class="section-head">
+                      <h6>2. How do we use the information collected?</h6>
+                    </span>
+                    <p>
+                      We use the information collected to serve you in five
+                      primary ways – for Shuttle Service Rides, to direct the
+                      Shuttle Service's vehicle and driver to pick you up and
+                      drop you off at the locations that you prefer; for our
+                      carpool service, to help you find other users who are
+                      geographically close to you or share a part of your
+                      commute route, to match commute schedules, to contact the
+                      users that you would like to carpool with, and to
+                      communicate with other users to arrange a carpool.
+                    </p>
+                    <p>
+                      We use your Personal Information that you submitted when
+                      signing up for an account to send you an activation code
+                      or link through text message for you to activate your
+                      account, as well as a welcome email for you to verify your
+                      account. We will communicate with you by email, phone, or
+                      text message to address your questions, provide our
+                      support to you, and keep you updated regarding our
+                      services.
+                    </p>
+                    <p>
+                      We use the addresses or location information that you and
+                      other users submitted to construct a user community for
+                      each user. In addition, we will disclose certain parts of
+                      your Personal Information to other users in your community
+                      to help users arrange carpools among themselves, or
+                      Shuttle Services to pick you up and drop you off. The
+                      information that we disclose is your first name, the first
+                      initial of your last name, your profile photo and vehicle
+                      photo, your phone number, your commute locations and
+                      schedules as well as the verification confirmations you
+                      provide to us. When you either offer a ride to or request
+                      a ride from another user in Duet applications, we will
+                      send an email message and an in-app chat message in our
+                      mobile application on behalf of you to this user. The
+                      email will include basic information about you and your
+                      commute to help the recipient user evaluate whether he or
+                      she can carpool with you, and to allow the recipient user
+                      to respond to you with his or her decision. Your
+                      information in this email includes your first name, the
+                      first initial of your last name, profile photo,
+                      verification status, and the names of the cities of your
+                      two commute locations, your commute schedule and your
+                      suggested carpool date. The in-app chat message will
+                      include the carpool date that you select. By using the
+                      option of offering or requesting a ride in the Duet
+                      applications, you have given us your consent to share the
+                      aforementioned information of yours with the Duet user
+                      whom you select to carpool with.
+                    </p>
+                    <p>
+                      We may review, scan, or analyze your communications with
+                      other users exchanged via our mobile applications for
+                      fraud prevention, risk assessment, regulatory compliance,
+                      investigation, product development, research and customer
+                      support purposes.
+                    </p>
+                    <p>
+                      We will not review, scan, or analyze your communications
+                      for sending third-party marketing messages to you. We will
+                      also not sell these reviews or analyses of communications
+                      to third parties. We will also use automated methods to
+                      carry out these reviews or analyses where reasonably
+                      possible. However, from time to time we may have to
+                      manually review some communications. By using our mobile
+                      applications, you consent that the Company, in its sole
+                      discretion, may review, scan, analyze, and store your
+                      communications, whether done manually or through automated
+                      means.
+                    </p>
+                    <p>
+                      We use your browsing, searching and registration history
+                      information for our own analytical purposes to help us
+                      better understand our users and improve our services.
+                    </p>
+                    <p>
+                      We use third parties to perform certain tasks on our
+                      behalf and need to share your information with them in
+                      order to provide products or services to you; for example,
+                      we may use a payment processing company to receive and
+                      process your credit card transactions for us such as
+                      Stripe, Inc. Unless we tell you differently or it is
+                      stated otherwise in a third party privacy policy, these
+                      parties do not have any right to use the Personal
+                      Information we share with them beyond what is necessary to
+                      assist us. As for other third parties, we do not share
+                      your information with them without your consent. However
+                      we reserve our right to share the aggregated user
+                      information, with identifiable user Personal Information
+                      redacted, with the third parties that we deem both
+                      appropriate and necessary for receiving these aggregated
+                      data.
+                    </p>
+                    <br />
+                    <span class="section-head">
+                      <h6>3. How do you edit your information?</h6>
+                    </span>
+                    <p>
+                      You're responsible for maintaining the accuracy of the
+                      information that you submit to us, such as your contact
+                      information, photos, commute locations and schedules
+                      provided as part of account sign-up. We provide you with
+                      the ability to access your account and edit your
+                      information anytime in your account if your information
+                      changes.
+                    </p>
+                    <br />
+                    <span class="section-head">
+                      <h6>4. Opt-Out and Cancellation of Accountn</h6>
+                    </span>
+                    <p>
+                      We provide you with the opportunity to opt out of
+                      receiving communications from us. We also provide you with
+                      the option of canceling your account with us if you no
+                      longer desire to use our services. If you decide to cancel
+                      your account, please contact us through
+                      <a href="mailto:ride@duetinc.com">ride@duetinc.com</a>.
+                    </p>
+                    <br />
+                    <span class="section-head">
+                      <h6>5. Information Retention</h6>
+                    </span>
+                    <p>
+                      We will retain the information that you submitted to us
+                      and that we collected from you for as long as your Duet
+                      account is active and as needed to provide you with
+                      services. Even after your account is cancelled, we will
+                      retain your information (including both personal and usage
+                      information) as needed to comply with our legal and
+                      regulatory obligations, to investigate or prevent fraud
+                      and other inappropriate activities, to enforce our
+                      agreements, and for other business reasons. After a period
+                      of time, your data may be anonymized and aggregated, and
+                      then may be held by us as long as we deem necessary for us
+                      to provide our services effectively, but our use of the
+                      anonymized data will be solely for analytical purposes.
+                    </p>
+                    <br />
+                    <span class="section-head">
+                      <h6>6. Information Sharing</h6>
+                    </span>
+                    <p>
+                      If you schedule Shuttle Service Rides using your
+                      employer's discount codes, we may share certain parts of
+                      your Personal Information with your employer with respect
+                      to those Rides. The information that we will share is your
+                      first name, last name, email, phone number, and the dates,
+                      times and places of the applicable Rides. We may, from
+                      time to time and upon request, share certain parts of your
+                      Personal Information with certain Shuttle Services. The
+                      information that we will share is your first name, last
+                      name, email, phone number, your registered locations and
+                      transaction history of orders of the shuttle or transit
+                      services. If we provide your Personal Information under
+                      the preceding sentence, we will require the Shuttle
+                      Service receiving it to use it in conformance with this
+                      privacy policy.
+                    </p>
+                    <p>
+                      We also will disclose your Personal Information if (a) we
+                      have a good faith belief that such disclosure is necessary
+                      to meet any applicable Law, detect, investigate and help
+                      prevent security, fraud or technical issues, or protect
+                      the rights, property or safety of the Company, our users,
+                      employees or others; and (b) as part of a corporate
+                      transaction, such as a transfer of assets to or an
+                      acquisition by or merger with another company.
+                    </p>
+                    <br />
+                    <span class="section-head">
+                      <h6>7. Social Media</h6>
+                    </span>
+                    <p>
+                      Our online and mobile services may include social media
+                      features, such as sharing via Facebook, Twitter and email.
+                      Social media features and widgets are either hosted by a
+                      third party or hosted directly on our online services.
+                      Your interactions with these features and widgets are
+                      governed by the privacy policy of the company providing
+                      them.
+                    </p>
+                    <br />
+                    <span class="section-head">
+                      <h6>8. Data Security</h6>
+                    </span>
+                    <p>
+                      The information we collect is securely stored within our
+                      database that is serviced by our preferred vendor such as
+                      Amazon Web Services ("AWS"). You can review AWS' security
+                      policy at
+                      <a href="https://aws.amazon.com/security"
+                        >https://aws.amazon.com/security</a
+                      >. However, as effective as the security technology and
+                      approaches are, no security system is impenetrable. We
+                      recommend that you do not disclose your password to
+                      anyone.
+                    </p>
+                    <br />
+                    <span class="section-head">
+                      <h6>9. Contacting Duet</h6>
+                    </span>
+                    <p>
+                      If you have any questions about this privacy statement,
+                      the practices of the Company, or your dealings with the
+                      Company, you may contact us at
+                      <a href="mailto:ride@duetinc.com">ride@duetinc.com</a>.
+                    </p>
+                    <br />
+                    <br />
+                    <p style="font-size: 20px;">END OF DOCUMENT</p>
+                  </div>
+                </div>
+
+                <div role="tabpanel" class="tab-pane" id="terms">
+                  <div class="section-head">
+                    <h6>DUET TERMS OF SERVICE</h6>
+                    <time datetime="2017-02-24"
+                      ><a href="#">(Last updated on January 21, 2020)</a></time
+                    >
+                  </div>
+                  <div class="teton-content">
+                    <p>
+                      Thank you for using our service! These terms of use (the
+                      "<strong>Agreement</strong>") govern access to and use of
+                      the services offered from time to time of Dashboard Story,
+                      Inc. (hereinafter, "<strong>Duet</strong>";
+                      "<strong>we</strong>" or "<strong>our</strong>"), provided
+                      through any software provided to you to access our
+                      services, including mobile applications (the
+                      "<strong>Applications</strong>"), updates or patches,
+                      utilities and tools or APIs and (the
+                      "<strong>Software</strong>") and our website (the
+                      "<strong>Website</strong>" and, collectively with the
+                      Software, the "<strong>Platform</strong>") to you
+                      ("<strong>User</strong>" or "<strong>you</strong>"), so
+                      please carefully read them before using the Platform and
+                      Services.
+                    </p>
+                    <p>
+                      Duet's collection and use of personal information in
+                      connection with the Services is described in our Privacy
+                      Policy (the "<strong>Privacy Policy</strong>").
+                    </p>
+                    <p>
+                      This Agreement, together with the Privacy Policy, as set
+                      forth from time to time at our Website and which are
+                      hereby incorporated into this Agreement by reference,
+                      establish the legal terms and conditions of the agreement
+                      between us governing your use and our provision of the
+                      Platform and Services.
+                    </p>
+                    <p>
+                      You may use the Platform and Services only in compliance
+                      with this Agreement. You may use the Platform and Services
+                      only if you have the power to form a contract with Duet
+                      and are not barred from doing so under any applicable Law.
+                      You may not use our Shuttle Services if you are under 18
+                      years of age or our Carpool Services if you're under 22
+                      years of age (collectively "Age Limits"). By agreeing to
+                      this Agreement, you are representing to us that you are
+                      over the Age Limits for the Services that you plan to use.
+                      <strong
+                        >You may not use the Services unless you are a resident
+                        of the United States of America and access the Platform
+                        in the United States of America. Without limiting the
+                        foregoing, the Services are not available to any person
+                        resident outside the United States of America.</strong
+                      >
+                    </p>
+                    <p>
+                      IMPORTANT: PLEASE REVIEW THE ARBITRATION AGREEMENT SET
+                      FORTH BELOW CAREFULLY, AS IT WILL REQUIRE YOU TO RESOLVE
+                      DISPUTES WITH DUET ON AN INDIVIDUAL BASIS THROUGH FINAL
+                      AND BINDING ARBITRATION. BY ENTERING THIS AGREEMENT, YOU
+                      EXPRESSLY ACKNOWLEDGE THAT YOU HAVE READ AND UNDERSTAND
+                      ALL OF THE TERMS OF THIS AGREEMENT AND HAVE TAKEN TIME TO
+                      CONSIDER THE CONSEQUENCES OF THIS IMPORTANT DECISION.
+                    </p>
+                    <p>
+                      THE PLATFORM IS A SERVICE THAT CONNECTS RIDERS WITH
+                      DRIVERS OR SHUTTLE SERVICES. ALL ARRANGEMENTS MADE THROUGH
+                      THE PLATFORM ARE BETWEEN RIDERS AND DRIVERS OR SHUTTLE
+                      SERVICES. DUET IS NOT A PARTY TO THOSE AGREEMENTS AND DUET
+                      IS NOT RESPONSIBLE FOR THE ACTS OR OMISSIONS OF ANY USER
+                      OR SHUTTLE SERVICE, INCLUDING ANY INACCURACY IN
+                      INFORMATION PROVIDED AND ANY FAILURE TO COMPLY WITH THIS
+                      AGREEMENT OR APPLICABLE LAW. DUET RESERVES THE RIGHT, BUT
+                      HAS NO OBLIGATION, TO MONITOR DISPUTES BETWEEN YOU AND
+                      OTHER USERS OR SHUTTLE SERVICES. ANY DISPUTES RELATING TO
+                      RIDES ARE BETWEEN RIDERS, DRIVERS AND SHUTTLE SERVICES.
+                      DUET IS UNDER NO OBLIGATION TO RESOLVE DISPUTES BETWEEN
+                      USERS AND WILL HAVE NO LIABILITY IN ANY SUCH DISPUTE.
+                    </p>
+                    <br />
+                    <span class="section-head">
+                      <h6>1. Definitions</h6>
+                    </span>
+                    <p>
+                      Capitalized terms in this Agreement have the meanings
+                      assigned to them in <strong>Section 12.11</strong> or
+                      elsewhere in these this Agreement, unless the context
+                      otherwise requires, which meaning will be equally
+                      applicable to both the singular and plural forms of those
+                      terms. In this Agreement, unless a clear contrary
+                      intention appears (a) "Section" refers to sections of this
+                      Agreement; (b) "including" (and with correlative meaning
+                      "include") means including without limiting the generality
+                      of any description preceding such term, and (c) any
+                      provision for Duet's discretion, determination, belief,
+                      consent or approval allows Duet to exercise its
+                      discretion, make determinations, reach beliefs and to
+                      grant or withhold its consent or approval in its sole and
+                      absolute discretion.
+                    </p>
+                    <br />
+                    <br />
+                    <span class="section-head">
+                      <h6>2. Services Provided by Duet.</h6>
+                    </span>
+                    <strong style="font-size: 17px;">2.1 Services. </strong>
+                    <p>
+                      Duet provides a service (the "<strong>Services</strong>")
+                      allowing users who are looking for a ride
+                      ("<strong>Riders</strong>") to connect with users who may
+                      be headed in the same direction
+                      ("<strong>Drivers</strong>," such Rides are designated
+                      "<strong>Carpools</strong>") and certain commercial
+                      shuttle services that participate in the Platform
+                      ("<strong>Shuttle Services</strong>") as part of
+                      agreements between Duet and one or more employer served by
+                      those Shuttle Services ("<strong>Shuttle Sponsors</strong
+                      >"). You may only use Shuttle Services if you are an
+                      employee of the applicable Shuttle Sponsor. You may not
+                      use the Services for purposes other than arranging
+                      personal transportation (a "<strong>Ride</strong>") and,
+                      in particular, you may not use the Services for the
+                      commercial delivery of goods or services to others. Unless
+                      otherwise agreed by Duet in a separate written agreement
+                      with you, the Services are made available solely for your
+                      personal, noncommercial use. YOU ACKNOWLEDGE THAT YOUR
+                      ABILITY TO OBTAIN TRANSPORTATION SERVICES THROUGH THE USE
+                      OF THE SERVICES DOES NOT ESTABLISH DUET AS A PROVIDER OF
+                      TRANSPORTATION SERVICES OR AS A TRANSPORTATION CARRIER.
+                    </p>
+                    <strong style="font-size: 17px;"
+                      >2.2 Scheduling a Carpool Ride.
+                    </strong>
+                    <p>
+                      You can use the "Schedule a carpool" option in the
+                      Applications to join an existing Open Carpool or Confirmed
+                      Carpool or create a new Open Carpool, either as Rider or
+                      Driver. Once you join an Open Carpool created by another
+                      user or another user joins an Open Carpool you have
+                      created, the Carpool is then automatically converted to a
+                      Confirmed Carpool. You will NOT be asked again for
+                      acceptance or confirmation. By creating an Open Carpool or
+                      joining a Carpool, you agree that you will meet your
+                      Confirmed Carpool Partners at the scheduled pickup
+                      location and at the scheduled pickup time, and, if you are
+                      the Driver, that you will drop off the Riders at the
+                      scheduled dropoff location. Unlike direct transportation,
+                      carpool travel typically takes longer as riders wait for
+                      fellow passengers to load or unload. In addition to being
+                      affected by other passengers sharing the ride, travel time
+                      is dependent on geography, weather condition, time of day,
+                      and traffic conditions. Duet and the Drivers and Shuttle
+                      Services partners are not responsible for delays in
+                      anticipated pickup or arrival. Duet has no obligation to
+                      display any Carpool you create and reserves the right to
+                      display Carpools to users at Duet's discretion.
+                    </p>
+                    <strong style="font-size: 17px;">2.3 Cancellation. </strong>
+                    <p>
+                      You can cancel a Carpool only through the Applications.
+                      Fees will apply if you cancel a Confirmed Carpool as
+                      specified in Section 3. If you cancel a Confirmed Carpool
+                      less than ten minutes before the scheduled pickup time,
+                      Duet will consider you a No Show for that Confirmed
+                      Carpool. In addition to fees, if you are a No Show
+                      (whether by late cancellation or otherwise) for three
+                      Confirmed Carpools in any calendar month, you will be
+                      blocked from the Platform and Services through the end of
+                      the following calendar month. If you are blocked a second
+                      time, you will be permanently blocked from the Platform
+                      and Services.
+                    </p>
+                    <strong style="font-size: 17px;">2.4 Claims. </strong>
+                    <p>
+                      You will use the Application to designate each Confirmed
+                      Carpool as "Pickup Complete," "Cancelled" or "No Show"
+                      (each a "<strong>Claim</strong>"). Duet will not accept
+                      Claims other than through the designated claim function in
+                      the Application. Whether or not you make a Claim, Duet
+                      will determine the Claim status of each user registered
+                      for a Confirmed Carpool within 24 hours of the scheduled
+                      departure time. You accept that Duet's determination of
+                      Claim status is final.
+                    </p>
+                    <strong style="font-size: 17px;"
+                      >2.5 Accessibility Needs.
+                    </strong>
+                    <p>
+                      If you have accessibility needs, please bring those up
+                      directly with the Driver or the Shuttle Service to
+                      determine if they will be able to accommodate your needs.
+                      Duet cannot guarantee accommodation of your accessibility
+                      needs.
+                    </p>
+                    <strong style="font-size: 17px;">2.6 Updates. </strong>
+                    <p>
+                      Duet reserves the right to change or upgrade any equipment
+                      or software that Duet uses to provide the Services without
+                      notice to User. Duet may install security patches,
+                      updates, upgrades and service packs with respect to the
+                      Platform ("Updates") as Duet determine in its discretion,
+                      and Duet reserves the right, but not the obligation, to
+                      roll back any Updates. Updates may change system behavior
+                      and functionality and as such may negatively affect the
+                      Services used by User. Duet will not be responsible or
+                      liable for service disruption or changes in functionality
+                      or performance due to Updates. Duet will not be
+                      responsible or liable for issues that may arise from
+                      incompatibilities between User's systems or software and
+                      any Update or hardware or software change or
+                      configuration, regardless of whether discretionary or
+                      requested.
+                    </p>
+                    <strong style="font-size: 17px;"
+                      >2.7 Access Credentials.
+                    </strong>
+                    <p>
+                      User is responsible for safeguarding the username,
+                      password and other access credentials that User uses to
+                      access the Platform and Services ("<strong
+                        >Access Credentials</strong
+                      >") and User agrees not to disclose User's Access
+                      Credentials to any third party. User is responsible for
+                      any activity using User's Access Credentials, whether or
+                      not User authorized that activity. User will immediately
+                      notify Duet of any unauthorized use of User's account and
+                      of any actual or potential disclosure of User's Access
+                      Credentials. User acknowledges that if User wishes to
+                      protect User's transmission of data or files to Duet, it
+                      is User's responsibility to use a secure encrypted
+                      connection to communicate with the Platform and Services.
+                      Duet makes no representations or warranties as to the
+                      security of any such encrypted connection, however, and
+                      User agrees that Duet will have no liability if it fails
+                      to protect User's transmission.
+                    </p>
+                    <strong style="font-size: 17px;">2.8 Verification. </strong>
+                    <p>
+                      You will have the option to perform certain verifications
+                      of yourself, such as verifying your mobile phone number,
+                      email account, Facebook account, and LinkedIn account.
+                      Duet recommends you perform these verifications, which are
+                      factored into other users' consideration of carpooling
+                      with you. Duet may enforce some or all of the supported
+                      verifications in order to improve your carpooling success
+                      rate or allow you to book Shuttle Services. Duet uses the
+                      application programming interface (API) or software
+                      development kit (SDK) of the respective third parties to
+                      conduct these verifications of you.
+                    </p>
+                    <br />
+                    <br />
+                    <span class="section-head">
+                      <h6>3. Charges and Reimbursements.</h6>
+                    </span>
+                    <strong style="font-size: 17px;">3.1 Riders. </strong>
+                    <p>
+                      <strong>(a) Charges. </strong>You understand that use of
+                      the Services may result in charges to you as set forth in
+                      this Section 3 ("<strong>Charges</strong>"). With respect
+                      to Carpools, Duet will charge the Rider a "<strong
+                        >Carpool Fee</strong
+                      >," which will include Duet's service charge for providing
+                      the Services (the "<strong>Service Charge</strong>") and
+                      an amount to reimburse the Driver (the
+                      "<strong>Reimbursement</strong>"). With respect to Rides
+                      for Shuttle Services, Duet will charge the Rider a Charge
+                      specified at the time you schedule the Ride (the "<strong
+                        >Shuttle Fee</strong
+                      >").
+                    </p>
+                    <p>
+                      <strong>(b) Payments. </strong>To use the Services, you
+                      must establish a positive balance in your account. Duet
+                      allows you to pay into your account in fixed increments
+                      (e.g. $10). All payments will be enabled by Duet using the
+                      preferred payment method designated in your account, after
+                      which you will receive a receipt by email or through the
+                      Platform. If your primary account payment method is
+                      determined to be expired, invalid or otherwise not able to
+                      be charged, you agree that Duet may use a secondary
+                      payment method in your account, if available.
+                    </p>
+                    <p>
+                      <strong>(c) Changes; Disparities. </strong>As between you
+                      and Duet, Duet reserves the right to establish, remove
+                      and/or revise Charges for any or all services obtained
+                      through the use of the Services at any time in Duet's sole
+                      discretion. Duet may from time to time provide certain
+                      users with promotional offers and discounts that may
+                      result in different amounts charged for the same or
+                      similar services obtained through the use of the Services,
+                      and you agree that those promotional offers and discounts,
+                      unless also made available to you, will have no bearing on
+                      your use of the Services or the Charges applied to you.
+                      You will see your Carpool Fee before you create or join a
+                      Carpool and Duet will not change your Carpool Fee for that
+                      Carpool after you have created or joined that Carpool.
+                    </p>
+                    <p>
+                      <strong>(d) Promotions. </strong>Duet may, in its sole
+                      discretion, create referral and/or promotional offer
+                      ("Promotions") such as promotional codes may be redeemed
+                      for discounts on future Services and/or a Driver's or
+                      Shuttle Service's services, or other features or benefits
+                      related to the Services and/or a Driver's or Shuttle
+                      Service's services, subject to any additional terms that
+                      Duet establishes. You agree that Promotions (i) must be
+                      used for the intended audience and purpose, and in a
+                      lawful manner, (ii) may not be duplicated, sold or
+                      transferred in any manner, or made available to the
+                      general public (whether posted to a public form or
+                      otherwise), unless expressly permitted by Duet, (iii) may
+                      be disabled by Duet at any time for any reason without
+                      liability to Duet, (iv) may only be used pursuant to the
+                      specific terms that Duet establishes for the Promotion,
+                      (v) are not valid for cash, and (vi) may expire before
+                      your use. Duet reserves the right to withhold or deduct
+                      credits or other features or benefits obtained through the
+                      use of Promotions by you or any other user in the event
+                      that Duet determines or believes that the use or
+                      redemption of the Promotion was in error, fraudulent,
+                      illegal, or otherwise in violation of this Agreement.
+                    </p>
+                    <p>
+                      <strong
+                        >(e) Driver and Shuttle Service Reimbursements. </strong
+                      >You will be responsible to Drivers and Shuttle Services
+                      for the cost of repair for damage to, or necessary
+                      cleaning of, vehicles and property resulting from use of
+                      the Services under your account in excess of normal "wear
+                      and tear" damages and necessary cleaning ("<strong
+                        >Repair</strong
+                      >
+                      or <strong>Cleaning</strong>"). Duet reserves the right to
+                      facilitate payment to Drivers and Shuttle Services of any
+                      Repair or Cleaning costs Duet determines are your
+                      responsibility under the preceding sentence, using your
+                      payment method designated in your account.
+                    </p>
+                    <strong style="font-size: 17px;"
+                      >3.2 Reimbursements.
+                    </strong>
+                    <p>
+                      Reimbursements are the amount of reimbursement a Driver
+                      receives for a portion of the costs (including the costs
+                      of owning and operating the Driver's vehicle) associated
+                      with driving successfully completed Confirmed Carpools.
+                      You will see your Reimbursement before you create or join
+                      a Carpool as Driver and Duet will not change your
+                      Reimbursement for that Carpool after you have created or
+                      joined that Carpool as Driver, provided that Duet reserves
+                      the right, in Duet's reasonable discretion, to adjust or
+                      withhold all or a portion of a Reimbursement (a) if Duet
+                      determines that you have attempted to defraud or abuse
+                      Duet or Duet's payment processors, (b) to resolve a Rider
+                      complaint, or (c) for any other reason Duet deems
+                      appropriate. You acknowledge and agree that your
+                      Reimbursement for any Carpool may be less than your actual
+                      costs or reimbursable expenses for that Carpool. You must
+                      comply with any and all applicable tax Law, including the
+                      reporting and payment of any taxes arising in connection
+                      with your use of the Services or payments made through the
+                      Services. The reporting and payment of any such applicable
+                      taxes are your responsibility. You are responsible for
+                      determining if any Reimbursement is taxable, and for
+                      remitting taxes to the appropriate tax authority.
+                      Reimbursements will be credited to your account and will
+                      not be paid out to you directly.
+                    </p>
+                    <strong style="font-size: 17px;"
+                      >3.3 Cancellation and No Shows.</strong
+                    >
+                    <p>
+                      <strong>(a) Cancellation and No Show Charges. </strong>If
+                      you cancel a Confirmed Carpool or a Confirmed Shuttle
+                      Service Ride or Duet determines that you were a No Show
+                      for a Confirmed Carpool or a Confirmed Shuttle Service
+                      Ride, you will pay a Charge as follows:
+                    </p>
+                    <p>
+                      (i) For cancellations more than an hour or more before the
+                      scheduled departure or pickup time, the Charge will be $1
+                      or, for Shuttle Services, the amount specified in the
+                      agreement between Duet the applicable Shuttle Sponsor.
+                    </p>
+                    <p>
+                      (ii) For cancellations less than an hour (but more than
+                      ten minutes) before the scheduled departure or pickup
+                      time, the Charge will be 50% of the Carpool Fee for that
+                      Confirmed Carpool or, for Shuttle Services, the amount
+                      specified in the agreement between Duet the applicable
+                      Shuttle Sponsor.
+                    </p>
+                    <p>
+                      (iii) For No Shows (including cancellations ten minutes or
+                      less before the scheduled departure or pickup time), the
+                      Charge will be the Carpool Fee for that Confirmed Carpool
+                      or, for Shuttle Services, the amount specified in the
+                      agreement between Duet the applicable Shuttle Sponsor.
+                    </p>
+                    <p>
+                      <strong>(b) Cancellation and No Show Credits. </strong>If
+                      one of your Confirmed Carpool Partners cancels a Confirmed
+                      Carpool or Duet determines that one of your Confirmed
+                      Carpool Partners was a No Show for a Confirmed Carpool,
+                      you will receive a credit, equal to the excess, if any, of
+                      the Charge specified in
+                      <strong>Section 3.3(a)</strong> over the Service Charge
+                      for that Confirmed Carpool.
+                    </p>
+                    <strong style="font-size: 17px;"
+                      >3.4 Payments Only Through the Platform.
+                    </strong>
+                    <p>
+                      You will not make or solicit payments for Carpools
+                      scheduled through the Platform other than through the
+                      Platform. Duet will not acknowledge or give you credit for
+                      payments made other than through the Platform.
+                    </p>
+                    <strong style="font-size: 17px;"
+                      >3.5 Completion of Rides; Processing of Charges and
+                      Credits.
+                    </strong>
+                    <p>
+                      Riders are obligated to pay Charge and Drivers are
+                      entitled to Reimbursement after the Ride is completed. A
+                      Ride is completed after the Driver or Shuttle Service
+                      drops the Rider off at the scheduled dropoff location,
+                      using the Platform. Credits and Charges for completed
+                      Rides will be processed by the business day following the
+                      later of the day on which they are incurred or (if later)
+                      finally determined.
+                    </p>
+                    <strong style="font-size: 17px;">3.6 Redemptions. </strong>
+                    <p>
+                      You may redeem your positive account balance at any time,
+                      provided that redemptions may be made only in increments
+                      specified by Duet from time to time (e.g. $5) and Duet may
+                      deduct any payment processing fees incurred by Duet in
+                      making the redemption from the amount of the redemption.
+                      The remainder balance can be redeemed in its entirety at
+                      your request if you decide to close or deactivate your
+                      Duet account, and you inform Duet of this intention by an
+                      email to ride@duetinc.com, provided that Duet will deduct
+                      any payment processing fees incurred by Duet in making the
+                      redemption from the amount of the redemption.
+                    </p>
+                    <br />
+                    <br />
+                    <span class="section-head">
+                      <h6>4. User Obligations.</h6>
+                    </span>
+                    <strong style="font-size: 17px;"
+                      >4.1 General User Eligibility.</strong
+                    >
+                    <p>
+                      To be eligible to use the Services, you must not have been
+                      convicted or pleaded guilty or nolo contendere to any
+                      felony or serious criminal offense (as determined by Duet)
+                      ever, nor any misdemeanor within the past three years. You
+                      hereby represent that you are eligible under the preceding
+                      sentence and that you have disclosed to Duet any criminal
+                      history.
+                    </p>
+                    <strong style="font-size: 17px;"
+                      >4.2 Carpool User Eligibility.</strong
+                    >
+                    <p>
+                      You may not use the Services with respect to Carpools (as
+                      a Rider or a Driver) if you are under 22 years of age. By
+                      using the Services with respect to Carpools, you are
+                      representing to us that you are over 22.
+                    </p>
+                    <strong style="font-size: 17px;"
+                      >4.3 Driver Eligibility.</strong
+                    >
+                    <p>
+                      To be eligible to use the Services as a Driver, you must
+                      at all times, in addition to the other requirements set
+                      forth in this Agreement, (a) hold a valid driving license
+                      for the area in which you are driving, (b) ensure your
+                      vehicle is roadworthy, and has all certifications required
+                      by applicable Law and follow prescribed manufacturer
+                      preventative and maintenance standards for your vehicle,
+                      (c) have appropriate insurance coverage for all Rides and
+                      any accidents that may occur during a Ride, including
+                      personal injury protection insurance coverage for your
+                      vehicle with no less than the minimum limits required by
+                      applicable Law, (d) only provide Rides in a personal
+                      capacity and not in the course of a business, (e) not use
+                      the Services to generate a profit; and (f) not use the
+                      Services to provide Rides on motorcycles, (g) have NO
+                      record of convictions for serious driving offenses (as
+                      determined by Duet), and (h) be medically fit to act as a
+                      driver. You hereby represent that you are eligible under
+                      the preceding sentence, that you have disclosed to Duet
+                      any record of driving offenses, and that you will, on
+                      request, provide Duet with evidence of insurance. Drivers
+                      are advised to check with their insurance provider to
+                      ensure that their coverage extends to the expense-sharing
+                      ridesharing activities such as Carpools scheduled using
+                      the Platform.
+                    </p>
+                    <strong style="font-size: 17px;"
+                      >4.4 Duty to Update.</strong
+                    >
+                    <p>
+                      If at any time you do not meet or do not continue to meet
+                      the eligibility requirements listed in this Agreement, you
+                      will notify Duet immediately at ride@duetinc.com, and you
+                      will have no right to use or continue to use the Platform
+                      or the Services.
+                    </p>
+                    <strong style="font-size: 17px;"
+                      >4.5 Other User Responsibilities.</strong
+                    >
+                    <p>
+                      You may not authorize third parties to use your account
+                      and you may not use your account to book Rides for third
+                      parties (whether they accompany you or not), you will use
+                      only the Access Credential provided by Duet. You may not
+                      assign or otherwise transfer your account to any other
+                      Person. You agree to comply with all applicable Law when
+                      accessing or using the Platform and Services, and you may
+                      only access or use the Platform and Services for lawful
+                      purposes (e.g., no transport of unlawful or hazardous
+                      materials). You may not in your access or use of the
+                      Platform or Services cause nuisance, annoyance,
+                      inconvenience, or property damage, whether to the Driver
+                      or Shuttle Service, any other Person, or their respective
+                      vehicles and other property. Your receipt of Services is
+                      at all times conditioned on providing Duet with all
+                      information reasonably necessary for Duet to provide the
+                      Services. You are responsible for obtaining the data
+                      network access necessary to use the Platform. Your mobile
+                      network's data and messaging rates and fees may apply if
+                      you access or use the Platform from your device. You are
+                      responsible for obtaining the current, updated version of
+                      any Software acquiring and updating compatible hardware or
+                      devices necessary to access and use the Platform. Duet
+                      does not guarantee that the Platform, or any portion
+                      thereof, will function on any particular hardware or
+                      devices. In addition, the Platform may be subject to
+                      malfunctions and delays inherent in the use of the
+                      Internet and electronic communications.
+                    </p>
+                    <strong style="font-size: 17px;"
+                      >4.6 Unreasonable Behavior and Conditions.</strong
+                    >
+                    <p>
+                      Drivers and Shuttle Services may refuse service to Riders
+                      (and Riders may decline service from Drivers and Shuttle
+                      Services) for unreasonable behavior or conditions,
+                      including (a) animals that make the driver or other
+                      passengers uncomfortable, (b) luggage or objects that do
+                      not fit into the available seat space or trunk space, (c)
+                      food or beverages with odor or risk to make the drivers or
+                      other passengers uncomfortable, (d) shouting, playing loud
+                      music, loud phone ringtones or loud phone calls, and (e)
+                      illegal defamatory, abusive, obscene, profane, offensive,
+                      threatening, harassing, or sexually or racially offensive
+                      speech or behavior.
+                    </p>
+                    <strong style="font-size: 17px;"
+                      >4.7 Acceptable Use.</strong
+                    >
+                    <ol>
+                      <li>
+                        (a) Using the Platform to encourage any illegal or
+                        abusive activities, or other activities that interfere
+                        with the business or activities of Duet;
+                      </li>
+                      <li>
+                        (b) Attempting to bypass or break any security mechanism
+                        on any of the Platform or using the Platform in any
+                        other manner that poses a security or service risk to
+                        Duet or any of its users or suppliers;
+                      </li>
+                      <li>
+                        (c) Reverse-engineering the Platform in order to find
+                        limitations, vulnerabilities, or evade filtering
+                        capabilities;
+                      </li>
+                      <li>
+                        (d) Using the Platform in any manner that may subject
+                        Duet or any third party to liability, damages, or
+                        danger;
+                      </li>
+                      <li>
+                        (e) Launching or facilitating, whether intentionally or
+                        unintentionally, a denial of service attack on any part
+                        of the Platform or any other conduct that adversely
+                        impacts the availability, reliability, or stability of
+                        the Platform;
+                      </li>
+                      <li>
+                        (f) Using the Platform to transmit any material that
+                        contains viruses, trojan horses, worms or any other
+                        malicious, harmful, or deleterious programs or otherwise
+                        to harm or disrupt another Person's computer or to
+                        illegally access software or bypass security on
+                        websites, or servers;
+                      </li>
+                      <li>
+                        (g) Engaging in any advertising or marketing of goods or
+                        services, including any activities that violate any
+                        anti-spam, data protection, or privacy Law;
+                      </li>
+                      <li>
+                        (h) Using the Platform to harass, intimidate or threaten
+                        another Person, including unsolicited or unwanted
+                        communications of any kind;
+                      </li>
+                      <li>
+                        (i) Using the Platform to harvest or otherwise collect
+                        information about others, including email addresses or
+                        phone numbers;
+                      </li>
+                      <li>
+                        (j) Using the Platform to engage in or in connection
+                        with fraudulent activity;
+                      </li>
+                      <li>
+                        (k) Violating or facilitating the violation of any Law,
+                        including Law regarding the transmission of data or
+                        software;
+                      </li>
+                      <li>
+                        (l) Taking any action to participate in, encourage, or
+                        promote any activity prohibited under this Agreement;
+                      </li>
+                      <li>
+                        (m) Using the Platform to transmit any material that
+                        infringes the Intellectual Property Rights or other
+                        rights of third parties;
+                      </li>
+                      <li>
+                        (n) Using the Platform to transmit any material that is
+                        libelous, defamatory, discriminatory, obscene, indecent,
+                        or otherwise malicious or harmful to any person or
+                        entity;
+                      </li>
+                      <li>
+                        (o) Creating a false identity or forged email address or
+                        header, or phone number, or otherwise attempting to
+                        mislead others as to the identity of the sender or the
+                        origin of a message or phone call;
+                      </li>
+                      <li>
+                        (p) Reselling, renting, redistributing or otherwise
+                        marketing the Platform or Services; or
+                      </li>
+                      <li>
+                        (q) Using the Platform, or any component of the
+                        Platform, in any manner not authorized by Duet.
+                      </li>
+                    </ol>
+                    <br />
+                    <br />
+                    <span class="section-head">
+                      <h6>5. Denial and Suspension of Services.</h6>
+                    </span>
+                    <p>
+                      Duet reserves the right, in its discretion, to refuse or
+                      deny access to the Platform and Services to any person for
+                      any reason or no reason Duet may in its discretion
+                      immediately suspend any Services and any right to use the
+                      Platform at any time, including if:
+                    </p>
+                    <ol>
+                      <li>
+                        (a) Duet believes that User has breached this Agreement;
+                      </li>
+                      <li>
+                        (b) Duet is obligated or believes itself obligated to
+                        suspend any Services to comply with applicable Law,
+                        including any order, instruction, requirement, directive
+                        or request of any governmental body;
+                      </li>
+                      <li>
+                        (c) Duet believes that continuing to supply the Platform
+                        or Services to User may cause damage or harm to Duet's
+                        relationship with any governmental body, business
+                        partner or other third party related to the Platform or
+                        Services;
+                      </li>
+                      <li>
+                        (d) applicable Law or a regulatory action or lawsuit
+                        prohibits, impairs or makes impractical the provision of
+                        the Platform or Services;
+                      </li>
+                      <li>
+                        (e) a third-party supplier on whose services the
+                        provision of Platform or Services is dependent suspends
+                        its provision of those services to Duet;
+                      </li>
+                      <li>
+                        (f) the Platform or Services are being used in a manner
+                        that Duet believes or has been notified may otherwise
+                        create liability or may be fraudulent or illegal; or
+                      </li>
+                      <li>
+                        (g) User or any third party has accessed the Platform or
+                        Services in violation of <strong>Section 4</strong>, or
+                        there has otherwise been unauthorized use of User's
+                        Access Credentials.
+                      </li>
+                    </ol>
+                    <br />
+                    <br />
+                    <span class="section-head">
+                      <h6>6. Intellectual Property Rights; Data.</h6>
+                    </span>
+                    <strong style="font-size: 17px;">6.1 License. </strong>
+                    <p>
+                      Subject to your compliance with this Agreement and during
+                      the Term, Duet grants you a limited, non-exclusive,
+                      non-sublicensable, revocable, non-transferable license to
+                      (a) access and use the Software on your personal device
+                      solely in connection with your use of the Services, and
+                      (b) access and use any Content, information and related
+                      materials that may be made available through the Platform,
+                      in each case solely for your personal, noncommercial use.
+                      Some Software used in the Platform may be offered under an
+                      open source license that Duet will make available to you.
+                      There may be provisions in the open source license that
+                      expressly override some of the terms of this Agreement.
+                      Any rights not expressly granted in this Agreement are
+                      reserved by Duet and Duet's licensors.
+                    </p>
+                    <strong style="font-size: 17px;">6.2 Restrictions. </strong>
+                    <p>
+                      You may not (a) remove any copyright, trademark or other
+                      proprietary notices from any portion of the Platform, (b)
+                      reproduce, modify, prepare derivative works based on,
+                      distribute, license, lease, sell, resell, transfer,
+                      publicly display, publicly perform, transmit, stream,
+                      broadcast or otherwise exploit the Platform except as
+                      expressly permitted by Duet, (c) decompile, reverse
+                      engineer or disassemble the Platform except as may be
+                      permitted by applicable Law, (d) link to, mirror or frame
+                      any portion of the Platform, (e) cause or launch any
+                      programs or scripts for the purpose of scraping, indexing,
+                      surveying, or otherwise data mining any portion of the
+                      Platform or unduly burdening or hindering the operation
+                      and/or functionality of any aspect of the Platform, or (f)
+                      attempt to gain unauthorized access to or impair any
+                      aspect of the Platform or its related systems or networks.
+                    </p>
+                    <strong style="font-size: 17px;"
+                      >6.3 Third Party Services and Content.
+                    </strong>
+                    <p>
+                      The Platform and Services may be made available or
+                      accessed in connection with third party services and
+                      Content (including advertising) that Duet does not
+                      control. You acknowledge that different terms of use and
+                      privacy policies may apply to your use of such third party
+                      services and Content. Duet does not endorse such third
+                      party services and Content and in no event will Duet be
+                      responsible or liable for any products or services of such
+                      third party providers. Additionally, Apple Inc. or Google,
+                      Inc. will be a third-party beneficiary to this contract if
+                      you access the Platform or Services using Applications
+                      developed for Apple iOS or Android-powered mobile devices,
+                      respectively. These third party beneficiaries are not
+                      parties to this contract and are not responsible for the
+                      provision or support of the Platform or Services in any
+                      manner. Your access to the Platform or Services using
+                      these devices is subject to terms set forth in the
+                      applicable third party beneficiary's terms of service.
+                    </p>
+                    <strong style="font-size: 17px;"
+                      >6.4 Injunctive Relief.
+                    </strong>
+                    <p>
+                      User agrees that any breach by User of this Section 6 is
+                      likely to cause irreparable injury for which Duet would
+                      have no adequate remedy at law. Therefore, in the event of
+                      such a breach or threatened breach and subject to
+                      <strong>Section 12.10(b)</strong>, Duet will be entitled
+                      to seek injunctive relief, without limiting any other
+                      rights or remedies that may be available to it and User
+                      agrees to waive any requirement for the securing or
+                      posting of any bond in connection with any Duet efforts to
+                      seek injunctive relief in accordance with this
+                      <strong>Section 6.4</strong>.
+                    </p>
+                    <strong style="font-size: 17px;">6.5 Feedback. </strong>
+                    <p>
+                      You may choose or Duet may invite you to submit comments
+                      or ideas about the Platform and Services, including about
+                      how to improve the Platform and Services
+                      ("<strong>Feedback</strong>"). By submitting Feedback, you
+                      agree that your submissions are gratuitous, unsolicited
+                      and without restriction and will not place Duet under any
+                      fiduciary or other obligation, and that Duet is free to
+                      use the Feedback without any additional compensation to
+                      you, and/or to disclose the Feedback on a non-confidential
+                      basis or otherwise to anyone. You further acknowledge
+                      that, by acceptance of your submission, Duet does not
+                      waive any rights to use similar or related ideas
+                      previously known to Duet, or developed by its employees,
+                      or obtained from sources other than you.
+                    </p>
+                    <br />
+                    <br />
+                    <span class="section-head">
+                      <h6>7. Contributing User Content to Services.</h6>
+                    </span>
+                    <strong style="font-size: 17px;"
+                      >7.1 License to Duet.
+                    </strong>
+                    <p>
+                      Duet may, in Duet's sole discretion, permit you from time
+                      to time to submit, upload, publish or otherwise make
+                      available to Duet through the Platform Content related to
+                      the Services, initiation of support requests, and
+                      submission of entries for competitions and promotions
+                      ("<strong>User Content</strong>"). Any User Content
+                      provided by you remains your property. However, by
+                      providing User Content to Duet, you grant Duet a
+                      worldwide, perpetual, irrevocable, transferable,
+                      royalty-free license, with the right to sublicense, to
+                      use, copy, modify, create derivative works of, distribute,
+                      publicly display, publicly perform, and otherwise exploit
+                      in any manner all User Content in all formats and
+                      distribution channels now known or hereafter devised
+                      (including in connection with the Services and Duet's
+                      business and on third-party sites and services), without
+                      further notice to or consent from you, and without the
+                      requirement of payment to you or any other Person.
+                    </p>
+                    <strong style="font-size: 17px;"
+                      >7.2 User Responsibility.</strong
+                    >
+                    <ol>
+                      <li>
+                        (a) Duet does not pre-screen all User Content and does
+                        not endorse or approve any User Content that User and
+                        other users may contribute to the Platform. You are
+                        solely responsible for your User Content and may be held
+                        liable for User Content that you post. You bear the
+                        entire risk of the completeness, accuracy and/or
+                        usefulness of User Content found on the Platform.
+                      </li>
+                      <li>
+                        (b) You represent and warrant that: (i) you either are
+                        the sole and exclusive owner of all User Content or you
+                        have all rights, licenses, consents and releases
+                        necessary to grant Duet the license to the User Content
+                        as set forth above, and (ii) neither the User Content,
+                        nor your submission, uploading, publishing or otherwise
+                        making available of such User Content, nor Duet's use of
+                        the User Content as permitted in this Agreement will
+                        infringe, misappropriate or violate a third party's
+                        Intellectual Property Rights, or rights of publicity or
+                        privacy, or result in the violation of any applicable
+                        Law.
+                      </li>
+                      <li>
+                        (c) You agree to not provide User Content that is
+                        defamatory, libelous, hateful, violent, obscene,
+                        pornographic, unlawful, or otherwise offensive, as
+                        determined by Duet in its sole discretion, whether or
+                        not that material may be protected by Law.
+                      </li>
+                    </ol>
+                    <strong style="font-size: 17px;"
+                      >7.3 Treatment of User Content.
+                    </strong>
+                    <p>
+                      Duet reserves the right (but has no obligation except as
+                      required by Law) to remove, block, edit, move or disable
+                      User Content for any reason, including when Duet
+                      determines that User Content violates this Agreement. The
+                      decision to remove User Content at any time is in Duet's
+                      discretion. To the maximum extent permitted by Law, Duet
+                      does not assume any responsibility or liability for User
+                      Content or for removal of, User Content or any failure to
+                      or delay in removing, User Content or other Content. Duet
+                      has no liability for User's or any third party's violation
+                      of this Agreement, including this
+                      <strong>Section 7</strong>, or any third party's violation
+                      of Law or of any other agreement between that third party
+                      and Duet.
+                    </p>
+                    <strong style="font-size: 17px;"
+                      >7.4 Intellectual Property Rights.
+                    </strong>
+                    <p>
+                      Duet respects the Intellectual Property Rights of others.
+                      User must have the legal right to Upload User Content
+                      through the Platform. User may not Upload any User Content
+                      on the Platform that infringes the Intellectual Property
+                      Rights or any other rights of a third party nor may User
+                      Upload User Content in violation of Law or this Agreement.
+                      User may Upload only User Content that User is permitted
+                      to Upload by the owner or by Law. Duet may, without prior
+                      notice to User and in its discretion, remove User Content
+                      that Duet believes may infringe the Intellectual Property
+                      Rights or other rights of a third party.
+                    </p>
+                    <strong style="font-size: 17px;"
+                      >7.5 Take Down Procedure.
+                    </strong>
+                    <p>
+                      If any person believes that person's Intellectual Property
+                      Rights have been infringed by someone else on the
+                      Platform, that person may contact Duet by e-mailing the
+                      following information to ride@duetinc.com:
+                    </p>
+                    <ol>
+                      <li>
+                        (a) a description of the Intellectual Property Rights
+                        and an explanation as to how they have been infringed;
+                      </li>
+                      <li>
+                        (b) a description of where the infringing material is
+                        located;
+                      </li>
+                      <li>
+                        (c) the complaining person's address, phone number and
+                        email address;
+                      </li>
+                      <li>
+                        (d) a statement by the complaining person, made under
+                        penalty of perjury, that (i) the complaining person has
+                        a good-faith belief that the disputed use of material in
+                        which that person owns Intellectual Property Rights is
+                        not authorized, and (ii) the information provided is
+                        accurate, correct, and that the complaining person is
+                        authorized to act on behalf of the owner of an exclusive
+                        right that is allegedly infringed; and
+                      </li>
+                      <li>
+                        (e) a physical or electronic signature of the person
+                        authorized to act on behalf of the owner of the
+                        exclusive right that has allegedly been infringed.
+                      </li>
+                    </ol>
+                    <strong style="font-size: 17px;"
+                      >7.6 User Content License Grant to Other Users.
+                    </strong>
+                    <p>
+                      If you use the Platform to transmit User Content to other
+                      users of the Platform then, except as expressly
+                      communicated by you to the recipient in writing at the
+                      time of transmittal, you grant those recipients the right
+                      to use, copy, modify, display, perform, create derivative
+                      works from, and otherwise communicate and distribute the
+                      User Content transmitted on or through the Platform
+                      without further notice, attribution or compensation to
+                      you, subject to the recipient's obligations to Duet and
+                      under Law.
+                    </p>
+                    <br />
+                    <br />
+                    <span class="section-head">
+                      <h6>8. Text Messaging and Telephone Calls.</h6>
+                    </span>
+                    <p>
+                      You agree that Duet may contact you by telephone or text
+                      messages (including by an automatic telephone dialing
+                      system) at any of the phone numbers provided by you or on
+                      your behalf in connection with your account, including for
+                      marketing purposes. You understand that you are not
+                      required to provide this consent as a condition of
+                      purchasing any property, goods or services. You also
+                      understand that you may opt out of receiving text messages
+                      from Duet at any time, either by texting back the word
+                      "STOP" using the mobile device that is receiving the
+                      messages, or by contacting ride@duetinc.com. If you do not
+                      choose to opt out, Duet may contact you as outlined in the
+                      Privacy Policy.
+                    </p>
+                    <br />
+                    <br />
+                    <span class="section-head">
+                      <h6>
+                        9. Disclaimers; Limitation of Liability; Indemnity.
+                      </h6>
+                    </span>
+                    <strong style="font-size: 17px;">9.1 DISCLAIMER.</strong>
+                    <ol>
+                      <li>
+                        (a) THE SERVICES ARE PROVIDED "AS IS" AND "AS
+                        AVAILABLE." DUET DISCLAIMS ALL REPRESENTATIONS AND
+                        WARRANTIES, EXPRESS, IMPLIED, OR STATUTORY, NOT
+                        EXPRESSLY SET OUT IN THIS AGREEMENT, INCLUDING THE
+                        IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+                        PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN ADDITION,
+                        DUET MAKES NO REPRESENTATION, WARRANTY, OR GUARANTEE
+                        REGARDING THE RELIABILITY, TIMELINESS, QUALITY,
+                        SUITABILITY, OR AVAILABILITY OF THE SERVICES OR ANY
+                        SERVICES REQUESTED THROUGH THE USE OF THE SERVICES, OR
+                        THAT THE SERVICES WILL BE UNINTERRUPTED OR ERROR-FREE.
+                        DUET DOES NOT GUARANTEE THE QUALITY, SUITABILITY, SAFETY
+                        OR ABILITY OF DRIVERS OR SHUTTLE SERVICES. YOU AGREE
+                        THAT THE ENTIRE RISK ARISING OUT OF YOUR USE OF THE
+                        SERVICES, AND ANY SERVICE REQUESTED IN CONNECTION WITH
+                        THE SERVICES, REMAINS SOLELY WITH YOU, TO THE MAXIMUM
+                        EXTENT PERMITTED UNDER APPLICABLE LAW.
+                      </li>
+                      <li>
+                        (b) THE PLATFORM IS AVAILABLE ON MOBILE DEVICES. DO NOT
+                        USE THE PLATFORM IN A WAY THAT DISTRACTS YOU OR PREVENTS
+                        YOU FROM OBEYING TRAFFIC OR SAFETY LAWS.
+                      </li>
+                      <li>
+                        (c) ALTHOUGH DUET MAY IN SOME INSTANCES ATTEMPT TO
+                        VERIFY CERTAIN INFORMATION PROVIDED BY DRIVERS, DUET HAS
+                        NO OBLIGATION TO DO SO AND MAKES NO REPRESENTATIONS
+                        REGARDING THE ACCURACY OF SUCH VERIFICATION. YOU
+                        ACKNOWLEDGE THAT YOU ARE NOT RELYING ON DUET AND THAT IT
+                        IS YOUR RESPONSIBILITY TO VERIFY THE IDENTITY,
+                        QUALIFICATIONS AND STATUS OF A DRIVER.
+                      </li>
+                    </ol>
+                    <strong style="font-size: 17px;"
+                      >9.2 LIMITATION OF LIABILITY.</strong
+                    >
+                    <ol>
+                      <li>
+                        (a) DUET WILL NOT BE LIABLE FOR INDIRECT, INCIDENTAL,
+                        SPECIAL, EXEMPLARY, PUNITIVE, OR CONSEQUENTIAL DAMAGES,
+                        INCLUDING LOST PROFITS, LOST DATA, PERSONAL INJURY, OR
+                        PROPERTY DAMAGE RELATED TO, IN CONNECTION WITH, OR
+                        OTHERWISE RESULTING FROM ANY USE OF THE SERVICES,
+                        REGARDLESS OF THE NEGLIGENCE (EITHER ACTIVE,
+                        AFFIRMATIVE, SOLE, OR CONCURRENT) OF DUET, EVEN IF DUET
+                        HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+                      </li>
+                      <li>
+                        (b) DUET WILL NOT BE LIABLE FOR ANY DAMAGES, LIABILITY
+                        OR LOSSES ARISING OUT OF (i) YOUR USE OF OR RELIANCE ON
+                        THE SERVICES OR YOUR INABILITY TO ACCESS OR USE THE
+                        SERVICES, OR (ii) ANY TRANSACTION OR RELATIONSHIP
+                        BETWEEN YOU AND ANY DRIVER OR SHUTTLE SERVICE, EVEN IF
+                        DUET HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH
+                        DAMAGES. DUET WILL NOT BE LIABLE FOR DELAY OR FAILURE IN
+                        PERFORMANCE RESULTING FROM CAUSES BEYOND DUET'S
+                        REASONABLE CONTROL. YOU ACKNOWLEDGE THAT DRIVERS
+                        PROVIDING TRANSPORTATION SERVICES REQUESTED THROUGH THE
+                        SERVICES MAY OFFER RIDESHARING OR PEER-TO-PEER
+                        TRANSPORTATION SERVICES AND MAY NOT BE PROFESSIONALLY
+                        LICENSED OR PERMITTED.
+                      </li>
+                      <li>
+                        (c) THE SERVICES MAY BE USED BY YOU TO REQUEST AND
+                        SCHEDULE TRANSPORTATION WITH DRIVERS AND SHUTTLE
+                        SERVICES, BUT YOU AGREE THAT DUET HAS NO RESPONSIBILITY
+                        OR LIABILITY TO YOU RELATED TO ANY TRANSPORTATION
+                        SERVICES PROVIDED TO YOU BY DRIVERS OR SHUTTLE SERVICES
+                        OTHER THAN AS EXPRESSLY SET FORTH IN THIS AGREEMENT.
+                      </li>
+                    </ol>
+                    <strong style="font-size: 17px;"
+                      >9.3 LIMITATIONS UNDER APPLICABLE LAW.
+                    </strong>
+                    <p>
+                      THE LIMITATIONS AND DISCLAIMER IN THIS SECTION 9 DO NOT
+                      PURPORT TO LIMIT LIABILITY OR ALTER YOUR RIGHTS AS A
+                      CONSUMER THAT CANNOT BE EXCLUDED UNDER APPLICABLE LAW.
+                      BECAUSE SOME STATES OR JURISDICTIONS DO NOT ALLOW THE
+                      EXCLUSION OF OR THE LIMITATION OF LIABILITY FOR
+                      CONSEQUENTIAL OR INCIDENTAL DAMAGES, IN SUCH STATES OR
+                      JURISDICTIONS, DUET'S LIABILITY WILL BE LIMITED TO THE
+                      EXTENT PERMITTED BY LAW. THIS
+                      <strong>SECTION 9.3</strong> WILL HAVE NO EFFECT ON
+                      <strong>SECTION 10</strong>.
+                    </p>
+
+                    <br />
+                    <span class="section-head">
+                      <h6>10. Indemnity.</h6>
+                    </span>
+                    <p>
+                      You will indemnify and hold Duet and its affiliates,
+                      vendors and suppliers and its and their respective
+                      officers, directors, employees, and agents harmless from
+                      any and all claims, demands, losses, liabilities, and
+                      expenses (including attorneys' fees), arising out of or in
+                      connection with (a) your use of the Platform or Services
+                      or services obtained through your use of the Platform or
+                      Services, including any dispute between you and any other
+                      user of the Platform or Services or any Shuttle Service,
+                      (b) your breach or violation of this Agreement, (c) Duet's
+                      use of your User Content, or (d) your violation of the
+                      rights of any third party, including Drivers and Shuttle
+                      Services.
+                    </p>
+                    <br />
+                    <span class="section-head">
+                      <h6>11. Term and Termination.</h6>
+                    </span>
+                    <p>
+                      The term of this Agreement (the "<strong>Term</strong>")
+                      will begin on the date you accept this Agreement and will
+                      continue until it is terminated pursuant to its terms.
+                      Either party may terminate this Agreement at any time.
+                      Duet may terminate this Agreement by notice to you. You
+                      may terminate this Agreement by terminating your account
+                      using the process provided on the Platform for terminating
+                      a customer account. The provisions of the preamble and
+                      <strong>Sections 1, 3, 6, 7, and 9 - 12</strong>, as well
+                      as any other terms of this Agreement that expressly extend
+                      or by their nature should extend beyond termination or
+                      expiration of this Agreement, will survive and continue in
+                      full force and effect after any termination or expiration
+                      of this Agreement. Any license(s) granted to you under
+                      this Agreement will automatically terminate on termination
+                      or expiration of this Agreement. Once terminated, Duet may
+                      permanently delete your account and all the User Content
+                      associated with it. If you don't log in to your account
+                      for 12 or more months, we may treat your account as
+                      "inactive" and permanently delete the account and all the
+                      data associated with it.
+                    </p>
+                    <br />
+                    <span class="section-head">
+                      <h6>12. Miscellaneous.</h6>
+                    </span>
+                    <strong style="font-size: 17px;">12.1 Assignment. </strong>
+                    <p>
+                      User will not assign, transfer or delegate its rights or
+                      obligations under this Agreement to any third party
+                      without Duet's prior written consent. Duet may freely
+                      assign this Agreement or transfer any of its interest
+                      herein, including to any Duet affiliate, to a purchaser of
+                      all or substantially all of Duet's assets, and to a
+                      successor in interest of Duet as part of a corporate
+                      reorganization, consolidation or merger. This Agreement
+                      and each of the provisions hereof will inure to the
+                      benefit of and be binding on each party's successors,
+                      administrators and permitted assigns.
+                    </p>
+                    <strong style="font-size: 17px;"
+                      >12.2 Severability.
+                    </strong>
+                    <p>
+                      If any provision of this Agreement is determined by any
+                      court of competent jurisdiction to be invalid or
+                      unenforceable, that provision will be interpreted to the
+                      maximum extent to which it is valid and enforceable, all
+                      as determined by such court in such action, and the
+                      remaining provisions of this Agreement will, nevertheless,
+                      continue in full force and effect without being impaired
+                      or invalidated in any way.
+                    </p>
+                    <strong style="font-size: 17px;"
+                      >12.3 Entire Agreement; No Reliance.
+                    </strong>
+                    <p>
+                      This Agreement, including the Privacy Policy, constitutes
+                      the entire agreement and understanding between the parties
+                      with respect to its subject matter, and this Agreement
+                      merges and supersedes all prior agreements, discussions
+                      and writings with respect to its subject matter. Each
+                      party represents that it has not relied on any
+                      representations made by the other party or its
+                      representatives or on any descriptions, illustrations or
+                      specifications contained in any physical or digital text
+                      including websites, proposals, catalogues or other
+                      publicity material. Each party has relied only on the
+                      express terms of this Agreement, and not on any
+                      representations of the other party not set forth in this
+                      Agreement, nor on any other documents or materials of the
+                      other party not expressly made a part of this Agreement.
+                    </p>
+                    <strong style="font-size: 17px;"
+                      >12.4 Force Majeure.
+                    </strong>
+                    <p>
+                      Neither party will be held responsible for any delay or
+                      failure in performance of any part of this Agreement to
+                      the extent that delay or failure is caused by fire, flood,
+                      explosion, war, terrorism, strike, embargo, governmental
+                      action or failure to act, the act of any civil or military
+                      authority, act of God, inability to secure material or
+                      transportation facilities, acts or omissions of carriers,
+                      power outages, computer failures, or by any other causes
+                      beyond its control whether or not similar to the
+                      foregoing.
+                    </p>
+                    <strong style="font-size: 17px;">12.5 No Waiver. </strong>
+                    <p>
+                      The waiver, modification, or failure to insist by a party
+                      on any of the provisions of this Agreement will not void,
+                      waive, nor modify any of the other provisions nor be
+                      construed as a waiver or relinquishment of such party's
+                      right to performance in the future of any such provision.
+                    </p>
+                    <strong style="font-size: 17px;"
+                      >12.6 Relationship of the Parties.
+                    </strong>
+                    <p>
+                      The relationship of the parties under this Agreement is
+                      one of independent contractors, and no agency,
+                      partnership, employment, joint venture or similar
+                      relationship is created by this Agreement. Except as
+                      specifically authorized, neither party will have any
+                      authority to assume or create obligations on the other
+                      party's behalf, and neither party will take any action
+                      that has the effect of creating the appearance of its
+                      having such authority.
+                    </p>
+                    <strong style="font-size: 17px;">12.7 Notices. </strong>
+                    <p>
+                      Any notice required or permitted under this Agreement will
+                      be given in writing by personal delivery, by USPS Priority
+                      Express Mail, by nationally recognized overnight delivery
+                      service (e.g. UPS), or e mail. Any notice will be deemed
+                      received on the earlier of the date of actual delivery or
+                      the date on which delivery is refused, regardless of
+                      whether the party has vacated the physical address or
+                      discontinued the e-mail address. The notice address and
+                      e-mail address for User will be the address and e-mail
+                      address on record with Duet as modified by User through
+                      the Platform from time to time. The notice address for
+                      Duet will be 2 North 1st St., 5th Floor, San Jose, CA
+                      95113 and the e-mail address for Duet will be
+                      ride@duetinc.com, as reflected in this Agreement as
+                      modified form time to time, pursuant to its terms.
+                    </p>
+                    <strong style="font-size: 17px;"
+                      >12.8 Third Party Beneficiaries.
+                    </strong>
+                    <p>
+                      This Agreement does not and is not intended to confer any
+                      rights or remedies on any person or entity other than the
+                      parties.
+                    </p>
+                    <strong style="font-size: 17px;">12.9 Amendment. </strong>
+                    <p>
+                      Duet may revise this Agreement from time to time and the
+                      most current version will always be posted on the Website.
+                      If a revision, in Duet's discretion, is material Duet may,
+                      but have no obligation to, notify User, including by
+                      postings to relevant Duet blogs. User is responsible for
+                      checking those pages regularly. By continuing to access or
+                      use the Platform and Services after revisions become
+                      effective, User agrees to be bound by the revised terms.
+                      If User does not agree to the new terms, User must cease
+                      using the Platform and Services and terminate User's
+                      account using the process provided on the Platform for
+                      terminating a customer account.
+                    </p>
+                    <strong style="font-size: 17px;"
+                      >12.10 Governing Law; Arbitration.
+                    </strong>
+                    <ol>
+                      <li>
+                        (a) The validity and enforceability of this Agreement,
+                        and all claims or causes of action (whether in contract,
+                        tort, statute or otherwise) that may be based on, arise
+                        out of or relate to this Agreement, or the negotiation,
+                        execution or performance of this Agreement (including
+                        any claim or cause of action based on, arising out of or
+                        related to any representation or warranty made in or in
+                        connection with this Agreement or as an inducement to
+                        enter into this Agreement), will be governed by,
+                        construed in accordance with, and enforced in accordance
+                        with, the domestic internal laws of the state of
+                        California, including its statutes of limitations, but
+                        without regard for conflicts of law principles.
+                      </li>
+                      <li>
+                        (b) Binding, confidential arbitration pursuant to this
+                        <strong>Section 12.10(b)</strong> will be the only
+                        remedy for any dispute or claim of any kind, including
+                        third-party claims arising under, concerning, or
+                        relating to this Agreement, its interpretation, its
+                        validity (including any claim that all or any part of
+                        this Agreement is void or voidable), its termination, or
+                        its subject matter, whether sounding in contract, tort,
+                        equity, statutory law, administrative regulation or
+                        otherwise (a "<strong>Legal Claim</strong>"). Any Legal
+                        Claim, will be resolved in a confidential expedited
+                        arbitration administered by the JAMS pursuant to its
+                        Comprehensive Arbitration Rules and Procedures (a copy
+                        of which can be found here:
+                        https://www.jamsadr.com/rules-comprehensive-arbitration)
+                        (the "<strong>Rules</strong>") then in effect. For
+                        purposes of clarification, the parties understand and
+                        agree that (a) <strong>Section 12.10(a)</strong> will
+                        apply to any arbitration under this
+                        <strong>Section 12.10(b)</strong>, both as to the
+                        governing law to be applied by the Arbitrator to the
+                        Legal Claim and as to the law governing the arbitration
+                        and the interpretation of this
+                        <strong>Section 12.10(b)</strong>, and (b) the Federal
+                        Arbitration Act, 9 U.S.C. §§ 1-16, will also apply to
+                        any arbitration under this
+                        <strong>Section 12.10(b)</strong> by virtue of Article
+                        VI, Clause 2 to the United States Constitution. Any
+                        Legal Claim submitted to arbitration will be decided by
+                        a single, neutral arbitrator (the
+                        "<strong>Arbitrator</strong>") mutually agreed by the
+                        parties or, if they cannot agree within 15 business days
+                        of the commencement of arbitration, in accordance with
+                        the Rules. The Arbitrator must be qualified as a
+                        California attorney who has at least ten years of prior
+                        combined professional experience either as a judge or in
+                        private practice as a business or commercial litigator.
+                        Any arbitration hearings or conferences pursuant to this
+                        <strong>Section 12.10(b)</strong> will be conducted
+                        exclusively by means of conference telephone or other
+                        communications technology, as reasonably determined by
+                        the Arbitrator, by means of which all persons
+                        participating in those hearings or conferences can hear
+                        each other, and neither the parties, the Arbitrator or
+                        any attorneys, witnesses or other representatives of the
+                        parties will be required to be physically present in any
+                        particular place for purposes of any hearing or
+                        conference unless the Arbitrator determines that a
+                        physical hearing is necessary to effectively arbitrate
+                        the Legal Claim, in which case that physical hearing
+                        will be in a location selected by the Arbitrator to be
+                        reasonably convenient to the parties and the Arbitrator.
+                        The Arbitrator will have the exclusive power to
+                        adjudicate the alleged breach, enforcement,
+                        interpretation or validity of this Agreement, including
+                        as to the scope or applicability of this
+                        <strong>Section 12.10(b)</strong>. Discovery within an
+                        arbitration pursuant to this
+                        <strong>Section 12.10(b)</strong> will be limited as
+                        reasonable or necessary by the Arbitrator. If there is
+                        more than one Legal Claim between the parties, all such
+                        Legal Claims may be heard in a single arbitration under
+                        this <strong>Section 12.10(b)</strong>. Except to the
+                        extent required by applicable Law that cannot be waived
+                        or modified by this Agreement, Legal Claims under this
+                        Agreement may not be consolidated into a single
+                        arbitration proceeding with disputes between Duet and
+                        other persons, even if those Legal Claims are governed
+                        by an arbitration proceeding similar or identical to
+                        this <strong>Section 12.10(b)</strong> and even those
+                        other persons are similarly situated and their disputes
+                        are similar or identical in the nature to a Legal Claims
+                        under this Agreement. All JAMS fees and costs will be
+                        borne equally by the parties, except that in rendering
+                        the award, the Arbitrator will allocate and award an
+                        appropriate share of the prevailing party's reasonable
+                        attorneys' fees and costs, to the losing party. Judgment
+                        on any arbitration award may be entered and enforced by
+                        any court of competent jurisdiction. This
+                        <strong>Section 12.10(b)</strong> will not preclude a
+                        party from seeking emergency injunctive relief from
+                        courts of appropriate jurisdiction as to any rights or
+                        obligations under this Agreement requiring such
+                        emergency injunctive relief, provided that the Legal
+                        Claim will thereafter be resolved exclusively by
+                        arbitration under this
+                        <strong>Section 12.10(b)</strong>. EACH PARTY EXPRESSLY
+                        AGREES AND UNDERSTANDS THAT BY AGREEING TO ARBITRATION,
+                        IT IS WAIVING THE RIGHT TO A JURY TRIAL OR TO A CIVIL
+                        ADMINISTRATIVE TRIBUNAL.
+                      </li>
+                    </ol>
+                    <strong style="font-size: 17px;"
+                      >12.10 Definitions.
+                    </strong>
+                    <p>
+                      The following terms will be defined as set forth below for
+                      purposes of this Agreement:
+                    </p>
+                    <p>
+                      "<strong>Confirmed Carpool</strong>" means a Carpool has
+                      been joined by at least one Rider and one Driver.
+                    </p>
+                    <p>
+                      "<strong>Confirmed Carpool Partners</strong>" means the
+                      users who are scheduled to share the same Confirmed
+                      Carpool.
+                    </p>
+                    <p>
+                      "<strong>Content</strong>" means software, technology,
+                      text, forum posts, chat posts, profiles, widgets,
+                      messages, links, emails, music, sound, graphics, pictures,
+                      video, code, and all audio visual or other material.
+                      Content includes User Content.
+                    </p>
+                    <p>
+                      "<strong>Intellectual Property Rights</strong>" means all
+                      copyrights fixed in any medium now known or hereafter
+                      discovered, including copyrights in computer programs,
+                      pictorial works, audiovisual works, literary works,
+                      musical works, sound recordings, motion pictures and the
+                      like; patents, trademarks, trade names, trade secrets,
+                      design rights, design models, database rights and
+                      topography rights, all rights to bring an action for
+                      passing off, rights of privacy or publicity, and any other
+                      similar form of intellectual rights in intangible property
+                      or proprietary rights, statutory or otherwise, whether
+                      registered or not, and whether applied for or not, all
+                      rights to apply for protection in respect of any of the
+                      above rights and all other forms of protection of a
+                      similar nature or that relate to intangible property,
+                      ideas or expression, as they may exist anywhere in the
+                      world.
+                    </p>
+                    <p>
+                      "<strong>Law</strong>" means any domestic or foreign,
+                      federal, state or local statute, law (including principles
+                      of common law), ordinance, rule, policy, guideline,
+                      permit, administrative interpretation, regulation, order,
+                      writ, injunction, legally binding directive, judgment,
+                      decree or other requirement of any governmental body.
+                    </p>
+                    <p>
+                      "<strong>Open Carpool</strong>" means a Carpool request
+                      that is created by one user, but is still missing a Driver
+                      or a Rider.
+                    </p>
+                    <p>
+                      "<strong>Person</strong>" means any individual,
+                      corporation (including any non-profit corporation),
+                      general or limited partnership, limited liability company,
+                      joint venture, estate, trust, association, organization,
+                      labor union, or other entity or governmental body.
+                    </p>
+                    <br />
+                    <br />
+                    <p style="font-size: 20px;">END OF DOCUMENT</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end row -->
+      </div>
+      <!-- end container -->
+    </section>
+    <!--  END OUR MISSION -->
+
+    <div id="footer"></div>
+
+    <!-- Javascript -->
+    <!--<script type="text/javascript" src="plugins/jquery-3.3.1.min.js"></script>-->
+    <script
+      type="text/javascript"
+      src="plugins/bootstrap/js/bootstrap.min.js"
+    ></script>
+    <script type="text/javascript" src="plugins/back-to-top.js"></script>
+    <script
+      type="text/javascript"
+      src="plugins/jquery-inview/jquery.inview.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="plugins/ismobile/isMobile.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="plugins/flexslider/jquery.flexslider-min.js"
+    ></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <!-- Modal Video -->
+    <script type="text/javascript" src="js/modal-video.js"></script>
+    <!--[if !IE]>-->
+    <script type="text/javascript" src="js/animations.js"></script>
+    <!--<![endif]-->
+    <!-- Theme Switcher (REMOVE ON YOUR PRODUCTION SITE) -->
+    <!--<script type="text/javascript" src="js/demo/theme-switcher.js"></script>-->
+    <script>
+      $(function() {
+        //$(".chevron-down").
+        $('div[data-toggle=collapse]').click(function() {
+          $(this)
+            .children('span')
+            .toggleClass('fa-chevron-down fa-chevron-up');
+        });
+      });
+    </script>
+  </body>
+</html>

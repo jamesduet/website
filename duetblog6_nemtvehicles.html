@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+      Duet: an integrated software for nemt, transportation providers, microtransit, last mile and commute.
+    </title>
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      property="al:ios:url"
+      content="duet://invite_from_fb?tracking_id=882682221745718"
+    />
+    <meta property="al:ios:app_store_id" content="882682221745718" />
+    <meta property="al:ios:app_name" content="Duet Commute" />
+    <link href="images/favicon.png" rel="icon" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FontAwesome JS-->
+    <script
+      type="text/javascript"
+      src="plugins/font-awesome/js/fontawesome-all.min.js"
+    ></script>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css" />
+    <!-- Plugins CSS -->
+    <!--<link rel="stylesheet" href="plugins/pe-icon-7-stroke/css/pe-icon-7-stroke.css">-->
+    <link rel="stylesheet" href="plugins/animate-css/animate.min.css" />
+    <link rel="stylesheet" href="plugins/flexslider/flexslider.css" />
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="css/theme-1.css" />
+    <link id="theme-style" rel="stylesheet" href="css/index.css" />
+    <!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    ></script>
+    <!-- Google Analytics -->
+    <script>
+      (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        (i[r] =
+          i[r] ||
+          function() {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      })(
+        window,
+        document,
+        'script',
+        '//www.google-analytics.com/analytics.js',
+        'ga'
+      );
+      ga('create', 'UA-53638414-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+    <script>
+      var userAgent = 'desktop';
+      if (
+        navigator.userAgent.match(/Android/i) ||
+        navigator.userAgent.match(/webOS/i) ||
+        navigator.userAgent.match(/iPhone/i) ||
+        navigator.userAgent.match(/iPad/i) ||
+        navigator.userAgent.match(/iPod/i) ||
+        navigator.userAgent.match(/BlackBerry/i) ||
+        navigator.userAgent.match(/Windows Phone/i)
+      ) {
+        userAgent = 'mobile';
+      } else {
+        //console.log('desktop');
+      }
+
+      $(document).ready(function() {
+        if (userAgent == 'desktop') {
+          $('div.down-app-banner').hide();
+        }
+
+        if (userAgent == 'mobile') {
+          $('div#mobileFormDiv').html('');
+          $('div#mobileFormDiv').attr(
+            'style',
+            'background: rgba(0,0,0,0) !important'
+          );
+          $('div.down-app-header').hide();
+        }
+      });
+      $(function() {
+        $('#header-container').load('components/header.html');
+        $('#footer').load('components/footer.html');
+      });
+    </script>
+  </head>
+
+  <body class="home-page blog-page">
+    <!-- * Facebook Like button script starts -->
+    <div id="fb-root"></div>
+    <div id="header-container" class="sticky-top"></div>
+
+    <div class="blog-header-section">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-lg-6 col-md-6 order-lg-1 order-md-1 order-2 d-flex align-items-center"
+          >
+            <div class="blog-header">
+              <h2>Blog</h2>
+            </div>
+          </div>
+          <div
+            class="col-lg-6 col-md-6 order-lg-2 order-md-2 order-1 d-flex align-items-center"
+          >
+            <div class="search-container">
+              <input
+                type="text"
+                class="form-control search-input"
+                placeholder="Search"
+              />
+              <div class="search-icon">
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13.7812 12.8789C14.0547 13.1523 14.0547 13.5625 13.7812 13.8086C13.6719 13.9453 13.5078 14 13.3438 14C13.1523 14 12.9883 13.9453 12.8516 13.8086L9.1875 10.1445C8.20312 10.9375 6.97266 11.375 5.66016 11.375C2.54297 11.375 0 8.83203 0 5.6875C0 2.57031 2.51562 0 5.66016 0C8.77734 0 11.3477 2.57031 11.3477 5.6875C11.3477 7.02734 10.9102 8.25781 10.1172 9.21484L13.7812 12.8789ZM1.3125 5.6875C1.3125 8.12109 3.25391 10.0625 5.6875 10.0625C8.09375 10.0625 10.0625 8.12109 10.0625 5.6875C10.0625 3.28125 8.09375 1.3125 5.6875 1.3125C3.25391 1.3125 1.3125 3.28125 1.3125 5.6875Z"
+                    fill="#006BE0"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="section featured-blog-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9">
+            <div class="read-blog">
+              <div class="market-trends-card-tag">
+                Podcast
+              </div>
+              <h2 class="feature-blog-title">
+                How to pick the best NEMT vehicles
+              </h2>
+              <span class="feature-blog-subheading"
+                >Guest: Michael Shank, President of <a href="https://42northtc.com" style="color:#118bf0;" target="_blank">42° North</a> Transportation Consultant</span
+              >
+              <p class="feature-blog-summary"><br>
+                The right vehicles - purchased at the right time - can make or break an NEMT service. Learn how to avoid the biggest mistakes owners make and set yourself up for success.<br><br>
+                In this podcast, James from <a href="https://www.duetinc.com" style="color:#118bf0;" target="_blank">Duet</a>, NEMT technologists and service managers, had an insightful discussion with our guest, Michael Shank from <a href="https://42northtc.com" style="color:#118bf0;" target="_blank">42° North</a>, on choosing and financing the best vehicles for your service. Michael and his team have been in commercial vehicle business for 40+ years. Michael has personally sold 8500 wheelchair accessible vans. He is unquestionable a vehicle purchasing and financing expert. We covered the following topics:<br><br>
+                <ul>
+                  <li>Full size or minivan?</li>
+                  <li>Used or new?</li>
+                  <li>Rear or side entry?</li>
+                  <li>Loans vs lease vs lease-to-own?</li>
+                </ul>
+              </p>
+              <div class="feature-blog-author-container">
+                <div class="feature-blog-author">By James O’Donnell, Cofounder & COO at Duet</div>
+                <div class="feature-blog-date">April 17, 2025</div>
+              </div>
+              <div class="read-blog-img-container">
+                <a href="https://youtu.be/JFkbtjIhqRU" target="_blank">
+                  <img
+                    src="images/img_marketing_6.svg"
+                    alt=""
+                    style="width: 100%;"
+                    class="image-corner"
+                  />
+                </a>
+                <div class="watch-the-video-overlay image-corner"></div>
+                <div class="watch-the-video-container">
+                  <div class="watch-the-video">
+                    <div class="watch-the-video-text">Watch the video</div>
+                    <div class="play-icon-container">
+                      <svg
+                        width="250"
+                        height="250"
+                        viewBox="0 0 250 250"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_4153_4087)">
+                          <path
+                            d="M125 0C56.0705 0 0 56.0707 0 125C0 193.929 56.0705 250 125 250C193.929 250 250 193.929 250 125C250 56.0707 193.929 0 125 0ZM125 17.8571C184.278 17.8571 232.143 65.7215 232.143 125C232.143 184.278 184.278 232.143 125 232.143C65.7217 232.143 17.8571 184.278 17.8571 125C17.8571 65.7215 65.7217 17.8571 125 17.8571ZM93.378 68.4523C86.4976 68.6071 80.533 74.1331 80.3571 82.0313V167.876C80.5923 178.406 91.1068 184.793 100.354 179.78L174.758 136.719C178.808 134.367 181.548 130.05 181.548 125C181.548 119.95 178.808 115.633 174.758 113.281L100.354 70.2195C98.0417 68.9662 95.6714 68.4007 93.378 68.4523Z"
+                            fill="white"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_4153_4087">
+                            <rect width="250" height="250" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="hover-overlay"></div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section ready-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 section-title">
+            <h2 class="title">
+              Ready to get in touch with Duet?
+            </h2>
+            <a
+              href="https://calendly.com/meetduet/1hr-with-duet-web"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-white btn-book-demo"
+              >Book a free demo</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="footer"></div>
+    <!-- Javascript -->
+    <script
+      type="text/javascript"
+      src="plugins/bootstrap/js/bootstrap.min.js"
+    ></script>
+    <script type="text/javascript" src="plugins/back-to-top.js"></script>
+    <script
+      type="text/javascript"
+      src="plugins/jquery-inview/jquery.inview.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="plugins/ismobile/isMobile.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="plugins/flexslider/jquery.flexslider-min.js"
+    ></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/duet-parse.js"></script>
+    <script type="text/javascript" src="js/image-border-radius.js"></script>
+    <!--<script type="text/javascript" src="js/duet-jquery.js"></script>-->
+
+    <!-- Modal Video -->
+    <script type="text/javascript" src="js/modal-video.js"></script>
+
+    <!--[if !IE]>-->
+    <script type="text/javascript" src="js/animations.js"></script>
+    <!--<![endif]-->
+  </body>
+</html>

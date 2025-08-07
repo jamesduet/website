@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-B46RBCKMD7"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'G-B46RBCKMD7');
+    </script>
+
+    <title>
+      Duet: dispatching software for nemt, medical transportation, paratransit,
+      access services.
+    </title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      property="al:ios:url"
+      content="duet://invite_from_fb?tracking_id=882682221745718"
+    />
+    <meta property="al:ios:app_store_id" content="882682221745718" />
+    <meta property="al:ios:app_name" content="Duet Commute" />
+    <link href="images/favicon.png" rel="icon" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FontAwesome JS-->
+    <script
+      type="text/javascript"
+      src="plugins/font-awesome/js/fontawesome-all.min.js"
+    ></script>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css" />
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="plugins/animate-css/animate.min.css" />
+    <link rel="stylesheet" href="plugins/flexslider/flexslider.css" />
+    <link
+      id="theme-style"
+      rel="stylesheet"
+      href="css/girlscoutcookie-theme.css"
+    />
+    <link rel="stylesheet" href="css/girlscoutcookie.css" />
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    ></script>
+    <script>
+      (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        (i[r] =
+          i[r] ||
+          function() {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      })(
+        window,
+        document,
+        'script',
+        '//www.google-analytics.com/analytics.js',
+        'ga'
+      );
+
+      ga('create', 'UA-53638414-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script>
+      var userAgent = 'desktop';
+      if (
+        navigator.userAgent.match(/Android/i) ||
+        navigator.userAgent.match(/webOS/i) ||
+        navigator.userAgent.match(/iPhone/i) ||
+        navigator.userAgent.match(/iPad/i) ||
+        navigator.userAgent.match(/iPod/i) ||
+        navigator.userAgent.match(/BlackBerry/i) ||
+        navigator.userAgent.match(/Windows Phone/i)
+      ) {
+        userAgent = 'mobile';
+      } else {
+        //console.log('desktop');
+      }
+
+      $(document).ready(function() {
+        if (userAgent == 'desktop') {
+          $('div.down-app-banner').hide();
+        }
+
+        if (userAgent == 'mobile') {
+          $('div#mobileFormDiv').html('');
+          $('div#mobileFormDiv').attr(
+            'style',
+            'background: rgba(0,0,0,0) !important'
+          );
+          $('div.down-app-header').hide();
+        }
+      });
+
+      $(function() {
+        $('#header-container').load('components/header.html');
+        $('#footer').load('components/footer.html');
+      });
+    </script>
+    <!-- Hotjar Tracking Code for https://www.duetinc.com -->
+    <script>
+      (function(h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function() {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 5109064, hjsv: 6 };
+        a = o.getElementsByTagName('head')[0];
+        r = o.createElement('script');
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+
+    <!-- MailChimp Signup Code for https://www.duetinc.com -->
+    <script id="mcjs">
+      !(function(c, h, i, m, p) {
+        (m = c.createElement(h)),
+          (p = c.getElementsByTagName(h)[0]),
+          (m.async = 1),
+          (m.src = i),
+          p.parentNode.insertBefore(m, p);
+      })(
+        document,
+        'script',
+        'https://chimpstatic.com/mcjs-connected/js/users/92bad3b15b1f15d536f5e31ed/4c716e2afe785974c18cc797d.js'
+      );
+    </script>
+  </head>
+
+  <body class="home-page landing-page">
+    <!-- * Facebook Like button script starts -->
+    <div id="fb-root"></div>
+    <div id="header-container" class="sticky-top"></div>
+    <!-- ******PROMO****** -->
+    <section id="promo" class="">
+      <div class="promo container">
+        <div class="intro">
+          <h1 class="title">
+            NEMT dispatching software for every provider
+          </h1>
+          <p class="summary">
+            Simple to set up. Easy to use.
+          </p>
+        </div>
+        <!--//intro-->
+
+        <!--//signup form-->
+        <div class="promo-content">
+          <div class="signup">
+            <div>
+              <p class="summary">
+                <script
+                  async
+                  src="https://pxl.growth-channel.net/s/bf1b513d-0bc6-462c-a6a8-416bb058666a"
+                ></script
+                ><!-- Growth Channel pixel -->
+                <a
+                  href="https://forms.gle/e6uBGswibPgsnQRt9"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-white-fill btn-ctc btn-book-demo"
+                >
+                  Book a free demo</a
+                >
+              </p>
+              <div
+                id="myModal"
+                tabindex="-1"
+                class="modal fade"
+                role="dialog"
+                aria-hidden="true"
+              >
+                <div
+                  class="modal-dialog"
+                  role="document"
+                  style="max-width: 800px"
+                >
+                  <!-- Modal content -->
+                  <div class="modal-content" style="margin: 25% auto">
+                    <span class="close"></span>
+                    <div class="modal-body" id="myModalBody">
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="name"
+                          placeholder="Your name"
+                          required
+                        />
+                      </div>
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="email"
+                          placeholder="Your email"
+                          required
+                        />
+                      </div>
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="orgName"
+                          placeholder="Your organization"
+                          required
+                        />
+                      </div>
+                      <div class="form-group">
+                        <textarea
+                          type="text"
+                          class="form-control"
+                          id="comment"
+                          rows="5"
+                          placeholder="We work with enterprise clients to set up the service. Please tell us briefly the project or service that you are looking for. We will get back to you with the relevant information."
+                          required
+                        ></textarea>
+                      </div>
+                    </div>
+                    <!--<div style="display: flex; justify-content: flex-end">-->
+                    <div
+                      class="modal-footer"
+                      style="padding:0; border-top: none"
+                    >
+                      <button
+                        type="button"
+                        class="btn btn-secondary waves-effect waves-light"
+                        id="myModalCancel"
+                        data-dismiss="modal"
+                      >
+                        Cancel
+                      </button>
+                      <button
+                        type="button"
+                        id="sendEmailButton"
+                        class="btn btn-primary waves-effect"
+                      >
+                        Send
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Modal For email form submission success-->
+              <div
+                class="modal fade"
+                id="submissionSuccessModal"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="submissionSuccessModalLabel"
+                aria-hidden="true"
+                style="display:none"
+              >
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <p class="modal-title">Success</p>
+                      <button
+                        type="button"
+                        id="submissionSuccessModalCloseButton"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <p>
+                        Email sent successfully. Thank you for your interest in
+                        Duet! We will get back to you soon.
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        id="submissionSuccessModalClose"
+                        data-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Modal For email form submission fail-->
+              <div
+                class="modal fade"
+                id="submissionFailModal"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="submissionFailModalLabel"
+                aria-hidden="true"
+                style="display:none"
+              >
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <p class="modal-title">Failed</p>
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <p>
+                        Email failed to send, please provide all the information
+                        asked and try again.
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        id="submissionFailModalClose"
+                        data-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--//contianer-->
+          </div>
+          <!--//signup-->
+        </div>
+      </div>
+      <div class="promo-overlay"></div>
+
+      <div class="promo-play-button-overlay">
+        <div class="promo-play-button-container" id="playButton">
+          <svg
+            width="250"
+            height="250"
+            viewBox="0 0 250 250"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_4153_4087)">
+              <path
+                d="M125 0C56.0705 0 0 56.0707 0 125C0 193.929 56.0705 250 125 250C193.929 250 250 193.929 250 125C250 56.0707 193.929 0 125 0ZM125 17.8571C184.278 17.8571 232.143 65.7215 232.143 125C232.143 184.278 184.278 232.143 125 232.143C65.7217 232.143 17.8571 184.278 17.8571 125C17.8571 65.7215 65.7217 17.8571 125 17.8571ZM93.378 68.4523C86.4976 68.6071 80.533 74.1331 80.3571 82.0313V167.876C80.5923 178.406 91.1068 184.793 100.354 179.78L174.758 136.719C178.808 134.367 181.548 130.05 181.548 125C181.548 119.95 178.808 115.633 174.758 113.281L100.354 70.2195C98.0417 68.9662 95.6714 68.4007 93.378 68.4523Z"
+                fill="white"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_4153_4087">
+                <rect width="250" height="250" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Video Overlay -->
+      <div class="video-overlay" id="videoOverlay">
+        <div class="video-content">
+          <div class="close-button-container">
+            <div class="close-button">
+              <svg
+                width="50"
+                height="50"
+                viewBox="0 0 50 50"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M42.6851 7.31414C32.9329 -2.43805 17.0657 -2.43805 7.31398 7.31414C-2.43777 17.0663 -2.43821 32.9335 7.31398 42.6853C12.1901 47.5614 18.595 49.9994 25.0001 49.9994C31.4048 49.9994 37.8103 47.5614 42.6862 42.6853C52.4379 32.9331 52.4379 17.0659 42.6862 7.31414H42.6851ZM40.9966 40.9978C32.1757 49.8186 17.8234 49.8186 9.0016 40.9978C0.17983 32.1769 0.180703 17.8245 9.0016 9.00274C13.412 4.5923 19.2052 2.38707 24.9991 2.38707C30.793 2.38707 36.5857 4.5923 40.9966 9.00274C49.8175 17.8236 49.8175 32.176 40.9966 40.9978Z"
+                  fill="white"
+                />
+                <path
+                  d="M33.1838 16.8149C32.7178 16.3489 31.9618 16.3489 31.4953 16.8149L24.9982 23.3117L18.5011 16.8146C18.035 16.3486 17.2791 16.3486 16.8126 16.8146C16.3461 17.2806 16.3465 18.0366 16.8126 18.5031L23.3097 25.0002L16.8126 31.4974C16.3465 31.9634 16.3465 32.7193 16.8126 33.1859C17.0458 33.4191 17.3511 33.5355 17.6568 33.5355C17.9625 33.5355 18.2678 33.4191 18.501 33.1859L24.9982 26.6887L31.4953 33.1859C31.7285 33.4191 32.0338 33.5355 32.3395 33.5355C32.6453 33.5355 32.9505 33.4191 33.1838 33.1859C33.6498 32.7198 33.6498 31.9639 33.1838 31.4974L26.6866 25.0002L33.1838 18.5031C33.6498 18.0371 33.6498 17.2811 33.1838 16.815L33.1838 16.8149Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+          </div>
+          <!--   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" -->
+          <!-- allow="autoplay; encrypted-media" -->
+          <div class="video-wrapper">
+            <iframe
+              id="youtubeVideo"
+              width="450"
+              height="800"
+              src="https://www.youtube.com/embed/y6oMutwJQCw?rel=0&autoplay=1"
+              title="YouTube video player"
+              frameborder="0"
+              allowfullscreen
+              allow="autoplay; encrypted-media"
+              referrerpolicy="strict-origin-when-cross-origin"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--//promo-->
+    <!--//wrapper-->
+
+    <!-- end section -->
+    <div id="footer"></div>
+    <!-- Javascript -->
+    <script type="text/javascript" src="js/promo-video.js"></script>
+    <script
+      type="text/javascript"
+      src="plugins/bootstrap/js/bootstrap.min.js"
+    ></script>
+    <script type="text/javascript" src="plugins/back-to-top.js"></script>
+    <script
+      type="text/javascript"
+      src="plugins/jquery-inview/jquery.inview.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="plugins/ismobile/isMobile.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="plugins/flexslider/jquery.flexslider-min.js"
+    ></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/duet-parse.js"></script>
+    <!--<script type="text/javascript" src="js/duet-jquery.js"></script>-->
+
+    <!-- Modal Video -->
+    <script type="text/javascript" src="js/modal-video.js"></script>
+
+    <!--[if !IE]>-->
+    <script type="text/javascript" src="js/animations.js"></script>
+    <!--<![endif]-->
+
+    <script type="text/javascript" src="js/faq.js"></script>
+
+    <!-- Start of LiveChat (www.livechatinc.com) code -->
+    <script>
+      window.__lc = window.__lc || {};
+      window.__lc.license = 12919956;
+      (function(n, t, c) {
+        function i(n) {
+          return e._h ? e._h.apply(null, n) : e._q.push(n);
+        }
+        var e = {
+          _q: [],
+          _h: null,
+          _v: '2.0',
+          on: function() {
+            i(['on', c.call(arguments)]);
+          },
+          once: function() {
+            i(['once', c.call(arguments)]);
+          },
+          off: function() {
+            i(['off', c.call(arguments)]);
+          },
+          get: function() {
+            if (!e._h)
+              throw new Error(
+                "[LiveChatWidget] You can't use getters before load."
+              );
+            return i(['get', c.call(arguments)]);
+          },
+          call: function() {
+            i(['call', c.call(arguments)]);
+          },
+          init: function() {
+            var n = t.createElement('script');
+            (n.async = !0),
+              (n.type = 'text/javascript'),
+              (n.src = 'https://cdn.livechatinc.com/tracking.js'),
+              t.head.appendChild(n);
+          },
+        };
+        !n.__lc.asyncInit && e.init(),
+          (n.LiveChatWidget = n.LiveChatWidget || e);
+      })(window, document, [].slice);
+    </script>
+    <noscript
+      ><a href="https://www.livechatinc.com/chat-with/12919956/" rel="nofollow"
+        >Chat with us</a
+      >, powered by
+      <a
+        href="https://www.livechatinc.com/?welcome"
+        rel="noopener nofollow"
+        target="_blank"
+        >LiveChat</a
+      ></noscript
+    >
+    <!-- End of LiveChat code -->
+  </body>
+</html>

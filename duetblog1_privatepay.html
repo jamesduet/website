@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+      Duet: an integrated software for nemt, transportation providers, microtransit, last mile and commute.
+    </title>
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      property="al:ios:url"
+      content="duet://invite_from_fb?tracking_id=882682221745718"
+    />
+    <meta property="al:ios:app_store_id" content="882682221745718" />
+    <meta property="al:ios:app_name" content="Duet Commute" />
+    <link href="images/favicon.png" rel="icon" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FontAwesome JS-->
+    <script
+      type="text/javascript"
+      src="plugins/font-awesome/js/fontawesome-all.min.js"
+    ></script>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css" />
+    <!-- Plugins CSS -->
+    <!--<link rel="stylesheet" href="plugins/pe-icon-7-stroke/css/pe-icon-7-stroke.css">-->
+    <link rel="stylesheet" href="plugins/animate-css/animate.min.css" />
+    <link rel="stylesheet" href="plugins/flexslider/flexslider.css" />
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="css/theme-1.css" />
+    <link id="theme-style" rel="stylesheet" href="css/index.css" />
+    <!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    ></script>
+    <!-- Google Analytics -->
+    <script>
+      (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        (i[r] =
+          i[r] ||
+          function() {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      })(
+        window,
+        document,
+        'script',
+        '//www.google-analytics.com/analytics.js',
+        'ga'
+      );
+      ga('create', 'UA-53638414-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+    <script>
+      var userAgent = 'desktop';
+      if (
+        navigator.userAgent.match(/Android/i) ||
+        navigator.userAgent.match(/webOS/i) ||
+        navigator.userAgent.match(/iPhone/i) ||
+        navigator.userAgent.match(/iPad/i) ||
+        navigator.userAgent.match(/iPod/i) ||
+        navigator.userAgent.match(/BlackBerry/i) ||
+        navigator.userAgent.match(/Windows Phone/i)
+      ) {
+        userAgent = 'mobile';
+      } else {
+        //console.log('desktop');
+      }
+
+      $(document).ready(function() {
+        if (userAgent == 'desktop') {
+          $('div.down-app-banner').hide();
+        }
+
+        if (userAgent == 'mobile') {
+          $('div#mobileFormDiv').html('');
+          $('div#mobileFormDiv').attr(
+            'style',
+            'background: rgba(0,0,0,0) !important'
+          );
+          $('div.down-app-header').hide();
+        }
+      });
+      $(function() {
+        $('#header-container').load('components/header.html');
+        $('#footer').load('components/footer.html');
+      });
+    </script>
+  </head>
+
+  <body class="home-page blog-page">
+    <!-- * Facebook Like button script starts -->
+    <div id="fb-root"></div>
+    <div id="header-container" class="sticky-top"></div>
+
+    <div class="blog-header-section">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-lg-6 col-md-6 order-lg-1 order-md-1 order-2 d-flex align-items-center"
+          >
+            <div class="blog-header">
+              <h2></h2>
+            </div>
+          </div>
+          <div
+            class="col-lg-6 col-md-6 order-lg-2 order-md-2 order-1 d-flex align-items-center"
+          >
+            <div class="search-container">
+              <input
+                type="text"
+                class="form-control search-input"
+                placeholder="Search"
+              />
+              <div class="search-icon">
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13.7812 12.8789C14.0547 13.1523 14.0547 13.5625 13.7812 13.8086C13.6719 13.9453 13.5078 14 13.3438 14C13.1523 14 12.9883 13.9453 12.8516 13.8086L9.1875 10.1445C8.20312 10.9375 6.97266 11.375 5.66016 11.375C2.54297 11.375 0 8.83203 0 5.6875C0 2.57031 2.51562 0 5.66016 0C8.77734 0 11.3477 2.57031 11.3477 5.6875C11.3477 7.02734 10.9102 8.25781 10.1172 9.21484L13.7812 12.8789ZM1.3125 5.6875C1.3125 8.12109 3.25391 10.0625 5.6875 10.0625C8.09375 10.0625 10.0625 8.12109 10.0625 5.6875C10.0625 3.28125 8.09375 1.3125 5.6875 1.3125C3.25391 1.3125 1.3125 3.28125 1.3125 5.6875Z"
+                    fill="#006BE0"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="section featured-blog-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9">
+            <div class="read-blog">
+              <div class="market-trends-card-tag">
+                Latest thoughts
+              </div>
+              <h2 class="feature-blog-title">
+                NEMT Private Pay Guide: How to Start, Price, and Grow Your Medical Transportation Business
+              </h2>
+              <span class="feature-blog-subheading"
+                ><i>Article 1 of 3 on NEMT trip sources</i></span
+              >
+              <p class="feature-blog-summary">
+                “Should I offer private pay?” is one of the most common questions I hear from NEMT operators. While it’s not right for every service, it can be lucrative for those prepared to meet its unique demands. In this guide, we'll explore everything you need to know about private pay in NEMT: pricing strategies, operational requirements, and proven growth tactics.
+
+              </p>
+              <div class="feature-blog-author-container">
+                <div class="feature-blog-author">By James O’Donnell, Cofounder & COO at Duet</div>
+                <div class="feature-blog-date">January 24, 2025</div>
+              </div>
+              <div class="read-blog-img-container">
+                <img
+                  src="images/img_featured_blog.svg"
+                  alt=""
+                  style="width: 100%;"
+                  class="image-corner"
+                />
+              </div>
+              <div class="feature-blog-body">
+                <h3>Understanding NEMT Revenue Sources</h3>
+                <p>
+                  Before diving  into private pay, let's understand where NEMT trips typically come from:</p>
+                  <ul>
+                    <li><b>Private pay</b>: Individual riders or their families book and pay for their own medical transportation. While volume tends to be lower, these trips command premium rates.</li>
+                    <li><b>Direct contracts</b>: Medical facilities and health plans establish rate agreements and dispatch rides directly to NEMT services. Both volume and pricing vary significantly by contract.</li>
+                    <li><b>Brokers</b>: NEMT brokers aggregate large volumes of rides from healthcare organizations, distributing them across multiple providers. These typically offer high volume but lower per-trip rates.</li>
+                  </ul>
+                  <p>The “best” source depends on both your local market and what kind of business you want to build. But if you can consistently keep your riders happy, private pay has some unique advantages.
+                </p><br>
+                <h3>Why Consider Private Pay NEMT?</h3>
+                <p>
+                  <em>Private Pay Advantages:</em>
+                </p>
+                  <ol type="1">
+                    <li>
+                      Premium rates
+                      <ol type="a">
+                        <li>Private pay rates often exceed direct contracts by 50% or more</li>
+                        <li>Typical private pay rates can be as high as $65-150 for local wheelchair trips</li>
+                        <li>Long-distance transport can command $500+ per trip</li>
+                      </ol>
+                    </li><br>
+                    <li>
+                      Low barrier to entry
+                      <ol type="a">
+                        <li>Minimal insurance requirements compared to facility contracts</li>
+                        <li>Fewer administrative requirements</li>
+                        <li>No complex credentialing process</li>
+                      </ol>
+                    </li><br>
+                    <li>
+                      Revenue security
+                      <ol type="a">
+                        <li>Diverse client base protects against single-contract dependencies</li>
+                        <li>Immediate payment vs delayed reimbursement</li>
+                        <li>Higher collection rates than insurance-based payments</li>
+                      </ol>
+                    </li>
+                  </ol>
+                <p><br>
+                  <em>Private Pay Challenges:</em>
+                </p>
+                  <ol type="1">
+                    <li>
+                      Volume limitations
+                      <ol type="a">
+                        <li>Typical markets can only support 2-4 pure private pay vehicles</li>
+                        <li>Seasonal fluctuations in demand</li>
+                      </ol>
+                    </li><br>
+                    <li>
+                      Requires marketing
+                      <ol type="a">
+                        <li>Ongoing client acquisition needed</li>
+                        <li>Marketing costs range from $200-500 per month</li>
+                        <li>Time investment in maintaining online presence</li>
+                      </ol>
+                    </li><br>
+                    <li>
+                      Location dependent
+                      <ol type="a">
+                        <li>Usually easier in affluent areas</li>
+                        <li>Senior-dense communities provide better opportunities</li>
+                        <li>Economics may not work in rural areas</li>
+                      </ol>
+                    </li>
+                  </ol><br>
+                <h3>Essential Requirements for Private Pay Success</h3>
+                <p>
+                  <i>Clean, wheelchair-accessible vehicles</i><br>
+                  Your fleet doesn't need to be extensive, but it does need to be impeccable:</p>
+                  <ul>
+                    <li>
+                      Wheelchair-accessible vans are essential - many families can transport ambulatory riders themselves or use ridesharing/taxi services; stretcher riders are more likely to have a facility or health plan manage their trips
+                    </li>
+                    <li>
+                      Immaculate cleanliness standards
+                    </li>
+                    <li>Professional appearance inside and out</li>
+                  </ul>
+                <p>
+                  <i>Customer service excellence</i><br>
+                  Private pay success hinges on exceptional service:</p>
+                  <ul>
+                    <li>
+                      Punctual arrival
+                    </li>
+                    <li>
+                      Friendly, accommodating, and culturally-sensitive drivers
+                    </li>
+                    <li>Clear communication with families</li>
+                    <li>Ability to handle unexpected situations and special requests (e.g., dealing with a broken wheelchair)</li>
+                  </ul>
+                <p>
+                  We ended up building a shareable link with vehicle location and ETA into Duet because private pay family members were calling our NEMT customers every 10 minutes. Make sure you're prepared to handle extra calls or have a real-time location tracking tech solution if you want to do a lot of private pay.
+                </p>
+                <p>
+                  <i>Billing and Payment Systems</i><br>
+                  Implement versatile payment handling:</p>
+                  <ul>
+                    <li>
+                      Accept multiple payment methods (cash, check, card)
+                    </li>
+                    <li>
+                      Support split payments across payers - sometimes hospitals will push a portion of the transport fee to the family
+                    </li>
+                    <li>Provide detailed invoices and receipts</li>
+                  </ul>
+                <p>
+                  I saw a long-distance trip once where the hospital paid $250 via direct pay, the rider’s husband paid with a $500 check, and the daughter paid with $200 cash! We’ve baked support for this kind of situation into the <a href="https://www.duetinc.com" style="color: #118bf0; font-weight: 600;" target="_blank">billing</a> portion of our software.
+                </p><br>
+                <h3>Marketing Your Private Pay Service</h3>
+                <p>
+                  Digital Presence</p>
+                  <ul>
+                    <li>Professional website with phone number, email, and ideally online booking</li>
+                    <li>Clarify what insurance plans you take on your website</li>
+                    <li>Google Business profile</li>
+                    <li>Regular social media updates</li>
+                    <li>Rider testimonials and reviews</li>
+                  </ul>
+                <p>
+                  Paid Advertising</p>
+                  <ul>
+                    <li>Google Ads targeting key non-emergency transport terms</li>
+                    <li>Facebook ads for family caregivers</li>
+                    <li>Local service area targeting - (e.g., direct mail or doorhangers in affluent zip codes)</li>
+                    <li>Typical ROI: my friend Harry, who <a href="https://www.osbornedigitalnemt.com/">specializes in NEMT marketing</a>, says a good digital campaign should generate at least 7-14 trips per month at a 2.5-3x return on spend</li>
+                  </ul>
+                <p>
+                  Community Outreach</p>
+                  <ul>
+                    <li>Senior community partnerships - leave a stack of flyers!</li>
+                    <li>Local medical professional networking - they can recommend you to their patients</li>
+                    <li>Community event participation - get your name out there</li>
+                  </ul><br>
+                <h3>Private Pay Pricing Strategy</h3>
+                <p>
+                  Develop your pricing structure based on:</p>
+                  <ul>
+                    <li>Local market rates</li>
+                    <li>Vehicle operating costs</li>
+                    <li>Competition analysis</li>
+                  </ul>
+                <p>
+                  Typical Private Pay Rate Structure:</p>
+                  <ul>
+                    <li>Base rate: $40-60 per local wheelchair trip</li>
+                    <li>Mileage rate: $2.50-3.50 per mile (may only start after several miles)</li>
+                    <li>Wait time: $30-60 per hour (bill by 15 or 30 minute increments to minimize objections)</li>
+                    <li>After-hours premium: 25-50% additional</li>
+                    <li>Long-distance trips: Custom quotes</li>
+
+                  </ul>
+                  <p>
+                  Like all NEMT rates, private pay rates vary tremendously based on the local market. If you already know typical rates for direct contracts or brokers in your area, consider charging 25-50% more for private pay. And offering discounts (10% is common) for recurring trips is a great way to lock in private pay volume.
+                </p><br>
+                <h3>Final Thoughts</h3>
+                <p>
+                  Private pay is a great channel to build a new NEMT service around. And established services who are confident in their customer service can improve their margin as well as diversify their revenue sources by incorporating private pay.</p>
+                 <p>
+                  At Duet we sell NEMT management software, not NEMT consulting. But we had to learn a lot about the industry to build a good product (not to mention to offer remote dispatching). I’m always <a href="https://calendly.com/jodonnell-dashboardstory/duet-nemt-dispatching-software-chat" style="color: #118bf0; font-weight: 600;" target="_blank">happy to talk</a> if you’d like to know more about private pay or us!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section ready-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 section-title">
+            <h2 class="title">
+              Ready to get in touch with Duet?
+            </h2>
+            <a
+              href="https://calendly.com/jodonnell-dashboardstory/duet-nemt-dispatching-software-chat"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-white btn-book-demo"
+              >Book a free demo</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="footer"></div>
+    <!-- Javascript -->
+    <script
+      type="text/javascript"
+      src="plugins/bootstrap/js/bootstrap.min.js"
+    ></script>
+    <script type="text/javascript" src="plugins/back-to-top.js"></script>
+    <script
+      type="text/javascript"
+      src="plugins/jquery-inview/jquery.inview.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="plugins/ismobile/isMobile.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="plugins/flexslider/jquery.flexslider-min.js"
+    ></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/duet-parse.js"></script>
+    <script type="text/javascript" src="js/image-border-radius.js"></script>
+    <!--<script type="text/javascript" src="js/duet-jquery.js"></script>-->
+
+    <!-- Modal Video -->
+    <script type="text/javascript" src="js/modal-video.js"></script>
+
+    <!--[if !IE]>-->
+    <script type="text/javascript" src="js/animations.js"></script>
+    <!--<![endif]-->
+  </body>
+</html>

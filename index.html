@@ -1,0 +1,2170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-B46RBCKMD7"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'G-B46RBCKMD7');
+    </script>
+
+    <title>
+      Duet: dispatching software for nemt, medical transportation, paratransit,
+      access services.
+    </title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      property="al:ios:url"
+      content="duet://invite_from_fb?tracking_id=882682221745718"
+    />
+    <meta property="al:ios:app_store_id" content="882682221745718" />
+    <meta property="al:ios:app_name" content="Duet Commute" />
+    <link href="images/favicon.png" rel="icon" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FontAwesome JS-->
+    <script
+      type="text/javascript"
+      src="plugins/font-awesome/js/fontawesome-all.min.js"
+    ></script>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css" />
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="plugins/animate-css/animate.min.css" />
+    <link rel="stylesheet" href="plugins/flexslider/flexslider.css" />
+    <link id="theme-style" rel="stylesheet" href="css/theme-1.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    ></script>
+    <script>
+      (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        (i[r] =
+          i[r] ||
+          function() {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      })(
+        window,
+        document,
+        'script',
+        '//www.google-analytics.com/analytics.js',
+        'ga'
+      );
+
+      ga('create', 'UA-53638414-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script>
+      var userAgent = 'desktop';
+      if (
+        navigator.userAgent.match(/Android/i) ||
+        navigator.userAgent.match(/webOS/i) ||
+        navigator.userAgent.match(/iPhone/i) ||
+        navigator.userAgent.match(/iPad/i) ||
+        navigator.userAgent.match(/iPod/i) ||
+        navigator.userAgent.match(/BlackBerry/i) ||
+        navigator.userAgent.match(/Windows Phone/i)
+      ) {
+        userAgent = 'mobile';
+      } else {
+        //console.log('desktop');
+      }
+
+      $(document).ready(function() {
+        if (userAgent == 'desktop') {
+          $('div.down-app-banner').hide();
+        }
+
+        if (userAgent == 'mobile') {
+          $('div#mobileFormDiv').html('');
+          $('div#mobileFormDiv').attr(
+            'style',
+            'background: rgba(0,0,0,0) !important'
+          );
+          $('div.down-app-header').hide();
+        }
+      });
+
+      $(function() {
+        $('#header-container').load('components/header.html');
+        $('#banner').load('components/banner.html');
+        $('#footer').load('components/footer.html');
+      });
+    </script>
+    <!-- Hotjar Tracking Code for https://www.duetinc.com -->
+    <script>
+      (function(h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function() {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 5109064, hjsv: 6 };
+        a = o.getElementsByTagName('head')[0];
+        r = o.createElement('script');
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+
+    <!-- MailChimp Signup Code for https://www.duetinc.com -->
+    <script id="mcjs">
+      !(function(c, h, i, m, p) {
+        (m = c.createElement(h)),
+          (p = c.getElementsByTagName(h)[0]),
+          (m.async = 1),
+          (m.src = i),
+          p.parentNode.insertBefore(m, p);
+      })(
+        document,
+        'script',
+        'https://chimpstatic.com/mcjs-connected/js/users/92bad3b15b1f15d536f5e31ed/4c716e2afe785974c18cc797d.js'
+      );
+    </script>
+  </head>
+
+  <body class="home-page landing-page">
+    <!-- * Facebook Like button script starts -->
+    <div id="fb-root"></div>
+    <div id="header-container" class="sticky-top"></div>
+    <div id="banner"></div>
+    <!-- ******PROMO****** -->
+    <section id="promo" class="">
+      <div class="promo container">
+        <div class="intro">
+          <h1 class="title">
+            NEMT dispatching software <br />
+            for every provider
+          </h1>
+          <p class="summary">
+            Simple to set up. Easy to use.
+          </p>
+        </div>
+        <!--//intro-->
+
+        <!--//signup form-->
+        <div class="promo-content">
+          <div class="signup">
+            <div>
+              <p class="summary">
+                <a
+                  href="https://calendly.com/meetduet/1hr-with-duet-web"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-white-fill btn-ctc btn-book-demo"
+                >
+                  Book a free demo</a
+                >
+              </p>
+              <div
+                id="myModal"
+                tabindex="-1"
+                class="modal fade"
+                role="dialog"
+                aria-hidden="true"
+              >
+                <div
+                  class="modal-dialog"
+                  role="document"
+                  style="max-width: 800px"
+                >
+                  <!-- Modal content -->
+                  <div class="modal-content" style="margin: 25% auto">
+                    <span class="close"></span>
+                    <div class="modal-body" id="myModalBody">
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="name"
+                          placeholder="Your name"
+                          required
+                        />
+                      </div>
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="email"
+                          placeholder="Your email"
+                          required
+                        />
+                      </div>
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="orgName"
+                          placeholder="Your organization"
+                          required
+                        />
+                      </div>
+                      <div class="form-group">
+                        <textarea
+                          type="text"
+                          class="form-control"
+                          id="comment"
+                          rows="5"
+                          placeholder="We work with enterprise clients to set up the service. Please tell us briefly the project or service that you are looking for. We will get back to you with the relevant information."
+                          required
+                        ></textarea>
+                      </div>
+                    </div>
+                    <!--<div style="display: flex; justify-content: flex-end">-->
+                    <div
+                      class="modal-footer"
+                      style="padding:0; border-top: none"
+                    >
+                      <button
+                        type="button"
+                        class="btn btn-secondary waves-effect waves-light"
+                        id="myModalCancel"
+                        data-dismiss="modal"
+                      >
+                        Cancel
+                      </button>
+                      <button
+                        type="button"
+                        id="sendEmailButton"
+                        class="btn btn-primary waves-effect"
+                      >
+                        Send
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Modal For email form submission success-->
+              <div
+                class="modal fade"
+                id="submissionSuccessModal"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="submissionSuccessModalLabel"
+                aria-hidden="true"
+                style="display:none"
+              >
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <p class="modal-title">Success</p>
+                      <button
+                        type="button"
+                        id="submissionSuccessModalCloseButton"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <p>
+                        Email sent successfully. Thank you for your interest in
+                        Duet! We will get back to you soon.
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        id="submissionSuccessModalClose"
+                        data-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Modal For email form submission fail-->
+              <div
+                class="modal fade"
+                id="submissionFailModal"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="submissionFailModalLabel"
+                aria-hidden="true"
+                style="display:none"
+              >
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <p class="modal-title">Failed</p>
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <p>
+                        Email failed to send, please provide all the information
+                        asked and try again.
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        id="submissionFailModalClose"
+                        data-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--//contianer-->
+          </div>
+          <!--//signup-->
+        </div>
+
+        <div class="promo-service-types">
+          <div class="service-types-label">Service types</div>
+          <div class="service-types-list">
+            <div class="chip">Wheelchair</div>
+            <div class="chip">Stretcher</div>
+            <div class="chip">Ambulatory</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="promo-overlay"></div>
+
+      <div class="circles-overlay">
+        <div class="circles-container">
+          <svg
+            width="487"
+            height="840"
+            viewBox="0 0 487 840"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              opacity="0.5"
+              cx="530"
+              cy="420"
+              r="400"
+              stroke="#007BFF"
+              stroke-width="40"
+            />
+            <g style="mix-blend-mode:multiply" opacity="0.5">
+              <circle
+                cx="220"
+                cy="347"
+                r="200"
+                stroke="#70B9F6"
+                stroke-width="40"
+              />
+            </g>
+            <circle cx="384" cy="234" r="8" fill="#FFC000" />
+            <circle cx="45" cy="251" r="16" fill="#118BF0" />
+            <circle cx="457" cy="814" r="16" fill="#FFC000" />
+            <circle cx="197" cy="643" r="8" fill="white" />
+          </svg>
+        </div>
+      </div>
+    </section>
+    <!--//promo-->
+    <!--//wrapper-->
+
+    <section class="services-section section">
+      <div id="services"></div>
+      <div class="container">
+        <div class="row">
+          <div class="section-title">
+            <h2 class="title">
+              Set up and learn in an hour. It’s that simple!
+            </h2>
+            <span>
+              Run all your NEMT service needs on one platform
+            </span>
+          </div>
+        </div>
+        <!-- end row -->
+        <div class="row features-list-section">
+          <div class="features-list-label">
+            Versatile features that scale with your growth
+          </div>
+          <div class="features-list-container">
+            <div class="chip chip-blue">Dispatching</div>
+            <div class="chip chip-blue">Scheduling</div>
+            <div class="chip chip-blue">Booking</div>
+            <div class="chip chip-blue">Pricing</div>
+            <div class="chip chip-blue">Reporting</div>
+            <div class="chip chip-blue">Billing</div>
+            <div class="chip chip-blue">Client CRMs</div>
+            <div class="chip chip-blue">Driver management</div>
+            <div class="chip chip-blue">Fleet management</div>
+            <div class="chip chip-blue">Back-office staffing</div>
+            <div class="chip chip-blue">Broker integration</div>
+            <div class="and-more">and more...</div>
+          </div>
+        </div>
+        <!-- end row -->
+      </div>
+      <!-- end container -->
+    </section>
+
+    <!-- Client Section -->
+    <section class="section section-dark trusted-by-section">
+      <div class="container">
+        <div class="row">
+          <div class="section-title">
+            <h2 class="title">
+              Trusted by NEMT transport providers across the US
+            </h2>
+            <span> </span>
+          </div>
+        </div>
+        <!-- end row -->
+        <div class="row promo-cards-list">
+          <div class="col-lg-4 promo-card-container">
+            <div class="promo-card">
+              <div class="promo-card-header">
+                <div class="water-droplet">
+                  <img
+                    src="images/ico_service_1.svg"
+                    alt="disability"
+                    style="width: 30px;"
+                  />
+                </div>
+              </div>
+              <div class="promo-card-body">
+                <h2 class="">New to NEMT services?</h2>
+              </div>
+              <div class="promo-card-footer">
+                <button data-toggle="modal" data-target="#promoModal1">
+                  Read more
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 promo-card-container">
+            <div class="promo-card">
+              <div class="promo-card-header">
+                <div class="water-droplet">
+                  <img
+                    src="images/ico_service_2.svg"
+                    alt="location"
+                    style="width: 30px;"
+                  />
+                </div>
+              </div>
+              <div class="promo-card-body">
+                <h2 class="">In business and growing?</h2>
+              </div>
+              <div class="promo-card-footer">
+                <button data-toggle="modal" data-target="#promoModal2">
+                  Read more
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 promo-card-container">
+            <div class="promo-card">
+              <div class="promo-card-header">
+                <div class="water-droplet">
+                  <img
+                    src="images/ico_service_3.svg"
+                    alt="map"
+                    style="width: 30px;"
+                  />
+                </div>
+              </div>
+              <div>
+                <h2 class="">
+                  Established and ready to elevate your business?
+                </h2>
+              </div>
+              <div>
+                <button data-toggle="modal" data-target="#promoModal3">
+                  Read more
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end row -->
+
+        <div
+          class="modal fade"
+          id="promoModal1"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered promo-modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body promo-modal-body">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div>
+                      We’re your first partner and supporter. We go beyond the
+                      technology to help you find your footing in the market.
+                    </div>
+                    <div class="promo-modal-tier">
+                      <div class="list-title">
+                        Startup tier
+                      </div>
+                      <div class="custom-list-description mt-2">
+                        $19/month special introductory offer for new providers
+                        with fewer than 100 trips a month
+                      </div>
+                      <ul class="custom-list mt-2">
+                        <li>1:1 training via zoom included</li>
+                        <li>
+                          Additional support available, including website,
+                          service consulting, market research, marketing,
+                          back-office staffing, etc.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="testimony ml-lg-4">
+                      <svg
+                        width="31"
+                        height="22"
+                        viewBox="0 0 31 22"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M9.216 0.103516H15.36L9.696 21.8955H0L9.216 0.103516ZM24.864 0.103516H31.008L25.344 21.8955H15.648L24.864 0.103516Z"
+                          fill="#007BFF"
+                        />
+                      </svg>
+                      <div class="testimony-message">
+                        When I started my NEMT business, I had zero trips and a
+                        lot of uncertainty. Thanks to Duet's guidance and
+                        software, I was able to grow from zero to 200 trips in
+                        three months in a rural market.
+                      </div>
+                      <div class="testimony-author">Mamadou, Transcare+</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="buttons-section">
+                      <a
+                        href="https://forms.gle/e6uBGswibPgsnQRt9"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-white-fill btn-ctc"
+                      >
+                        Sign up</a
+                      >
+
+                      <span class="m-2">or</span>
+                      <a
+                        href="https://calendly.com/meetduet/1hr-with-duet-web"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-white-fill btn-ctc"
+                      >
+                        Book a free demo</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="faq">
+                      <h3 class="list-title">Frequently Asked Questions</h3>
+
+                      <div class="accordion">
+                        <div class="accordion-item">
+                          <div class="accordion-header">
+                            <span>1. What does the price cover?</span>
+                            <span class="icon">
+                              <!-- Plus Icon -->
+                              <svg
+                                class="icon-plus"
+                                width="20"
+                                height="20"
+                                viewBox="0 0 20 20"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <line
+                                  y1="9"
+                                  x2="20"
+                                  y2="9"
+                                  stroke="#118BF0"
+                                  stroke-width="2"
+                                />
+                                <line
+                                  x1="9"
+                                  y1="20"
+                                  x2="9"
+                                  stroke="#118BF0"
+                                  stroke-width="2"
+                                />
+                              </svg>
+
+                              <!-- Minus Icon -->
+                              <svg
+                                class="icon-minus"
+                                width="20"
+                                height="3"
+                                viewBox="0 0 20 3"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <line
+                                  y1="1.93359"
+                                  x2="20"
+                                  y2="1.93359"
+                                  stroke="#118BF0"
+                                  stroke-width="2"
+                                />
+                              </svg>
+                            </span>
+                          </div>
+                          <div class="accordion-body">
+                            Access to all of our software applications for a
+                            year.
+                          </div>
+                        </div>
+
+                        <div class="accordion-item">
+                          <div class="accordion-header">
+                            <span>2. What happens after one year?</span>
+                            <span class="icon">
+                              <!-- Plus Icon -->
+                              <svg
+                                class="icon-plus"
+                                width="20"
+                                height="20"
+                                viewBox="0 0 20 20"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <line
+                                  y1="9"
+                                  x2="20"
+                                  y2="9"
+                                  stroke="#118BF0"
+                                  stroke-width="2"
+                                />
+                                <line
+                                  x1="9"
+                                  y1="20"
+                                  x2="9"
+                                  stroke="#118BF0"
+                                  stroke-width="2"
+                                />
+                              </svg>
+
+                              <!-- Minus Icon -->
+                              <svg
+                                class="icon-minus"
+                                width="20"
+                                height="3"
+                                viewBox="0 0 20 3"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <line
+                                  y1="1.93359"
+                                  x2="20"
+                                  y2="1.93359"
+                                  stroke="#118BF0"
+                                  stroke-width="2"
+                                />
+                              </svg>
+                            </span>
+                          </div>
+                          <div class="accordion-body">
+                            You will be automatically switched to our growth
+                            tier unless you want to leave our platform.
+                          </div>
+                        </div>
+
+                        <div class="accordion-item">
+                          <div class="accordion-header">
+                            <span
+                              >3. Will my software cost increase after one
+                              year?</span
+                            >
+                            <span class="icon">
+                              <!-- Plus Icon -->
+                              <svg
+                                class="icon-plus"
+                                width="20"
+                                height="20"
+                                viewBox="0 0 20 20"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <line
+                                  y1="9"
+                                  x2="20"
+                                  y2="9"
+                                  stroke="#118BF0"
+                                  stroke-width="2"
+                                />
+                                <line
+                                  x1="9"
+                                  y1="20"
+                                  x2="9"
+                                  stroke="#118BF0"
+                                  stroke-width="2"
+                                />
+                              </svg>
+
+                              <!-- Minus Icon -->
+                              <svg
+                                class="icon-minus"
+                                width="20"
+                                height="3"
+                                viewBox="0 0 20 3"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <line
+                                  y1="1.93359"
+                                  x2="20"
+                                  y2="1.93359"
+                                  stroke="#118BF0"
+                                  stroke-width="2"
+                                />
+                              </svg>
+                            </span>
+                          </div>
+                          <div class="accordion-body">
+                            Depends. Yes, if your service grew nicely within the
+                            first year. No, if your service growth is too slow,
+                            you may pay less.
+                          </div>
+                        </div>
+
+                        <div class="accordion-item">
+                          <div class="accordion-header">
+                            <span
+                              >4. What happens if I want to leave your platform
+                              within a year?</span
+                            >
+                            <span class="icon">
+                              <!-- Plus Icon -->
+                              <svg
+                                class="icon-plus"
+                                width="20"
+                                height="20"
+                                viewBox="0 0 20 20"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <line
+                                  y1="9"
+                                  x2="20"
+                                  y2="9"
+                                  stroke="#118BF0"
+                                  stroke-width="2"
+                                />
+                                <line
+                                  x1="9"
+                                  y1="20"
+                                  x2="9"
+                                  stroke="#118BF0"
+                                  stroke-width="2"
+                                />
+                              </svg>
+
+                              <!-- Minus Icon -->
+                              <svg
+                                class="icon-minus"
+                                width="20"
+                                height="3"
+                                viewBox="0 0 20 3"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <line
+                                  y1="1.93359"
+                                  x2="20"
+                                  y2="1.93359"
+                                  stroke="#118BF0"
+                                  stroke-width="2"
+                                />
+                              </svg>
+                            </span>
+                          </div>
+                          <div class="accordion-body">
+                            You will be refunded the prorated fees for the rest
+                            of the time left on your contract.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="modal fade"
+          id="promoModal2"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered promo-modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body promo-modal-body">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div>
+                      You’ve figured out how to build a brand and client base.
+                      We'll help you compete on service quality instead of
+                      price.
+                    </div>
+                    <div class="promo-modal-tier">
+                      <div class="list-title">
+                        Growth tier
+                      </div>
+                      <div class="custom-list-description mt-2">
+                        $1.25/vehicle revenue hour (typically $45 -
+                        $55/vehicle/month). We only get paid when you do. We're
+                        confident we can help you increase vehicle utilization
+                        and grow your service.
+                      </div>
+                      <ul class="custom-list mt-2">
+                        <li>
+                          Zoom training to admin/dispatchers, drivers, and other
+                          staff included
+                        </li>
+                        <li>
+                          Same-day support via email and SMS
+                        </li>
+                        <li>
+                          Additional support available, including website,
+                          service consulting, market research, marketing,
+                          back-office staffing, etc.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="testimony ml-lg-4">
+                      <svg
+                        width="31"
+                        height="22"
+                        viewBox="0 0 31 22"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M9.216 0.103516H15.36L9.696 21.8955H0L9.216 0.103516ZM24.864 0.103516H31.008L25.344 21.8955H15.648L24.864 0.103516Z"
+                          fill="#007BFF"
+                        />
+                      </svg>
+                      <div class="testimony-message">
+                        Duet makes dispatching easier and more efficient for us.
+                        Our utilization increased by 17% over seven months
+                        without adding additional vehicles.
+                      </div>
+                      <div class="testimony-author">
+                        Chastine, PRN Med Trans
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="buttons-section">
+                      <!--- <button class="btn btn-white-fill btn-ctc">
+                      Sign up now
+                      </button>
+                      <span class="m-2">or</span> -->
+                      <a
+                        href="https://calendly.com/meetduet/1hr-with-duet-web"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-white-fill btn-ctc"
+                      >
+                        Book a free demo</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="faq">
+                      <h3 class="list-title">Frequently Asked Questions</h3>
+
+                      <div class="accordion">
+                        <div class="accordion-item">
+                          <div class="accordion-header">
+                            <span>1. What is VRH?</span>
+                            <span class="icon">
+                              <!-- Plus Icon -->
+                              <svg
+                                class="icon-plus"
+                                width="20"
+                                height="20"
+                                viewBox="0 0 20 20"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <line
+                                  y1="9"
+                                  x2="20"
+                                  y2="9"
+                                  stroke="#118BF0"
+                                  stroke-width="2"
+                                />
+                                <line
+                                  x1="9"
+                                  y1="20"
+                                  x2="9"
+                                  stroke="#118BF0"
+                                  stroke-width="2"
+                                />
+                              </svg>
+
+                              <!-- Minus Icon -->
+                              <svg
+                                class="icon-minus"
+                                width="20"
+                                height="3"
+                                viewBox="0 0 20 3"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <line
+                                  y1="1.93359"
+                                  x2="20"
+                                  y2="1.93359"
+                                  stroke="#118BF0"
+                                  stroke-width="2"
+                                />
+                              </svg>
+                            </span>
+                          </div>
+                          <div class="accordion-body">
+                            <b>VRH</b> stands for <b>V</b>ehicle <b>R</b>evenue
+                            <b>H</b>our. It’s the travel time between the pickup
+                            location and the drop-off location with a rider,
+                            when you are generating revenue.
+                          </div>
+                        </div>
+
+                        <div class="accordion-item">
+                          <div class="accordion-header">
+                            <span>2. How is VRH calculated?</span>
+                            <span class="icon">
+                              <!-- Plus Icon -->
+                              <svg
+                                class="icon-plus"
+                                width="20"
+                                height="20"
+                                viewBox="0 0 20 20"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <line
+                                  y1="9"
+                                  x2="20"
+                                  y2="9"
+                                  stroke="#118BF0"
+                                  stroke-width="2"
+                                />
+                                <line
+                                  x1="9"
+                                  y1="20"
+                                  x2="9"
+                                  stroke="#118BF0"
+                                  stroke-width="2"
+                                />
+                              </svg>
+
+                              <!-- Minus Icon -->
+                              <svg
+                                class="icon-minus"
+                                width="20"
+                                height="3"
+                                viewBox="0 0 20 3"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <line
+                                  y1="1.93359"
+                                  x2="20"
+                                  y2="1.93359"
+                                  stroke="#118BF0"
+                                  stroke-width="2"
+                                />
+                              </svg>
+                            </span>
+                          </div>
+                          <div class="accordion-body">
+                            At Duet, when a booking is created in our system,
+                            its VRH is the travel time estimated by Google Maps
+                            API using its pickup and drop-off addresses.
+                            <br /><br />
+                            VRH is not the actual travel time that your driver
+                            claims. VRH is also not the same as your operating
+                            hours. VRH is typically a fraction of the operating
+                            hours, and smaller than the actual travel time as
+                            Google Maps APIs do not consider the real-time
+                            traffic time.
+                          </div>
+                        </div>
+
+                        <div class="accordion-item">
+                          <div class="accordion-header">
+                            <span
+                              >3. How much will your software cost me per
+                              month?</span
+                            >
+                            <span class="icon">
+                              <!-- Plus Icon -->
+                              <svg
+                                class="icon-plus"
+                                width="20"
+                                height="20"
+                                viewBox="0 0 20 20"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <line
+                                  y1="9"
+                                  x2="20"
+                                  y2="9"
+                                  stroke="#118BF0"
+                                  stroke-width="2"
+                                />
+                                <line
+                                  x1="9"
+                                  y1="20"
+                                  x2="9"
+                                  stroke="#118BF0"
+                                  stroke-width="2"
+                                />
+                              </svg>
+
+                              <!-- Minus Icon -->
+                              <svg
+                                class="icon-minus"
+                                width="20"
+                                height="3"
+                                viewBox="0 0 20 3"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <line
+                                  y1="1.93359"
+                                  x2="20"
+                                  y2="1.93359"
+                                  stroke="#118BF0"
+                                  stroke-width="2"
+                                />
+                              </svg>
+                            </span>
+                          </div>
+                          <div class="accordion-body">
+                            Providers on our platform pay about $45 to $55 per
+                            vehicle per month. Some of them operate 24/7.<br /><br />
+                            you can email us (ride@duetinc.com) if you'd like an
+                            estimate for your particular service.
+                          </div>
+                        </div>
+
+                        <div class="accordion-item">
+                          <div class="accordion-header">
+                            <span
+                              >4. Will the canceled or no show trips be included
+                              in the cost calculation?</span
+                            >
+                            <span class="icon">
+                              <!-- Plus Icon -->
+                              <svg
+                                class="icon-plus"
+                                width="20"
+                                height="20"
+                                viewBox="0 0 20 20"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <line
+                                  y1="9"
+                                  x2="20"
+                                  y2="9"
+                                  stroke="#118BF0"
+                                  stroke-width="2"
+                                />
+                                <line
+                                  x1="9"
+                                  y1="20"
+                                  x2="9"
+                                  stroke="#118BF0"
+                                  stroke-width="2"
+                                />
+                              </svg>
+
+                              <!-- Minus Icon -->
+                              <svg
+                                class="icon-minus"
+                                width="20"
+                                height="3"
+                                viewBox="0 0 20 3"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <line
+                                  y1="1.93359"
+                                  x2="20"
+                                  y2="1.93359"
+                                  stroke="#118BF0"
+                                  stroke-width="2"
+                                />
+                              </svg>
+                            </span>
+                          </div>
+                          <div class="accordion-body">
+                            No show trips are included, but canceled trips are
+                            not.
+                          </div>
+                        </div>
+
+                        <div class="accordion-item">
+                          <div class="accordion-header">
+                            <span
+                              >5. Will my cost be different if I provide
+                              wheelchair trips vs stretcher trips?</span
+                            >
+                            <span class="icon">
+                              <!-- Plus Icon -->
+                              <svg
+                                class="icon-plus"
+                                width="20"
+                                height="20"
+                                viewBox="0 0 20 20"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <line
+                                  y1="9"
+                                  x2="20"
+                                  y2="9"
+                                  stroke="#118BF0"
+                                  stroke-width="2"
+                                />
+                                <line
+                                  x1="9"
+                                  y1="20"
+                                  x2="9"
+                                  stroke="#118BF0"
+                                  stroke-width="2"
+                                />
+                              </svg>
+
+                              <!-- Minus Icon -->
+                              <svg
+                                class="icon-minus"
+                                width="20"
+                                height="3"
+                                viewBox="0 0 20 3"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <line
+                                  y1="1.93359"
+                                  x2="20"
+                                  y2="1.93359"
+                                  stroke="#118BF0"
+                                  stroke-width="2"
+                                />
+                              </svg>
+                            </span>
+                          </div>
+                          <div class="accordion-body">
+                            No. The mobility mode doesn’t make any difference.
+                          </div>
+                        </div>
+
+                        <div class="accordion-item">
+                          <div class="accordion-header">
+                            <span
+                              >6. Will my cost be different if I provide
+                              long-distance, cross-state trips?</span
+                            >
+                            <span class="icon">
+                              <!-- Plus Icon -->
+                              <svg
+                                class="icon-plus"
+                                width="20"
+                                height="20"
+                                viewBox="0 0 20 20"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <line
+                                  y1="9"
+                                  x2="20"
+                                  y2="9"
+                                  stroke="#118BF0"
+                                  stroke-width="2"
+                                />
+                                <line
+                                  x1="9"
+                                  y1="20"
+                                  x2="9"
+                                  stroke="#118BF0"
+                                  stroke-width="2"
+                                />
+                              </svg>
+
+                              <!-- Minus Icon -->
+                              <svg
+                                class="icon-minus"
+                                width="20"
+                                height="3"
+                                viewBox="0 0 20 3"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <line
+                                  y1="1.93359"
+                                  x2="20"
+                                  y2="1.93359"
+                                  stroke="#118BF0"
+                                  stroke-width="2"
+                                />
+                              </svg>
+                            </span>
+                          </div>
+                          <div class="accordion-body">
+                            No. Your lodging and resting time are not included
+                            in our cost calculation.
+                          </div>
+                        </div>
+
+                        <div class="accordion-item">
+                          <div class="accordion-header">
+                            <span>7. Why do you use VRH for pricing?</span>
+                            <span class="icon">
+                              <!-- Plus Icon -->
+                              <svg
+                                class="icon-plus"
+                                width="20"
+                                height="20"
+                                viewBox="0 0 20 20"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <line
+                                  y1="9"
+                                  x2="20"
+                                  y2="9"
+                                  stroke="#118BF0"
+                                  stroke-width="2"
+                                />
+                                <line
+                                  x1="9"
+                                  y1="20"
+                                  x2="9"
+                                  stroke="#118BF0"
+                                  stroke-width="2"
+                                />
+                              </svg>
+
+                              <!-- Minus Icon -->
+                              <svg
+                                class="icon-minus"
+                                width="20"
+                                height="3"
+                                viewBox="0 0 20 3"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <line
+                                  y1="1.93359"
+                                  x2="20"
+                                  y2="1.93359"
+                                  stroke="#118BF0"
+                                  stroke-width="2"
+                                />
+                              </svg>
+                            </span>
+                          </div>
+                          <div class="accordion-body">
+                            We only want to earn money when you do.
+                          </div>
+                        </div>
+
+                        <div class="accordion-item">
+                          <div class="accordion-header">
+                            <span
+                              >8. What’s the benefit to me of using VRH?</span
+                            >
+                            <span class="icon">
+                              <!-- Plus Icon -->
+                              <svg
+                                class="icon-plus"
+                                width="20"
+                                height="20"
+                                viewBox="0 0 20 20"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <line
+                                  y1="9"
+                                  x2="20"
+                                  y2="9"
+                                  stroke="#118BF0"
+                                  stroke-width="2"
+                                />
+                                <line
+                                  x1="9"
+                                  y1="20"
+                                  x2="9"
+                                  stroke="#118BF0"
+                                  stroke-width="2"
+                                />
+                              </svg>
+
+                              <!-- Minus Icon -->
+                              <svg
+                                class="icon-minus"
+                                width="20"
+                                height="3"
+                                viewBox="0 0 20 3"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <line
+                                  y1="1.93359"
+                                  x2="20"
+                                  y2="1.93359"
+                                  stroke="#118BF0"
+                                  stroke-width="2"
+                                />
+                              </svg>
+                            </span>
+                          </div>
+                          <div class="accordion-body">
+                            You don’t have to pay for vehicles that are out of
+                            service. You pay less during slow periods (e.g.,
+                            holidays). And you don’t have to keep your software
+                            vendor up to date on your fleet size.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="modal fade"
+          id="promoModal3"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered promo-modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body promo-modal-body">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div>
+                      You've worked hard to become a market leader. We can help
+                      you elevate your business to a new level, i.e., entering a
+                      new geography or diversifying your business model.
+                    </div>
+                    <div class="promo-modal-tier">
+                      <div class="list-title">
+                        Enterprise tier
+                      </div>
+                      <div class="custom-list-description mt-2">
+                        Grab a time with us to discuss your specific needs and
+                        see how we can help you with technology.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="testimony ml-lg-4">
+                      <svg
+                        width="31"
+                        height="22"
+                        viewBox="0 0 31 22"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M9.216 0.103516H15.36L9.696 21.8955H0L9.216 0.103516ZM24.864 0.103516H31.008L25.344 21.8955H15.648L24.864 0.103516Z"
+                          fill="#007BFF"
+                        />
+                      </svg>
+                      <div class="testimony-message">
+                        I had a three-month backlog of billing, and wasn’t even
+                        getting reimbursed on 30% of my Medicaid trips because
+                        of missing data. Duet built a customized feature for me
+                        to generate Medical forms automatically populated with
+                        trip data. It was a gamechanger.
+                      </div>
+                      <div class="testimony-author">
+                        Eugene, Capital Area Transport
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="buttons-section">
+                      <!-- <button class="btn btn-white-fill btn-ctc">
+                      Sign up now
+                      </button>
+                      <span class="m-2">or</span> -->
+                      <a
+                        href="https://calendly.com/meetduet/1hr-with-duet-web"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-white-fill btn-ctc"
+                      >
+                        Book a free demo</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row see-what-duet-row">
+          <div class="col-12 see-what-duet">
+            <div>See what Duet can do for you?</div>
+            <a
+              href="https://calendly.com/meetduet/1hr-with-duet-web"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-white btn-book-demo"
+              >Book a free demo</a
+            >
+          </div>
+        </div>
+      </div>
+      <!-- end container -->
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section section">
+      <div id="products"></div>
+      <div class="container">
+        <div class="row">
+          <div class="section-title">
+            <h2 class="title">
+              Everything you need to power your NEMT services
+            </h2>
+            <span
+              >Get started with features designed to build powerful workflows to
+              support your unique needs.</span
+            >
+          </div>
+        </div>
+        <div class="services-area">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 order-lg-1 order-md-1 order-1">
+              <div class="service-list-container">
+                <div class="list-title">
+                  Manage all your reservations and bookings in one place
+                </div>
+                <ul class="custom-list service-list">
+                  <li>Hospital discharge calls</li>
+                  <li>
+                    Reservations coming from email, calls, messages, and portals
+                  </li>
+                  <li>Recurring trip setup</li>
+                  <li>Bulk broker trip file upload</li>
+                  <li>Automatic trip push by brokers' APIs</li>
+                </ul>
+                <div>
+                  <a href="#"
+                    >Learn more
+                    <svg
+                      class="arrow-icon"
+                      width="16"
+                      height="10"
+                      viewBox="0 0 16 10"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10.4739 9.76844C10.3175 9.64338 10.255 9.45579 10.255 9.23693C10.255 9.04934 10.3175 8.86175 10.4739 8.73669L13.4441 5.73522H0.750366C0.312653 5.73522 0 5.42257 0 4.98486C0 4.57841 0.312653 4.23449 0.750366 4.23449H13.4441L10.4739 1.26429C10.1612 0.982903 10.1612 0.513924 10.4739 0.232536C10.7553 -0.0801163 11.2242 -0.0801163 11.5369 0.232536L15.789 4.48461C16.0703 4.766 16.0703 5.23498 15.789 5.51637L11.5369 9.76844C11.2242 10.0811 10.7553 10.0811 10.4739 9.76844Z"
+                        fill="#006BE0"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 order-lg-2 order-md-2 order-2">
+              <div>
+                <img src="images/img_service_1.svg" alt="Service 1" />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-md-6 order-lg-2 order-md-2 order-1">
+              <div class="service-list-container">
+                <div class="list-title">
+                  Schedule and dispatch with confidence
+                </div>
+                <ul class="custom-list service-list">
+                  <li>
+                    Real-time tracking and visualization
+                  </li>
+                  <li>
+                    Intuitive calendar view
+                  </li>
+                  <li>
+                    One-click scheduling automation
+                  </li>
+                  <li>
+                    Smart loading time prediction
+                  </li>
+                  <li>
+                    Vehicle economic health analytics
+                  </li>
+                </ul>
+                <div>
+                  <a href="#"
+                    >Learn more
+                    <svg
+                      class="arrow-icon"
+                      width="16"
+                      height="10"
+                      viewBox="0 0 16 10"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10.4739 9.76844C10.3175 9.64338 10.255 9.45579 10.255 9.23693C10.255 9.04934 10.3175 8.86175 10.4739 8.73669L13.4441 5.73522H0.750366C0.312653 5.73522 0 5.42257 0 4.98486C0 4.57841 0.312653 4.23449 0.750366 4.23449H13.4441L10.4739 1.26429C10.1612 0.982903 10.1612 0.513924 10.4739 0.232536C10.7553 -0.0801163 11.2242 -0.0801163 11.5369 0.232536L15.789 4.48461C16.0703 4.766 16.0703 5.23498 15.789 5.51637L11.5369 9.76844C11.2242 10.0811 10.7553 10.0811 10.4739 9.76844Z"
+                        fill="#006BE0"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 order-lg-1 order-md-1 order-2">
+              <div>
+                <img src="images/img_service_2.svg" alt="Service 2" />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-md-6 order-lg-1 order-md-1 order-1">
+              <div class="service-list-container">
+                <div class="list-title">
+                  Get paid faster with robust billing tools
+                </div>
+                <ul class="custom-list service-list">
+                  <li>
+                    Support multiple payment methods including card, invoice,
+                    billing cash and check
+                  </li>
+                  <li>
+                    Customize rates for each of your contracts and clients
+                  </li>
+                  <li>
+                    BYOF (Bring your own form) to autofill, bulk download and
+                    submit
+                  </li>
+                  <li>
+                    Generate billing reports customized to each payer’s
+                    requirements
+                  </li>
+                  <li>
+                    Submit attestations and claims directly to clearinghouse
+                  </li>
+                </ul>
+                <div>
+                  <a href="#"
+                    >Learn more
+                    <svg
+                      class="arrow-icon"
+                      width="16"
+                      height="10"
+                      viewBox="0 0 16 10"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10.4739 9.76844C10.3175 9.64338 10.255 9.45579 10.255 9.23693C10.255 9.04934 10.3175 8.86175 10.4739 8.73669L13.4441 5.73522H0.750366C0.312653 5.73522 0 5.42257 0 4.98486C0 4.57841 0.312653 4.23449 0.750366 4.23449H13.4441L10.4739 1.26429C10.1612 0.982903 10.1612 0.513924 10.4739 0.232536C10.7553 -0.0801163 11.2242 -0.0801163 11.5369 0.232536L15.789 4.48461C16.0703 4.766 16.0703 5.23498 15.789 5.51637L11.5369 9.76844C11.2242 10.0811 10.7553 10.0811 10.4739 9.76844Z"
+                        fill="#006BE0"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 order-lg-2 order-md-2 order-2">
+              <div>
+                <img src="images/img_service_3.svg" alt="Service 3" />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-md-6 order-lg-2 order-md-2 order-1">
+              <div class="service-list-container">
+                <div class="list-title">
+                  Deliver the best customer service
+                </div>
+                <ul class="custom-list service-list">
+                  <li>
+                    Create rich rider profiles to provide personalized services
+                  </li>
+                  <li>
+                    Share trip status with family using real-time tracking link
+                  </li>
+                  <li>
+                    Build a strong relationship with your facilities with
+                    built-in client CRM
+                  </li>
+                  <li>
+                    Offer facilities a web portal for them to book and track
+                    their own trips
+                  </li>
+                  <li>
+                    Generate itemized trip receipts to provide transparency in
+                    payment
+                  </li>
+                </ul>
+                <div>
+                  <a href="#"
+                    >Learn more
+                    <svg
+                      class="arrow-icon"
+                      width="16"
+                      height="10"
+                      viewBox="0 0 16 10"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10.4739 9.76844C10.3175 9.64338 10.255 9.45579 10.255 9.23693C10.255 9.04934 10.3175 8.86175 10.4739 8.73669L13.4441 5.73522H0.750366C0.312653 5.73522 0 5.42257 0 4.98486C0 4.57841 0.312653 4.23449 0.750366 4.23449H13.4441L10.4739 1.26429C10.1612 0.982903 10.1612 0.513924 10.4739 0.232536C10.7553 -0.0801163 11.2242 -0.0801163 11.5369 0.232536L15.789 4.48461C16.0703 4.766 16.0703 5.23498 15.789 5.51637L11.5369 9.76844C11.2242 10.0811 10.7553 10.0811 10.4739 9.76844Z"
+                        fill="#006BE0"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 order-lg-1 order-md-1 order-2">
+              <div>
+                <img src="images/img_service_4.svg" alt="Service 4" />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-md-6 order-lg-1 order-md-1 order-1">
+              <div class="service-list-container">
+                <div class="list-title">
+                  Simplify operation management
+                </div>
+                <ul class="custom-list service-list">
+                  <li>
+                    Set up driver profile with certifications, pay rate and
+                    incentives
+                  </li>
+                  <li>
+                    Schedule driver shifts, track driver clock in/out and break
+                    time
+                  </li>
+                  <li>
+                    Report timesheets and process driver pay with our integrated
+                    payroll solution
+                  </li>
+                  <li>
+                    Create vehicle profile with certifications, configuration
+                    and onboard equipment
+                  </li>
+                  <li>
+                    Schedule vehicle maintenance and store records in one place
+                  </li>
+                </ul>
+                <div>
+                  <a href="#"
+                    >Learn more
+                    <svg
+                      class="arrow-icon"
+                      width="16"
+                      height="10"
+                      viewBox="0 0 16 10"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10.4739 9.76844C10.3175 9.64338 10.255 9.45579 10.255 9.23693C10.255 9.04934 10.3175 8.86175 10.4739 8.73669L13.4441 5.73522H0.750366C0.312653 5.73522 0 5.42257 0 4.98486C0 4.57841 0.312653 4.23449 0.750366 4.23449H13.4441L10.4739 1.26429C10.1612 0.982903 10.1612 0.513924 10.4739 0.232536C10.7553 -0.0801163 11.2242 -0.0801163 11.5369 0.232536L15.789 4.48461C16.0703 4.766 16.0703 5.23498 15.789 5.51637L11.5369 9.76844C11.2242 10.0811 10.7553 10.0811 10.4739 9.76844Z"
+                        fill="#006BE0"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 order-lg-2 order-md-2 order-2">
+              <div>
+                <img src="images/img_service_5.svg" alt="Service 5" />
+              </div>
+            </div>
+          </div>
+          <div id="products-mobile-container" class="row">
+            <div id="products-mobile"></div>
+            <div class="col-lg-6 col-md-6 order-lg-2 order-md-2 order-1">
+              <div class="service-list-container">
+                <div class="list-title">
+                  Make it easier for your drivers
+                </div>
+                <ul class="custom-list service-list">
+                  <li>
+                    Native driver mobile app designed for the best user
+                    experience
+                  </li>
+                  <li>
+                    Trip info displayed in a way that is easy to read and follow
+                  </li>
+                  <li>
+                    Detailed instructions reduce the stress and time of pickup
+                  </li>
+                  <li>
+                    Navigation and status update at a simple tap
+                  </li>
+                  <li>
+                    Never miss a beat with multi-channel alert of any changes
+                  </li>
+                </ul>
+                <div>
+                  <a href="#"
+                    >Learn more
+                    <svg
+                      class="arrow-icon"
+                      width="16"
+                      height="10"
+                      viewBox="0 0 16 10"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10.4739 9.76844C10.3175 9.64338 10.255 9.45579 10.255 9.23693C10.255 9.04934 10.3175 8.86175 10.4739 8.73669L13.4441 5.73522H0.750366C0.312653 5.73522 0 5.42257 0 4.98486C0 4.57841 0.312653 4.23449 0.750366 4.23449H13.4441L10.4739 1.26429C10.1612 0.982903 10.1612 0.513924 10.4739 0.232536C10.7553 -0.0801163 11.2242 -0.0801163 11.5369 0.232536L15.789 4.48461C16.0703 4.766 16.0703 5.23498 15.789 5.51637L11.5369 9.76844C11.2242 10.0811 10.7553 10.0811 10.4739 9.76844Z"
+                        fill="#006BE0"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 order-lg-1 order-md-1 order-2">
+              <div>
+                <img
+                  src="images/img_service_6.svg"
+                  alt="Service 6"
+                  class="img-service-6"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="curves-overlay">
+            <div class="curves-container">
+              <svg
+                class="curve curve-2"
+                width="302"
+                height="302"
+                viewBox="0 0 302 302"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20 282C20 137.301 137.301 20 282 20"
+                  stroke="#70B9F6"
+                  stroke-opacity="0.2"
+                  stroke-width="40"
+                  stroke-linecap="round"
+                />
+                <circle cx="58" cy="146" r="8" fill="#FFC000" />
+              </svg>
+
+              <svg
+                class="curve curve-3"
+                width="428"
+                height="211"
+                viewBox="0 0 428 211"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M408 191C408 96.5593 331.232 20 236.535 20H20"
+                  stroke="#70B9F6"
+                  stroke-opacity="0.2"
+                  stroke-width="40"
+                  stroke-linecap="round"
+                />
+                <circle cx="201" cy="20" r="16" fill="#FFC000" />
+              </svg>
+
+              <svg
+                class="curve curve-4"
+                width="354"
+                height="194"
+                viewBox="0 0 354 194"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20 174C20 88.9481 88.8241 20 173.723 20H334"
+                  stroke="#70B9F6"
+                  stroke-opacity="0.2"
+                  stroke-width="40"
+                  stroke-linecap="round"
+                />
+              </svg>
+
+              <svg
+                class="curve curve-5"
+                width="288"
+                height="287"
+                viewBox="0 0 288 287"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M267.034 267C267.034 130.586 156.433 20 20.0002 20"
+                  stroke="#70B9F6"
+                  stroke-opacity="0.2"
+                  stroke-width="40"
+                  stroke-linecap="round"
+                />
+                <circle cx="162.034" cy="65" r="16" fill="#70B9F6" />
+              </svg>
+
+              <svg
+                class="curve curve-6"
+                width="168"
+                height="409"
+                viewBox="0 0 168 409"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20 389C90.6925 389 148 331.622 148 260.843L148 20"
+                  stroke="#70B9F6"
+                  stroke-opacity="0.2"
+                  stroke-width="40"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <!-- end row -->
+      </div>
+      <!-- end container -->
+      <div class="curves-overlay">
+        <div class="curves-container">
+          <svg
+            class="curve curve-1"
+            width="292"
+            height="312"
+            viewBox="0 0 292 312"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M20 292C20 141.779 141.779 20 292 20"
+              stroke="#70B9F6"
+              stroke-opacity="0.2"
+              stroke-width="40"
+              stroke-linecap="round"
+            />
+            <circle cx="116" cy="85" r="16" fill="#118BF0" />
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="section ready-section">
+      <div class="container">
+        <div class="row">
+          <div class="section-title">
+            <h2 class="title">
+              Ready to get in touch with Duet?
+            </h2>
+            <a
+              href="https://calendly.com/meetduet/1hr-with-duet-web"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-white btn-book-demo"
+              >Book a free demo</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Market Trends Section -->
+    <section class="section bg-light market-trends-section">
+      <div class="container">
+        <div class="row market-trends-header">
+          <div class="col-lg-12">
+            <div class="market-trends-header-content">
+              <h2 class="title">
+                Discover the latest in the NEMT market
+              </h2>
+              <!--View more blogs -->
+              <a class="view-more-post" href="blogs.html"
+                >More posts
+                <svg
+                  class="arrow-icon"
+                  width="13"
+                  height="20"
+                  viewBox="0 0 13 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.35292 20L12.3529 10L2.35292 0L0 2.35294L7.64707 10L0 17.6471L2.35292 20Z"
+                    fill="#118BF0"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+         
+
+        <div class="row market-trends-list">
+          
+          <div class="col-lg-4">
+            <div class="market-trends-card">
+              <img
+                src="images/img_marketing_10.svg"
+                alt=""
+                style="width: 100%;"
+                class="image-corner"
+              />
+              <h2>
+                30+ % margin growth
+              </h2>
+              <p>
+                A practical, interactive conversation on building a high-margin NEMT service. ...
+              </p>
+              <div>
+                <a href="duetblog10_highmarginnemtgrowth.html" target="_blank"
+                  >Read more</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="market-trends-card">
+              <img
+                src="images/img_marketing_9.svg"
+                alt=""
+                style="width: 100%;"
+                class="image-corner"
+              />
+              <h2>
+                Cut NEMT expenses by 10%+
+              </h2>
+              <p>
+                Learn about fuel cards - discounts, spend analysis, and avoid "friendly fraud" ...
+              </p>
+              <div>
+                <a href="duetblog9_fuelcards.html" target="_blank"
+                  >Read more</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="market-trends-card">
+              <img
+                src="images/img_marketing_8.svg"
+                alt=""
+                style="width: 100%;"
+                class="image-corner"
+              />
+              <h2>
+                From 0 to 5 vans in one year
+              </h2>
+              <p>
+                How to start and grow an NEMT service? Paul from Gentle Turns shared his NEMT journey ...
+              </p>
+              <div>
+                <a href="duetblog8_newnemtservice.html" target="_blank"
+                  >Read more</a
+                >
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- end container -->
+
+    <!-- end section -->
+    <div id="footer"></div>
+    <!-- Javascript -->
+    <script
+      type="text/javascript"
+      src="plugins/bootstrap/js/bootstrap.min.js"
+    ></script>
+    <script type="text/javascript" src="plugins/back-to-top.js"></script>
+    <script
+      type="text/javascript"
+      src="plugins/jquery-inview/jquery.inview.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="plugins/ismobile/isMobile.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="plugins/flexslider/jquery.flexslider-min.js"
+    ></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/duet-parse.js"></script>
+    <script type="text/javascript" src="js/image-border-radius.js"></script>
+    <!--<script type="text/javascript" src="js/duet-jquery.js"></script>-->
+
+    <!-- Modal Video -->
+    <script type="text/javascript" src="js/modal-video.js"></script>
+
+    <!--[if !IE]>-->
+    <script type="text/javascript" src="js/animations.js"></script>
+    <!--<![endif]-->
+
+    <script type="text/javascript" src="js/faq.js"></script>
+
+    <!-- Start of LiveChat (www.livechatinc.com) code -->
+    <script>
+      window.__lc = window.__lc || {};
+      window.__lc.license = 12919956;
+      (function(n, t, c) {
+        function i(n) {
+          return e._h ? e._h.apply(null, n) : e._q.push(n);
+        }
+        var e = {
+          _q: [],
+          _h: null,
+          _v: '2.0',
+          on: function() {
+            i(['on', c.call(arguments)]);
+          },
+          once: function() {
+            i(['once', c.call(arguments)]);
+          },
+          off: function() {
+            i(['off', c.call(arguments)]);
+          },
+          get: function() {
+            if (!e._h)
+              throw new Error(
+                "[LiveChatWidget] You can't use getters before load."
+              );
+            return i(['get', c.call(arguments)]);
+          },
+          call: function() {
+            i(['call', c.call(arguments)]);
+          },
+          init: function() {
+            var n = t.createElement('script');
+            (n.async = !0),
+              (n.type = 'text/javascript'),
+              (n.src = 'https://cdn.livechatinc.com/tracking.js'),
+              t.head.appendChild(n);
+          },
+        };
+        !n.__lc.asyncInit && e.init(),
+          (n.LiveChatWidget = n.LiveChatWidget || e);
+      })(window, document, [].slice);
+    </script>
+    <noscript
+      ><a href="https://www.livechatinc.com/chat-with/12919956/" rel="nofollow"
+        >Chat with us</a
+      >, powered by
+      <a
+        href="https://www.livechatinc.com/?welcome"
+        rel="noopener nofollow"
+        target="_blank"
+        >LiveChat</a
+      ></noscript
+    >
+    <!-- End of LiveChat code -->
+  </body>
+</html>

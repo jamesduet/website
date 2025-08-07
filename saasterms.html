@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+      Duet: an integrated platform for on-demand ride, dynamic transit and
+      microtransit for your commute, last mile and flex rides.
+    </title>
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      property="al:ios:url"
+      content="duet://invite_from_fb?tracking_id=882682221745718"
+    />
+    <meta property="al:ios:app_store_id" content="882682221745718" />
+    <meta property="al:ios:app_name" content="Duet Commute" />
+    <link href="images/favicon.png" rel="icon" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FontAwesome JS-->
+    <script
+      type="text/javascript"
+      src="plugins/font-awesome/js/fontawesome-all.min.js"
+    ></script>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css" />
+    <!-- Plugins CSS -->
+    <!--<link rel="stylesheet" href="plugins/pe-icon-7-stroke/css/pe-icon-7-stroke.css">-->
+    <link rel="stylesheet" href="plugins/animate-css/animate.min.css" />
+    <link rel="stylesheet" href="plugins/flexslider/flexslider.css" />
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="css/theme-1.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    ></script>
+    <script>
+      (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        (i[r] =
+          i[r] ||
+          function() {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      })(
+        window,
+        document,
+        'script',
+        '//www.google-analytics.com/analytics.js',
+        'ga'
+      );
+
+      ga('create', 'UA-53638414-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script>
+      var userAgent = 'desktop';
+
+      if (
+        navigator.userAgent.match(/Android/i) ||
+        navigator.userAgent.match(/webOS/i) ||
+        navigator.userAgent.match(/iPhone/i) ||
+        navigator.userAgent.match(/iPad/i) ||
+        navigator.userAgent.match(/iPod/i) ||
+        navigator.userAgent.match(/BlackBerry/i) ||
+        navigator.userAgent.match(/Windows Phone/i)
+      ) {
+        userAgent = 'mobile';
+      } else {
+        //console.log('desktop');
+      }
+
+      $(document).ready(function() {
+        if (userAgent == 'desktop') {
+          $('div.down-app-banner').hide();
+        }
+
+        if (userAgent == 'mobile') {
+          $('div#mobileFormDiv').html('');
+          $('div#mobileFormDiv').attr(
+            'style',
+            'background: rgba(0,0,0,0) !important'
+          );
+          $('div.down-app-header').hide();
+        }
+
+        setNavigation();
+      });
+
+      function setNavigation() {
+        var url = window.location.href;
+        var activeTab = url.substring(url.indexOf('#') + 1);
+        if (activeTab != url) {
+          $('.tab-pane').removeClass('active show');
+          $('#' + activeTab).addClass('active show');
+          $('a[href="#' + activeTab + '"]').tab('show');
+        }
+      }
+
+      $(function() {
+        $('#header-container').load('components/header.html');
+        $('#footer').load('components/footer.html');
+      });
+    </script>
+  </head>
+
+  <body class="home-page">
+    <!-- * Facebook Like button script starts -->
+    <div id="fb-root"></div>
+    <div id="header-container" class="sticky-top"></div>
+
+    <section class="section terms-section">
+      <div class="container">
+        <div class="">
+          <div class="bd-example bd-example-tabs">
+            <div class="tab-content">
+              <div role="tabpanel" class="tab-pane active show" id="terms">
+                <div class="section-head">
+                  <h6>DUET SAAS TERMS AND CONDITIONS</h6>
+                  <time datetime="2017-02-24"
+                    ><a href="#">(Last updated on May 8, 2019)</a></time
+                  >
+                </div>
+                <div class="teton-content">
+                  <p>
+                    These terms and conditions, together with one or more
+                    service orders (“<strong>Service Orders</strong>”) executed
+                    by Dashboard Story, Inc. (the “<strong>Duet</strong>”)and
+                    its customers (the “<strong>Customer</strong>”) governs
+                    access to and use of the services offered from time to time
+                    by Duet to Customer under this Agreement (the
+                    “<strong>Services</strong>”), provided through any software
+                    provided to Customer to access Duet’s services, including
+                    mobile applications, updates or patches, utilities and tools
+                    or APIs and (the "<strong>Software</strong>") and Duet’s
+                    website (the “<strong>Website</strong>” and, collectively
+                    with the Software, the "<strong>Platform</strong>").
+                  </p>
+                  <p>
+                    Duet’s collection and use of personal information in
+                    connection with the Services is described in our Privacy
+                    Policy, as set forth from time to time at the Website and
+                    which is hereby incorporated into these terms and conditions
+                    by reference (the "<strong>Privacy Policy</strong>").
+                  </p>
+                  <p>
+                    These terms and conditions, together with the Service Orders
+                    and the Privacy Policy (the “<strong>Agreement</strong>”),
+                    establish the legal terms and conditions of the agreement
+                    between Duet and Customer governing Customer’s use and
+                    Duet’s provision of the Platform and Services.
+                  </p>
+                  <br />
+                  <span class="section-head">
+                    <h6>1. Definitions and Construction.</h6>
+                  </span>
+                  <p>
+                    Capitalized terms in this Agreement have the meanings
+                    indicated in <strong>Section 13</strong> unless the context
+                    otherwise requires, which meaning will be equally applicable
+                    to both the singular and plural forms of those terms. In
+                    this Agreement, unless a clear contrary intention appears
+                    (a) “Section” refers to sections of this Agreement; (b)
+                    “including” (and with correlative meaning “include”) means
+                    including without limiting the generality of any description
+                    preceding that term, and (c) any reference to a consent,
+                    determination or other exercise of discretion by Duet,
+                    unless expressly provided to the contrary, means a
+                    determination or exercise of discretion in Duet’s sole and
+                    absolute discretion.
+                  </p>
+                  <br />
+                  <br />
+                  <span class="section-head">
+                    <h6>2. Hosted Services; Software.</h6>
+                  </span>
+                  <p>
+                    2.1 Duet will make the Hosted Services available to Customer
+                    and its Users pursuant to this Agreement during the Term.
+                    Customer agrees that its purchases under this Agreement are
+                    neither contingent on the delivery of any future
+                    functionality or features nor dependent on any oral or
+                    written public comments made by Duet regarding future
+                    functionality or features. Customer will be responsible for
+                    Users’ compliance with this Agreement.
+                  </p>
+                  <p>
+                    2.2 Customer will not: (a) sell, rent, lease, transfer,
+                    assign, distribute, display, host, outsource, disclose or
+                    otherwise commercially exploit or make the Hosted Services
+                    available to any third party other than Users for Customer’s
+                    internal purposes; (b) modify, make derivative works of,
+                    disassemble, reverse compile, reverse engineer, or subvert
+                    the intrinsic security of any part of the Hosted Services
+                    for any purpose; (c) access or use the Hosted Services in
+                    order to build a similar or competitive product or Hosted
+                    Service; (d) disclose any review of the Hosted Service to
+                    any third party without Duet’s prior written approval; (e)
+                    use any e-mail addresses and other User contact information
+                    provided on the Hosted Service for marketing or advertising
+                    purposes; or (f) post, transmit, link to, or otherwise
+                    distribute any inappropriate, profane, defamatory, obscene,
+                    indecent or unlawful material or information. Except as
+                    expressly stated in this Agreement, no part of the Hosted
+                    Services may be copied, reproduced, distributed,
+                    republished, downloaded, displayed, posted or transmitted in
+                    any form or by any means to, including electronic,
+                    mechanical, photocopying, recording, or other means.
+                    Customer will make every reasonable effort to prevent
+                    unauthorized third parties from accessing the Hosted
+                    Services, and notify Duet promptly of any such unauthorized
+                    access or use.
+                  </p>
+                  <p>
+                    2.3 Services may require or allow Users to download Software
+                    from Duet or its licensors onto Users’ smartphone, tablet,
+                    computer or other device, subject to limitations set forth
+                    in the Service Orders. Subject to those limitations, Duet
+                    grants to Customer and its Users a non-exclusive, limited
+                    license to use Software solely for the purpose stated by
+                    Duet at the time Software is made available to Users. If an
+                    end user license agreement is provided with Software,
+                    Customer’s and the Users’ use of that Software is subject to
+                    the terms of that license agreement. From time to time, Duet
+                    may provide Customer and Users with updates or modifications
+                    to Software. Customer understands that Duet’s introduction
+                    of various technologies may not be consistent across all
+                    platforms and that the performance of Software and related
+                    Hosted Services may vary depending on each User’s computer
+                    and other equipment. Customer understands that certain
+                    updates and modifications may be required in order to
+                    continue use the Software and Hosted Services.
+                  </p>
+                  <p>
+                    2.4 Neither Customer nor any User may sub-license, or charge
+                    others to use or access Software. Neither Customer nor any
+                    User may translate, reverse-engineer, reverse-compile or
+                    decompile, disassemble or make derivative works from
+                    Software. Neither Customer nor any User may modify Software
+                    or use it in any way not expressly authorized in writing by
+                    Duet.
+                  </p>
+                  <p>
+                    2.5 Duet will have the right to review and monitor all use
+                    of the Platform to ensure compliance with this Agreement.
+                    Duet reserves the right, on prior notice to Customer, to
+                    audit usage of the Software during normal business hours
+                    with reasonable prior notification to verify Customer’s
+                    compliance with the terms of this Agreement. Any information
+                    reviewed or otherwise received by Duet in the course of an
+                    audit pursuant to this <strong>Section 2.5</strong> will be
+                    deemed Customer’s Confidential Information, provided that
+                    Duet will have the right to use that information as
+                    reasonably necessary to enforce its rights under this
+                    Agreement.
+                  </p>
+                  <br />
+                  <br />
+                  <span class="section-head">
+                    <h6>3. Ownership.</h6>
+                  </span>
+                  <p>
+                    3.1 As between the parties, Duet will own and retain all
+                    right, title and interest in and to the Hosted Services and
+                    Software, including all intellectual property rights. No
+                    rights are granted to Customer under this Agreement other
+                    than as expressly set forth in this Agreement. As between
+                    the parties, Customer will own all right, title and interest
+                    in and to any Customer Data. Customer grants to Duet the
+                    non-exclusive, worldwide right to copy, adapt, transmit,
+                    communicate, display, distribute and create compilations and
+                    derivative works of the Customer Data for the purpose of
+                    providing the Hosted Services and to improve or enhance the
+                    Hosted Services. This license includes use of Customer Data
+                    to compile, use and disclose anonymous, aggregated
+                    statistics that include Customer Data, provided that no such
+                    information will directly identify and cannot reasonably be
+                    used to identify Customer or Customer’s Users. Customer will
+                    be solely responsible for ensuring that Customer has
+                    obtained all necessary third-party consents and made all
+                    required disclosures in connection with the foregoing grant.
+                    Customer acknowledges and agrees that Customer Data may be
+                    transferred outside of the country or other jurisdiction
+                    where other customers or users are located. In addition,
+                    Customer will have sole responsibility for the accuracy,
+                    quality, integrity, legality, reliability and copyright of
+                    all Customer Data.
+                  </p>
+                  <p>
+                    3.2 Customer understands that the Hosted Services are part
+                    of a proprietary Duet system, using artificial intelligence
+                    which will be trained by Customer Data and Customer hereby
+                    grants Duet a limited, royalty-free, non-exclusive,
+                    worldwide, license to use the Customer Data during the Term
+                    for the purpose of creating Training Data. Duet will own any
+                    Training Data created by Duet pursuant to the preceding
+                    sentence. The license granted pursuant to the preceding
+                    sentence will survive the termination or expiration of this
+                    Agreement.
+                  </p>
+                  <p>
+                    3.3 Duet will have a royalty-free, worldwide, transferable,
+                    sublicenseable, irrevocable, perpetual license to use or
+                    incorporate into the Hosted Services any suggestions,
+                    enhancement requests, recommendations or other feedback
+                    provided by Customer, including Users, relating to the
+                    operation of the Hosted Services.
+                  </p>
+                  <p>
+                    3.4 The parties understand and agree that monetary damages
+                    will not be sufficient to avoid or compensate for Customer’s
+                    use of the Hosted Services or Software other than as
+                    authorized under this Agreement, and that injunctive relief
+                    would be appropriate to prevent any such actual or
+                    threatened use or disclosure.
+                  </p>
+                  <br />
+                  <br />
+                  <span class="section-head">
+                    <h6>4. Billing And Payment.</h6>
+                  </span>
+                  <p>
+                    4.1 Except as expressly set forth in the Service Orders,
+                    Duet may change its fees for the Hosted Services in its
+                    discretion by prior notice to Customer. If the Service
+                    Orders expressly provide for fixed fees, those fees will be
+                    fixed only during the period specified. Any implementation
+                    fees will be due on execution of the applicable Service
+                    Order. Duet will invoice Customer monthly during the Term.
+                    Duet’s fees are exclusive of all taxes, levies, or duties
+                    imposed by taxing authorities, and Customer will be
+                    responsible for payment of all those taxes, levies, or
+                    duties, even if the amounts are not listed by Duet.
+                  </p>
+                  <p>
+                    4.2 Payment for invoices is due within 15 days of Customer’s
+                    receipt of the applicable invoice. If Customer does not
+                    dispute the applicable invoice during the Dispute Period,
+                    any such dispute will be deemed waived. For clarity,
+                    Customer remains obligated to pay Duet for all fees when
+                    due, regardless of any dispute. Overdue amounts are subject
+                    to interest at 1.5% per month, or the maximum rate permitted
+                    by law, whichever is lower, and may result in suspension of
+                    Customer’s ability to access the Hosted Service until
+                    payment is made, at Duet’s discretion. Customer will
+                    reimburse Duet for all reasonable, actual costs (including
+                    reasonable attorneys’ fees) incurred by Duet in the
+                    collection of overdue amounts.
+                  </p>
+                  <br />
+                  <br />
+                  <span class="section-head">
+                    <h6>5. Support.</h6>
+                  </span>
+                  <p>
+                    During the Term, Duet will provide Customer reasonable
+                    assistance during California business hours by telephone,
+                    e-mail or online chat as specified by Duet to Customer from
+                    time to time. Duet will use commercially reasonable efforts
+                    to correct at no additional charge any reproducible errors
+                    reported by Customer. Duet will have no obligation to
+                    provide any modifications to the Hosted Service.
+                  </p>
+                  <br />
+                  <br />
+                  <span class="section-head">
+                    <h6>6. Warranties; Limitation of Liability.</h6>
+                  </span>
+                  <p>
+                    6.1 <strong>Customer’s Limited Warranties</strong>. Customer
+                    warrants that (a) this Agreement constitutes the legal,
+                    valid and binding obligation of Customer, enforceable
+                    against Customer in accordance with its terms, (b) neither
+                    the execution and delivery of this Agreement nor either
+                    party’s performance under it will, directly or indirectly
+                    (with or without notice or lapse of time) (i) contravene,
+                    conflict with, or result in a violation of any domestic or
+                    foreign, federal, state or local statute, law (including
+                    principles of common law), ordinance, rule, policy,
+                    guideline, permit, administrative interpretation,
+                    regulation, order, writ, injunction, legally binding
+                    directive, judgment, decree or other requirement of any
+                    governmental body (“Legal Requirement”) to which Customer
+                    may be subject; (ii) give any governmental body or other
+                    person the right to challenge the validity or performance of
+                    this Agreement or to exercise any remedy or obtain any
+                    relief under, any contract or any Legal Requirement; or
+                    (iii) contravene, conflict with, or result in a default
+                    under any contractual or other obligation binding on
+                    Customer.
+                  </p>
+                  <p>
+                    6.2 <strong>Duet’s Limited Warranties</strong>. Duet
+                    warrants that (a) this Agreement constitutes the legal,
+                    valid and binding obligation of Duet, enforceable against
+                    Duet in accordance with its terms, (b) neither the execution
+                    and delivery of this Agreement nor either party’s
+                    performance under it will, directly or indirectly (with or
+                    without notice or lapse of time) (i) contravene, conflict
+                    with, or result in a violation of any Legal Requirement to
+                    which Duet may be subject; (ii) give any governmental body
+                    or other person the right to challenge the validity or
+                    performance of this Agreement or to exercise any remedy or
+                    obtain any relief under, any contract or any Legal
+                    Requirement; or (iii) contravene, conflict with, or result
+                    in a default under any contractual or other obligation
+                    binding on Duet, (c) the Hosted Services will operate
+                    substantially as described in the applicable Documentation,
+                    and (d) any support services provided pursuant to
+                    <strong>Section 5</strong> will be provided in a workmanlike
+                    manner consistent with industry standards.
+                  </p>
+                  <p>
+                    6.3 <strong>Exclusive Remedy</strong>. Customer’s sole and
+                    exclusive remedy, and Duet’s entire liability, for any
+                    breach by Duet of its warranties under this Agreement will
+                    be, at Duet’s discretion, either (a) to correct the error
+                    that caused the breach, or (b) as applicable, (i) to provide
+                    Hosted Services that conform to the warranties, or (ii) to
+                    re-perform any support services in a manner conforming to
+                    the warranties. If Duet is determines, in Duet’s reasonable
+                    discretion, that Duet cannot correct the error or otherwise
+                    cure the breach by providing conforming Hosted Services or
+                    re-performing support services, as applicable, using
+                    commercially reasonable efforts, then Duet may terminate
+                    this Agreement and return to Customer any pre-paid fees for
+                    any period after termination (but excluding any
+                    implementation fees).
+                  </p>
+                  <p>
+                    6.4 <strong>Limited Warranty</strong>. NO OTHER WARRANTY,
+                    EXPRESS OR IMPLIED, IS MADE WITH RESPECT TO THE HOSTED
+                    SERVICES, ANY SOFTWARE, OR ANY SUPPORT SERVICES TO BE
+                    SUPPLIED UNDER THIS AGREEMENT, INCLUDING ANY IMPLIED
+                    WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+                    PURPOSE, NON-INFRINGEMENT OF THIRD PARTY RIGHTS OR ANY
+                    WARRANTY ARISING FROM A COURSE OF DEALING OR USAGE OF TRADE.
+                    NO WARRANTY IS MADE REGARDING THE RESULTS OF ANY HOSTED
+                    SERVICES OR SOFTWARE, OR THAT USE OF ANY HOSTED SERVICES OR
+                    SOFTWARE WILL BE UNINTERRUPTED OR ERROR-FREE, OR THAT ANY
+                    ERRORS OR DEFECTS IN THE HOSTED SERVICES OR SOFTWARE WILL BE
+                    CORRECTED, OR THAT ANY HOSTED SERVICES’ OR SOFTWARE’S
+                    FUNCTIONALITY WILL MEET CUSTOMER’S REQUIREMENTS.
+                  </p>
+                  <p>
+                    6.5 <strong>Limitation of Liability</strong>. EXCEPT FOR A
+                    PARTY’S OBLIGATIONS UNDER <strong>SECTION 7</strong>, IN NO
+                    EVENT WILL EITHER PARTY’S AGGREGATE LIABILITY TO THE OTHER
+                    PARTY UNDER THIS AGREEMENT EXCEED THE AGGREGATE AMOUNTS PAID
+                    OR PAYABLE TO THE COMPANY BY WAY OF FEES FOR THE 12-MONTH
+                    PERIOD BEFORE THE EVENT GIVING RISE TO LIABILITY.
+                  </p>
+                  <p>
+                    6.4 <strong>No Consequential Damages</strong>. UNDER NO
+                    CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT,
+                    CONTRACT OR OTHERWISE, WILL EITHER PARTY BE LIABLE TO THE
+                    OTHER PARTY FOR ANY INDIRECT, SPECIAL, INCIDENTAL, PUNITIVE
+                    OR CONSEQUENTIAL DAMAGES OF ANY CHARACTER INCLUDING DAMAGES
+                    FOR LOSS OF GOODWILL, LOSS OF PROFITS, WORK STOPPAGE,
+                    COMPUTER FAILURE OR MALFUNCTION, EVEN IF SUCH PARTY WILL
+                    HAVE BEEN INFORMED OF THE POSSIBILITY OF SUCH LOSS. FOR
+                    PURPOSES OF CLARIFICATION ONLY, THE PARTIES ACKNOWLEDGE AND
+                    AGREE THAT THIS <strong>SECTION 6.6</strong> IS NOT INTENDED
+                    TO AND WILL NOT LIMIT A PARTY’S DUTY TO INDEMNIFY AS SET
+                    FORTH IN <strong>SECTION 7</strong>.
+                  </p>
+                  <br />
+                  <br />
+                  <span class="section-head">
+                    <h6>7. Indemnity.</h6>
+                  </span>
+                  <strong>7.1 Indemnification by Duet.</strong>
+                  <ol>
+                    <li>
+                      (a) Duet will defend, indemnify and hold Customer harmless
+                      against any claims made or brought against Customer by a
+                      third party alleging that (i) the use of the Hosted
+                      Service as contemplated under this Agreement infringes the
+                      copyrights, trademarks or trade secrets of that third
+                      party, or (ii) Duet failed to comply with applicable Legal
+                      Requirements in its performance of this Agreement;
+                      provided, that Customer (I) promptly gives written notice
+                      of the claim to Duet; (II) gives Duet control of the
+                      defense and settlement of the claim (provided that
+                      Customer may participate in the defense at its own expense
+                      and that Duet may not settle any claim in a manner that
+                      admits liability on behalf of Customer); and (III)
+                      provides to Duet, at Duet’s expense, reasonable assistance
+                      in connection with the defense and settlement of the
+                      claim.
+                    </li>
+                    <li>
+                      (b) Duet may, at its sole option and expense (i) procure
+                      for Customer the right to continue using the Hosted
+                      Service under the terms of this Agreement; or (ii) replace
+                      or modify the Hosted Service to be non-infringing without
+                      material decrease in functionality. If the foregoing
+                      options are not reasonably practicable, Duet may terminate
+                      this Agreement and return to Customer any pre-paid fees
+                      for any period after termination (but excluding any
+                      implementation fees). This
+                      <strong>Section 7.1</strong> represents Duet’s entire
+                      obligation and Customer’s exclusive remedy regarding any
+                      third party intellectual property claims.
+                    </li>
+                    <li>
+                      (c) Duet will have no liability for any claim under
+                      Section 7.1(a) to the extent liability is the result of
+                      (i) modifications to the Hosted Service by anyone other
+                      than Duet or its agents (provided that Duet will not be
+                      liable if Duet or its agents made the modifications using
+                      requirements documents, written specifications or other
+                      written materials submitted by Customer or its agents or
+                      representatives); (ii) the use or combination of the
+                      Hosted Service with any other item not provided by Duet
+                      where in the absence of that use or combination, the
+                      Hosted Service alone would not have given rise to the
+                      claim; or (iii) Customer’s continued use of an infringing
+                      version of the Hosted Service when the then current
+                      version of the Hosted Service has been modified to be
+                      noninfringing.
+                    </li>
+                  </ol>
+                  <p>
+                    7.2 <strong>Indemnification by Customer</strong>. Customer
+                    will defend, indemnify and hold Duet harmless against any
+                    claims made or brought against Duet by a third party based
+                    on or arising under (a) any claim the Customer Data or
+                    Duet’s transmission or hosting thereof infringes or violates
+                    the rights of that third party; (b) any claim Customer’s use
+                    of the Hosted Service in violation of this Agreement
+                    infringes or violates the rights of that third party
+                    (including any liability to the extent resulting from the
+                    items set forth in
+                    <strong>Section 7.1(c)(i) – (iii)</strong>; (c) the
+                    advertising, promotion or marketing of Customer product or
+                    service or the services or products that Customer sells or
+                    delivers to any User; or (d) any claim Customer failed to
+                    comply with applicable Legal Requirements in its performance
+                    of this Agreement; provided, that Duet (x) promptly gives
+                    written notice of the claim to Customer; (y) gives Customer
+                    control of the defense and settlement of the claim (provided
+                    that Duet may participate in the defense at its own expense
+                    and that Customer may not settle any claim in a manner that
+                    admits liability on behalf of Duet); and (z) provides to
+                    Customer, at Customer’s expense, reasonable assistance in
+                    connection with the defense and settlement of the claim.
+                  </p>
+                  <br />
+                  <br />
+                  <span class="section-head">
+                    <h6>8. Term and Termination.</h6>
+                  </span>
+                  <p>
+                    8.1 The term of this Agreement (the “<strong>Term</strong>”)
+                    will begin on the effective date of the first Service Order
+                    between Duet and Customer and will remain in effect until
+                    terminated in accordance with <strong>Section 8.2</strong>.
+                  </p>
+                  <p>
+                    8.2 Either party may terminate this Agreement at any time on
+                    notice to the other party. In the event of any termination,
+                    Customer will be liable for any payments then due under this
+                    Agreement and for services completed in accordance with this
+                    Agreement on or before the date of termination.
+                  </p>
+                  <p>
+                    8.3 At Customer’s request, within 30 days of termination of
+                    this Agreement, provided Customer is not in breach of the
+                    Agreement, Duet will make available to Customer a file of
+                    the Customer Data then in its possession for a reasonable
+                    fee. Customer agrees and acknowledges that Duet has no
+                    obligation to retain Customer Data and that Customer Data
+                    may be irretrievably deleted after 30 days following the
+                    termination of this Agreement or if Customer’s account is 30
+                    days or more past due. The following provisions will survive
+                    any termination of this Agreement:
+                    <strong
+                      >Sections 1, 2.2, 2.3, 2.4, 2.5, 3, 4, and 6 – 13</strong
+                    >.
+                  </p>
+                  <br />
+                  <br />
+                  <span class="section-head">
+                    <h6>9. Confidentiality and Privacy.</h6>
+                  </span>
+                  <p>
+                    9.1 Each party will protect the other's Confidential
+                    Information from unauthorized dissemination and use with the
+                    same degree of care that such party uses to protect its own
+                    like information. Neither party will use the other's
+                    Confidential Information for purposes other than those
+                    necessary to directly further the purposes of this
+                    Agreement. Neither party will disclose to third parties the
+                    other party's Confidential Information without the prior
+                    written consent of the other party. A party may disclose
+                    Confidential Information to that party’s employees or
+                    professional advisors (e.g., accountants, attorneys and
+                    financial advisors), affiliates and contractors who have a
+                    need to know that Confidential Information and receive it
+                    under a duty of confidentiality substantially similar to
+                    this <strong>Section 9.1</strong>. The parties may disclose
+                    Confidential Information if required by law so long as the
+                    party required to disclose takes reasonable steps available
+                    to narrow the required disclosure and obtain protective
+                    treatment and notifies the other party, to the extent
+                    permitted by applicable law, before disclosure in sufficient
+                    time to enable that party to seek protective treatment.
+                  </p>
+                  <p>
+                    9.2 Notwithstanding anything to the contrary in this
+                    Agreement, (a) Duet’s obligations regarding Customer Data
+                    and identification and other information concerning Users
+                    will be governed by the Privacy Policy; and (b) to the
+                    extent Duet collects personal information of consumers under
+                    the California Consumer Privacy Act, Cal. Civ. Code §§
+                    1798.100 et seq., as amended from time to time (the
+                    “<strong>CCPA</strong>”), (i) Duet will delete the
+                    consumer’s personal information from Duet’s records if
+                    directed by Customer, subject to any applicable exceptions
+                    set forth in the CCPA, (ii) Duet will not retain, use, or
+                    disclose the personal information for any purpose other than
+                    for the specific purpose of performing the services
+                    specified in this Agreement for Customer, or as otherwise
+                    permitted by the CCPA, including retaining, using, or
+                    disclosing the personal information for a commercial purpose
+                    other than providing the services specified in this
+                    Agreement, provided that the parties understand and agree
+                    that Duet’s creation, retention and use of Training Data
+                    pursuant to <strong>Section 3.2</strong> will not violate
+                    this <strong>Section 9.2(b)</strong>.
+                  </p>
+                  <br />
+                  <br />
+                  <span class="section-head">
+                    <h6>10. Customer’s Responsibilities.</h6>
+                  </span>
+                  <p>
+                    10.1 Customer will provide the requirements set forth in the
+                    applicable Service Orders. Customer will comply with all
+                    applicable Legal Requirements in connection with its use of
+                    the Hosted Service, including those related to vehicle and
+                    driver licensing and safety, insurance, driver background
+                    check, road safety, data privacy, international
+                    communications, and the exportation of technical or personal
+                    data from locations other than the location from which Duet
+                    controls and operates the Hosted Services. Customer will
+                    ensure that any use of the Hosted Services by Customer’s
+                    Users is in accordance with the terms of this Agreement. It
+                    is the responsibility of Customer to provide, prepare and
+                    maintain a system environment in which the Software is to be
+                    installed and from which the Hosted Service are to be
+                    accessed, as applicable, in conformance with the
+                    Documentation provided by Duet from time to time. Except as
+                    set forth in any Service Order, Duet is not responsible for
+                    the set-up and installation of Software. If Customer wishes
+                    Duet to provide set-up and installation services and Duet
+                    wishes to provide those services, the parties may enter into
+                    a separate agreement to govern those services.
+                  </p>
+                  <p>
+                    10.2 To enable Customer to access the Platform, Duet will
+                    provide Customer with access credentials. Customer will not
+                    provide or disclose its access credentials to any third
+                    party and will be solely responsible for maintaining the
+                    strict confidentiality of its access credentials at all
+                    times. Customer will use only its access credentials and not
+                    the access credentials of any third party. Customer will
+                    notify Duet immediately of any use of Customer’s access
+                    credentials by any third party. Duet will have no liability
+                    for any loss that Customer incurs as a result of third
+                    party’s use of Customer’s access credentials, whether with
+                    or without Customer’s knowledge or consent. Customer will be
+                    liable for any losses incurred by Duet or its affiliates due
+                    to third-party use of Customer’s access credentials.
+                  </p>
+                  <br />
+                  <span class="section-head">
+                    <h6>11. Professional Services.</h6>
+                  </span>
+                  <p>
+                    To the extent any Service Order provides for professional
+                    services by Duet for Customer, the following terms apply
+                    with respect to those Services except as otherwise provided
+                    in the applicable Service Order:
+                  </p>
+                  <p>
+                    11.1 Customer will pay Duet for the time of its personnel at
+                    Duet’s standard rates and will reimburse any out-of-pocket
+                    expenses incurred by Duet in providing the Services. If the
+                    Service Order contains or provides for a quotation for the
+                    Services, that quotation will be an estimate only and will
+                    not affect this <strong>Section 11.1</strong>, unless the
+                    Service Order specifically provides otherwise.
+                  </p>
+                  <p>
+                    11.2 Duet will invoice Customer for fees and expenses
+                    pursuant to <strong>Section 11.1</strong> on a monthly basis
+                    and Customer will pay such invoices within 30 days.
+                  </p>
+                  <p>
+                    11.3 Any deliverable provided to Customer by Duet in the
+                    performance of the Services (each, a
+                    “<strong>Deliverable</strong>”) shall be presumed accepted
+                    on the date that is the earlier of (a) two business days
+                    after Customer’s receipt of the Deliverable, and (b)
+                    Customer’s written acceptance. Any rejection of a
+                    Deliverable must be based upon material failure to conform
+                    to the written pecifications set forth in the Service Order
+                    and must be specific, reasonable and in writing.
+                  </p>
+                  <p>
+                    11.4 Customer will provide all information reasonably
+                    requested by Duet and will reasonably cooperate with Duet
+                    and make available relevant Customer personnel to facilitate
+                    provision of the professional Services.
+                  </p>
+                  <p>
+                    11.5 All right, title and interest in and to any work
+                    product and any intellectual property rights included or
+                    embodied therein are and will remain the sole and exclusive
+                    property of Duet, subject only to Customer’s underlying
+                    rights in materials and content delivered by Customer to
+                    Duet (“<strong>Customer Content</strong>”), provided that
+                    (a) Customer grants to Duet a nonexclusive, worldwide and
+                    royalty-free right and license, including the right of
+                    sublicense, to modify and edit any Customer Content, as well
+                    as, to combine, and create derivative works of, any Customer
+                    Content with other content and materials for the sole
+                    purposes of providing the professional Services and a
+                    non-exclusive, worldwide and royalty-free right and license,
+                    including the right to sublicense to use Customer Content,
+                    to the extent incorporated or embodied in the work product,
+                    for Duet’s use of the work product for any purpose
+                    whatsoever (whether in provision of professional Services or
+                    otherwise) subject to the requirements of
+                    <strong>Section 9</strong>, and (b) Duet grants to Customer
+                    a non-exclusive, worldwide, nonsublicensable and
+                    royalty-free right and license to use the work product
+                    solely as expressly contemplated by the Service Order.
+                  </p>
+                  <br />
+                  <br />
+                  <span class="section-head">
+                    <h6>12. General Provisions.</h6>
+                  </span>
+                  <p>
+                    12.1 Either party may include the other’s name and logo in
+                    Customer or vendor lists.
+                  </p>
+                  <p>
+                    12.2 The validity and enforceability of this Agreement, and
+                    all claims or causes of action (whether in contract, tort,
+                    statute or otherwise) that may be based on, arise out of or
+                    relate to this Agreement, or the negotiation, execution or
+                    performance of this Agreement (including any claim or cause
+                    of action based on, arising out of or related to any
+                    representation or warranty made in or in connection with
+                    this Agreement or as an inducement to enter into this
+                    Agreement), will be governed by, construed in accordance
+                    with, and enforced in accordance with, the domestic internal
+                    laws of the state of California, including its statutes of
+                    limitations, but without regard for conflicts of law
+                    principles.
+                  </p>
+                  <p>
+                    12.3 Binding, confidential arbitration pursuant to this
+                    <strong>Section 12.3</strong> will be the only remedy for
+                    any dispute or claim of any kind, including third-party
+                    claims arising under, concerning, or relating to this
+                    Agreement, its interpretation, its validity (including any
+                    claim that all or any part of this Agreement is void or
+                    voidable), its termination, or its subject matter, whether
+                    sounding in contract, tort, equity, statutory law,
+                    administrative regulation or otherwise (a
+                    “<strong>Claim</strong>”). Any Claim, will be resolved in a
+                    confidential expedited arbitration administered by the JAMS
+                    pursuant to its Comprehensive Arbitration Rules and
+                    Procedures (a copy of which can be found here:
+                    https://www.jamsadr.com/rules-comprehensivearbitration) (the
+                    “<strong>Rules</strong>”) then in effect. For purposes of
+                    clarification, the parties understand and agree that (a)
+                    <strong>Section 12.2</strong> will apply to any arbitration
+                    under this <strong>Section 12.3</strong>, both as to the
+                    governing law to be applied by the Arbitrator to the Claim
+                    and as to the law governing the arbitration and the
+                    interpretation of this <strong>Section 12.3</strong>, and
+                    (b) the Federal Arbitration Act, 9 U.S.C. §§ 1-16, will also
+                    apply to any arbitration under this
+                    <strong>Section 12.3</strong> by virtue of Article VI,
+                    Clause 2 to the United States Constitution. If there is more
+                    than one Claim between the parties, all such Claims may be
+                    heard in a single arbitration under this
+                    <strong>Section 12.3</strong>. Except to the extent required
+                    by Legal Requirements that cannot be waived or modified by
+                    this Agreement, Claims under this Agreement may not be
+                    consolidated into a single arbitration proceeding with
+                    claims between Duet and other persons, even if those claims
+                    are governed by an arbitration proceeding similar or
+                    identical to this <strong>Section 12.3</strong> and even
+                    those other persons are similarly situated and their claims
+                    are similar or identical in the nature to a Claim under this
+                    Agreement, provided that nothing in this sentence will be
+                    interpreted to prevent the Arbitrator from granting public
+                    injunctive relief in conformance with applicable Legal
+                    Requirements. Any Claim submitted to arbitration will be
+                    decided by a single, neutral arbitrator (the
+                    “<strong>Arbitrator</strong>”) mutually agreed by the
+                    parties or, if they cannot agree within 15 business days of
+                    the commencement of arbitration, in accordance with the
+                    Rules. The Arbitrator must be qualified as a California
+                    attorney who has at least ten years of prior combined
+                    professional experience either as a judge or in private
+                    practice as a business or commercial litigator. Any
+                    arbitration hearings or conferences pursuant to this
+                    <strong>Section 12.3</strong> will be conducted exclusively
+                    by means of conference telephone or other communications
+                    technology, as reasonably determined by the Arbitrator, by
+                    means of which all persons participating in those hearings
+                    or conferences can hear each other, and neither the Parties,
+                    the Arbitrator or any attorneys, witnesses or other
+                    representatives of the Parties will be required to be
+                    physically present in any particular place for purposes of
+                    any hearing or conference unless the Arbitrator determines
+                    that a physical hearing is necessary to effectively
+                    arbitrate the Claim, in which case that physical hearing
+                    will be in a location selected by the Arbitrator to be
+                    reasonably convenient to the parties and the Arbitrator. The
+                    Arbitrator will have the exclusive power to adjudicate the
+                    alleged breach, enforcement, interpretation or validity of
+                    this Agreement, including as to the scope or applicability
+                    of this arbitration clause. Discovery within the arbitration
+                    will be as the Arbitrator determines is reasonable or
+                    necessary for the fair and efficient arbitration of the
+                    Claim. All JAMS fees and costs will be borne equally by the
+                    parties, except that in rendering the award, the Arbitrator
+                    will allocate and award an appropriate share of the
+                    prevailing party’s reasonable attorneys’ fees and costs, to
+                    the losing party. Judgment on any arbitration award may be
+                    entered and enforced by any court of competent jurisdiction.
+                    EACH PARTY EXPRESSLY AGREES AND UNDERSTANDS THAT BY AGREEING
+                    TO ARBITRATION, IT IS WAIVING THE RIGHT TO A JURY TRIAL OR
+                    TO A CIVIL ADMINISTRATIVE TRIBUNAL.
+                  </p>
+                  <p>
+                    12.4 Neither party may assign any of its rights or
+                    obligations under this Agreement, whether by operation of
+                    law or otherwise, without the prior written consent of the
+                    other (not to be unreasonably withheld). Notwithstanding the
+                    foregoing, (a) either party may assign this Agreement in its
+                    entirety to its successor in interest in connection with a
+                    merger, reorganization, or sale of all or substantially all
+                    assets or equity; and (b) Duet may assign its rights and
+                    obligations relating to implementation of the Hosted Service
+                    to an Affiliate or partner. Any attempted assignment in
+                    breach of this section will be void. This Agreement will
+                    bind and inure to the benefit of the parties, their
+                    respective successors and permitted assigns. This Agreement
+                    is entered into by the parties for the exclusive benefit of
+                    the parties and their successors and permitted assignees.
+                    The Agreement is expressly not intended for the benefit of
+                    any other person. No third party will have any rights under
+                    this Agreement. This Agreement sets forth the entire
+                    agreement and understanding of the parties relating to its
+                    subject matter, supersedes all prior and contemporaneous
+                    agreements, representations, understandings, negotiations
+                    and discussions, whether written or oral, and will not be
+                    modified or affected by any offer, proposal, statement or
+                    representation, oral or written, made by or for any party in
+                    connection with the negotiation of this Agreement.
+                  </p>
+                  <p>
+                    12.5 If any provision of this Agreement is held by a court
+                    of competent jurisdiction to be invalid or unenforceable,
+                    then those provision(s) will be construed to reflect the
+                    intentions of the invalid or unenforceable provision(s),
+                    with all other provisions remaining in full force and
+                    effect. No joint venture, partnership, employment, or agency
+                    relationship exists between Duet and Customer as a result of
+                    this Agreement or use of the Hosted Services. Duet reserves
+                    the right to use third-party providers in the provision of
+                    the Hosted Services and Duet will be responsible for the
+                    acts or omissions of those third parties. Neither party will
+                    be liable to the other for any delay or failure to perform
+                    under this Agreement (excluding payment obligations) due to
+                    circumstances beyond that party’s reasonable control,
+                    including acts of God, acts of government, flood, fire,
+                    earthquakes, civil unrest, acts of terror, strikes or other
+                    labor problems (excluding those involving that party’s
+                    employees), internet or other Hosted Service disruptions
+                    involving hardware, software or power systems not within
+                    that party’s possession or reasonable control, and denial of
+                    service attacks. Any notice required or permitted under this
+                    Agreement will be given in writing by USPS Priority Express
+                    Mail, by nationally recognized overnight delivery service
+                    (e.g. UPS), or e mail, , in each case addressed to the party
+                    to which the notice is provided at the address or e mail
+                    address indicated in the Service Orders or at another
+                    address or e mail address designated by the party by notice
+                    from time to time to the other party. Any notice will be
+                    deemed received on the earlier of the date of actual
+                    delivery or the date on which delivery is refused,
+                    regardless of whether the party has vacated the physical
+                    address or discontinued the e mail address. The actual
+                    receipt by the addressee of any written notice will
+                    constitute notice under this
+                    <strong>Section 12.5</strong> notwithstanding the failure to
+                    have complied with any provisions of this
+                    <strong>Section 12.5</strong>. The failure of either party
+                    to enforce any right or provision in this Agreement will not
+                    constitute a waiver of that right or provision unless
+                    acknowledged and agreed to by that party in writing. Except
+                    for payment obligations, if either party is prevented from
+                    performing or is unable to perform any of its obligations
+                    under this Agreement due to causes beyond the reasonable
+                    control of the party invoking this provision, including acts
+                    of God, acts of civil or military authorities, riots or
+                    civil disobedience, wars, strikes or labor disputes (each, a
+                    “<strong>Force Majeure Event</strong>”), that party’s
+                    performance will be excused and the time for performance
+                    will be extended accordingly provided that the party
+                    promptly takes commercially reasonable steps to resume full
+                    performance. Any rights not expressly granted in this
+                    Agreement are reserved by Duet.
+                  </p>
+                  <br />
+                  <br />
+                  <span class="section-head">
+                    <h6>13. Definitions.</h6>
+                  </span>
+                  <p>
+                    "<strong>Affiliate</strong>" means any entity which directly
+                    or indirectly Controls, is Controlled by, or is under common
+                    Control with the subject entity.
+                  </p>
+                  <p>
+                    "<strong>Confidential Information</strong>" means all
+                    information disclosed to a party by the other party during
+                    the Term, whether in writing, electronically or orally
+                    (including third-party information held by the disclosing
+                    party under a duty of confidentiality), and that is either
+                    designated by the disclosing party as confidential in
+                    writing or is of a nature that a reasonable person would
+                    understand to be confidential. Confidential Information does
+                    not include information (a) known to the receiving party
+                    before its receipt from the disclosing party without a
+                    limitation or obligation of confidentiality, (b)
+                    independently developed by the receiving party without use
+                    of any Confidential Information; (c) in the public domain at
+                    the time of disclosure or otherwise, other than as a result
+                    of disclosure by the receiving party; or (d) received from a
+                    third party with a legal or contractual right to disclose
+                    that information or data to the receiving party, provided
+                    that third party had no duty to keep that information
+                    confidential and that the receiving party did not (and was
+                    not required to) agree to keep that information
+                    confidential.
+                  </p>
+                  <p>
+                    "<strong>Control</strong>" means direct or indirect
+                    ownership or control of more than 50% of the voting
+                    interests of the subject entity.
+                  </p>
+                  <p>
+                    "<strong>Customer Data</strong>" means any data, information
+                    or other materials submitted by Customer to the Hosted
+                    Service.
+                  </p>
+                  <p>
+                    "<strong>Dispute Period</strong>" means 15 days from receipt
+                    of invoice.
+                  </p>
+                  <p>
+                    "<strong>Documentation</strong>" means Duet’s then current
+                    on-line help, guides, and manuals published by Duet and made
+                    generally available by Duet for the Hosted Services.
+                    Documentation will include any updated Documentation that
+                    Duet provides from time to time.
+                  </p>
+                  <p>
+                    "<strong>Hosted Services</strong>" means the services
+                    described in the Service Orders, including updates to those
+                    services from time to time.
+                  </p>
+                  <p>
+                    "<strong>Training Data”</strong>" means improvements in
+                    semantic understanding of the Hosted Service (including
+                    vocabulary and natural language understanding) resulting
+                    from the processing of Customer Data from which individual
+                    User identities have been removed and that is not linked or
+                    reasonably linkable to any User or household.
+                  </p>
+                  <p>
+                    "<strong>Users</strong>" means individuals who are employees
+                    or service providers of Customer and who are authorized by
+                    Customer to use the Hosted Services for Customer’s internal
+                    purposes, including employees administering Customer’s
+                    services and drivers of vehicles.
+                  </p>
+                  <br />
+                  <br />
+                  <p style="font-size: 20px;">END OF DOCUMENT</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end row -->
+      </div>
+      <!-- end container -->
+    </section>
+    <!--  END OUR MISSION -->
+
+    <div id="footer"></div>
+
+    <!-- Javascript -->
+    <!--<script type="text/javascript" src="plugins/jquery-3.3.1.min.js"></script>-->
+    <script
+      type="text/javascript"
+      src="plugins/bootstrap/js/bootstrap.min.js"
+    ></script>
+    <script type="text/javascript" src="plugins/back-to-top.js"></script>
+    <script
+      type="text/javascript"
+      src="plugins/jquery-inview/jquery.inview.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="plugins/ismobile/isMobile.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="plugins/flexslider/jquery.flexslider-min.js"
+    ></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <!-- Modal Video -->
+    <script type="text/javascript" src="js/modal-video.js"></script>
+    <!--[if !IE]>-->
+    <script type="text/javascript" src="js/animations.js"></script>
+    <!--&lt;!&ndash;<![endif]&ndash;&gt;-->
+    <!--&lt;!&ndash; Theme Switcher (REMOVE ON YOUR PRODUCTION SITE) &ndash;&gt;-->
+    <!--<script type="text/javascript" src="js/demo/theme-switcher.js"></script>-->
+    <script>
+      $(function() {
+        //$(".chevron-down").
+        $('div[data-toggle=collapse]').click(function() {
+          $(this)
+            .children('span')
+            .toggleClass('fa-chevron-down fa-chevron-up');
+        });
+      });
+    </script>
+  </body>
+</html>
